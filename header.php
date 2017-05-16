@@ -19,14 +19,8 @@
 	<body <?php body_class(); ?>>
 	<?php do_action( 'foundationpress_after_body' ); ?>
 
-	<?php if ( get_theme_mod( 'wpt_mobile_menu_layout' ) === 'offcanvas' ) : ?>
-	<div class="off-canvas-wrapper">
-		<div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
-		<?php get_template_part( 'template-parts/mobile-off-canvas' ); ?>
-	<?php endif; ?>
 
-	<?php do_action( 'foundationpress_layout_start' ); ?>
-
+<div class="header">
 	<header id="masthead" class="site-header" role="banner">
 		<div class="title-bar" data-responsive-toggle="site-navigation">
 			<button class="menu-icon" type="button" data-toggle="mobile-menu"></button>
@@ -38,7 +32,7 @@
 		<nav id="site-navigation" class="main-navigation top-bar" role="navigation">
 			<div class="top-bar-left">
 				<ul class="menu">
-					<li class="home"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></li>
+					<li class="home"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.svg"> </a></li>
 				</ul>
 			</div>
 			<div class="top-bar-right">
@@ -50,6 +44,9 @@
 			</div>
 		</nav>
 	</header>
-
-	<section class="container">
-		<?php do_action( 'foundationpress_after_header' );
+</div>
+<div class="headerCTA">
+	<div class="headerCTA--content">
+	Not sure what you need? Give us a call on <a href="tel:01283 575097">01283 575097</a> or <a href="/contact">contact us</a>
+	</div>
+</div>

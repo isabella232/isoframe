@@ -1,29 +1,26 @@
-// Text meant only for screen readers. Addresses part of theme-check issue #840.
-// https://github.com/Automattic/_s/blob/master/style.css
-.screen-reader-text {
-  clip: rect(1px, 1px, 1px, 1px);
-  position: absolute !important;
-  height: 1px;
-  width: 1px;
-  overflow: hidden;
+$brand-purple: #4B324B;
+$brand-orange: #FAA500;
+$brand-grey: #BEB4BE;
+$brand-red: #FA0032;
+
+$grey-1: #4C484C;
+$grey-2: #867F86;
+$grey-3: #CEC6CE;
+$grey-4: #DED9DE;
+$grey-5: #EEECEE;
+$grey-6: #F5F3F5;
+
+$tint-orange-1: #FDE8C0;
+$tint-orange-2: #FEF5E5;
+
+$site-font: "AvenirNext", sans-serif;
+$site-font-bold: "Avenir Next Bold", sans-serif;
+$site-transiton: all 0.2s; 
+
+h1, h2, h3, h6 {
+font-family: $site-font-bold;
 }
 
-.screen-reader-text:focus {
-  background-color: #f1f1f1;
-  border-radius: 3px;
-  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
-  clip: auto !important;
-  color: #21759b;
-  display: block;
-  font-size: 14px;
-  font-size: 0.875rem;
-  font-weight: bold;
-  height: auto;
-  left: 5px;
-  line-height: normal;
-  padding: 15px 23px 14px;
-  text-decoration: none;
-  top: 5px;
-  width: auto;
-  z-index: 100000; // Above WP toolbar.
+a {
+	transition: $site-transiton;
 }
