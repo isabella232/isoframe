@@ -45,8 +45,21 @@
 		</nav>
 	</header>
 </div>
+
 <div class="headerCTA">
 	<div class="headerCTA--content">
 	Not sure what you need? Give us a call on <a href="tel:01283 575097">01283 575097</a> or <a href="/contact">contact us</a>
+	</div>
+</div>
+
+<div class="slider">
+	<div style="background-image:url('<?php echo get_template_directory_uri(); ?>/assets/images/slider/stand-background.jpg');">
+	<img src="<?php echo get_template_directory_uri(); ?>/assets/images/slider/stand-foreground.png">
+		<div class="titleText">
+			<div>
+				<h2>NEXT GENERATION <span>EXHIBITION STANDS</span></h2>
+				EXPERTISE / VALUE / PEACE OF MIND
+			</div>
+		</div>
 	</div>
 </div>
