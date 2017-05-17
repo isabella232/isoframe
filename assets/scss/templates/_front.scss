@@ -1,6 +1,6 @@
 .actionBoxes {
 	@include grid-row();
-	@include breakpoint(medium) {
+	@include breakpoint(large) {
 		display:flex;
 		padding-top:35px;
 		padding-bottom:20px;
@@ -9,7 +9,7 @@
 	div {
 		@include grid-column(12, 0);
 
-			@include breakpoint(medium) {
+			@include breakpoint(large) {
 				@include grid-column(4, 0);
 				flex: 1 1 33.3333%;
 			}
@@ -69,4 +69,37 @@
 
 	}
 
+}
+
+.why-choose-us {
+	width:100%;
+	background:$brand-purple;
+	@include breakpoint(large) {
+		height:304px;
+		background:$brand-purple url('../images/homepage-background.jpg') no-repeat center right;
+	}
+	div {
+		@include grid-row();
+		padding-right:20px;
+		@include breakpoint(large) {
+			padding-right:500px;
+		}
+		padding-left:20px;
+		padding-top:19px;
+		padding-bottom:19px;
+
+		h2 {
+			text-transform:uppercase;
+			color:$white;
+			font-size:rem-calc(32);
+			margin:0px;
+		}
+
+		p {
+			color:$white;
+			&:first-of-type{
+				font-weight:bold;
+			}
+		}
+	}
 }
