@@ -1,0 +1,107 @@
+.telephone {
+	&:before {
+		display:inline-block;
+		position:relative;
+		content:" ";
+		height:32px;
+		width:32px;
+		top:9px;
+		margin-right:5px;
+		background: url("../images/icons/phone.svg") no-repeat center center;
+
+	}
+}
+
+.email {
+	@include breakpoint(large) {
+		margin-left:25px;
+	}
+
+	&:before {
+		display:inline-block;
+		position:relative;
+		content:" ";
+		height:32px;
+		width:32px;
+		top:9px;
+		margin-right:5px;
+		background: url("../images/icons/email.svg") no-repeat center center;
+
+	}
+}
+
+.twitter {
+	display:block;
+	content:" ";
+	height:32px;
+	width:32px;
+	margin: 0px 10px;
+	background: url("../images/icons/twitter.svg") no-repeat center center;
+	&:hover {
+		opacity: 0.5;
+	}
+}
+.facebook {
+	display:block;
+	content:" ";
+	height:32px;
+	width:32px;
+	margin: 0px 10px;
+	background: url("../images/icons/facebook.svg") no-repeat center center;
+	&:hover {
+		opacity: 0.5;
+	}
+}
+.youtube {
+	display:block;
+	content:" ";
+	height:32px;
+	width:32px;
+	margin: 0px 10px;
+	background: url("../images/icons/youtube.svg") no-repeat center center;
+	&:hover {
+		opacity: 0.5;
+	}
+}
+.pinterest {
+	display:block;
+	content:" ";
+	height:32px;
+	width:32px;
+	margin: 0px 10px;
+	background: url("../images/icons/pinterest.svg") no-repeat center center;
+	&:hover {
+		opacity: 0.5;
+	}
+}
+.google {
+	display:block;
+	content:" ";
+	height:32px;
+	width:32px;
+	margin: 0px 10px;
+	background: url("../images/icons/google.svg") no-repeat center center;
+	&:hover {
+		opacity: 0.5;
+	}
+}
+
+.searchIcon a{
+	display:block;
+	content:" ";
+	height:32px;
+	width:32px;
+	margin: 0px 10px;
+	font-size:0!important;
+	background: url("../images/icons/search.svg") no-repeat center center;
+	&:hover {
+		opacity: 0.5!important;
+	}
+}
+
+.menu-icon {
+	&:hover {
+		border-radius:0px!important;
+		background:none;
+	}
+}
