@@ -60,8 +60,10 @@
 		</div>
 		<div class="footer__copyright__container--copyright">
 			<p>© 2017 DISPLAY MAKERS Ltd</p>
-			<div>Website by <a href="#"><img src="katapultlogo.png"></a></div>
 		</div>
+	</div>
+	<div class="footer__copyright__container--katapult">
+		<div>Website by <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/katapult.svg"></a></div>
 	</div>
 </div>
 

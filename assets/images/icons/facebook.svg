@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="24px" viewBox="0 0 12 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44 (41411) - http://www.bohemiancoding.com/sketch -->
+    <title>icon / facebook-square copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="element-/-footer-copy" transform="translate(-1105.000000, -30.000000)" fill="#4B324B">
+            <g id="icon-/-facebook-square" transform="translate(1095.000000, 26.000000)">
+                <g id="appbar.social.facebook" transform="translate(10.000000, 4.000000)">
+                    <path d="M2.50503158,4.64823158 C2.50503158,5.25277895 2.52631579,8.21052632 2.52631579,8.21052632 L0,8.21052632 L0,12 L2.50503158,11.9930526 L2.52631579,24 L7.57894737,24 L7.57894737,12 L10.8149053,11.9930526 C10.8149053,11.9930526 11.0593263,10.3289053 11.2105263,8.21052632 L7.57894737,8.21052632 C7.57894737,8.21052632 7.49677895,5.58637895 7.49677895,5.17465263 C7.49677895,4.76185263 8.03892632,4.20637895 8.57488421,4.20637895 L11.2842316,4.20637895 L11.2842316,0 L7.60048421,0 C2.38206316,0 2.50503158,4.04425263 2.50503158,4.64823158 Z" id="Shape" fill-rule="nonzero"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
