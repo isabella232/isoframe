@@ -1,8 +1,13 @@
 .page--default {
 	@include grid-row();
+	padding-bottom:30px;
 
 	.content {
 		@include grid-column(9);
+
+		h1 {
+			text-transform:uppercase;
+		}
 
 		h1, h2 {
 			color:$brand-purple;
