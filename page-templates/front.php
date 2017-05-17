@@ -96,23 +96,22 @@ get_header(); ?>
 
 	<div clas="new-advice--content">
 		<div>
-			<img src="#">
-			<h2>Title</h2>
+			<img src="<?php echo get_template_directory_uri(); ?>/assets/images/homepage-exhibitions2017.jpg">
+			<h2>Exhibition Trends for 2017</h2>
 			<p>Text here</p>
 			<a href='#'>Read more ></a>
 		</div>
 
 		<div>
-			<img src="#">
-			<h2>Title</h2>
+			<img src="<?php echo get_template_directory_uri(); ?>/assets/images/homepage-developingpresence.jpg"> 
+			<h2>Developing a powerful exhibition presence</h2>
 			<p>Text here</p>
 			<a href='#'>Read more ></a>
 		</div>
 
 		<div>
-			<img src="#">
-			<h2>Title</h2>
-			<p>Text here</p>
+			<img src="<?php echo get_template_directory_uri(); ?>/assets/images/homepage-exhibitionmanagement.jpg">
+			<h2>Exhibition Management, tailored support from start to finish</h2>
 			<a href='#'>Read more ></a>
 		</div>
 	</div>
