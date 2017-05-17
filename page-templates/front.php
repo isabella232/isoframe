@@ -43,9 +43,10 @@ get_header(); ?>
 
 <div class="why-choose-us">
 	<div>
-		<h2>Title text</h2>
-		<p>Text text</p>
-		<p>text text</p>
+		<h2>Why Choose Us?</h2>
+		<p>As one of the UK’s leading manufacturers of exhibition stands, we enable you to make a big impact by attracting visitors and delivering a great experience that engages your audience with your brand.</p>
+
+		<p>At ISOframe we approach exhibition stand design and development differently, our unique patented ISOframe system means all our stands are re-usable and re-configurable. An ISOframe exhibition stand isn’t single use, it will grow, change use and change shape with you and your business.</p>
 	</div>
 </div>
 
