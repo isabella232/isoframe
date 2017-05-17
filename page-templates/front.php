@@ -94,18 +94,16 @@ get_header(); ?>
 	
 	<h2>News & Advice</h2>
 
-	<div clas="new-advice--content">
+	<div class="news-advice--content">
 		<div>
 			<img src="<?php echo get_template_directory_uri(); ?>/assets/images/homepage-exhibitions2017.jpg">
 			<h2>Exhibition Trends for 2017</h2>
-			<p>Text here</p>
 			<a href='#'>Read more ></a>
 		</div>
 
 		<div>
 			<img src="<?php echo get_template_directory_uri(); ?>/assets/images/homepage-developingpresence.jpg"> 
 			<h2>Developing a powerful exhibition presence</h2>
-			<p>Text here</p>
 			<a href='#'>Read more ></a>
 		</div>
 
@@ -116,13 +114,14 @@ get_header(); ?>
 		</div>
 	</div>
 </div>
-
-<div class="footerCTA">
-	<div class="footerCTA--content">
-	Have an upcoming exhibition but need help to maximise impact and make the most of your investment?
-	</div>
-	<div class="footerCTA--link">
-		<a href="#">We can help</a>
+<div class="footerCTAbg">
+	<div class="footerCTA">
+		<div class="footerCTA--content">
+		Have an upcoming exhibition but need help to maximise impact and make the most of your investment?
+		</div>
+		<div class="footerCTA--link">
+			<a href="#" class="button">We can help</a>
+		</div>
 	</div>
 </div>
 
