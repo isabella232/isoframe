@@ -72,12 +72,19 @@ get_header(); ?>
 <div class="designerPullOut">
 	<div class="content">
 		<div class="content--image">
+		<img src="<?php echo get_template_directory_uri(); ?>/assets/images/homepage-screen.png">
 		</div>
 		<div class="content--text">
-			<h2>Title text</h2>
-			<p>first paragraph</p>
-			<p>Second paragraph</p>
+			<h2>Ready to start designing your ideal stand?</h2>
+			<p>Get creative with the IOSframe 3D Designer</p>
+
+			<p>Design your exhibition stands easier than ever before, module-by-module with the new ISOframe 3D Designer. Create detailed and accurate 3D renders quickly and easily, manipulate your designs in a couple of clicks, upload artwork and export your designs.</p>
 			<a href="#" class="button">Find out more</a>
+			<span>Available on 
+			<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/android.svg"></a>
+			<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/apple.svg"></a>
+			<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/windows.svg"></a>
+			</span> 
 		</div>
 	</div>
 </div>
