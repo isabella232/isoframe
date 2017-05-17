@@ -53,18 +53,18 @@ get_header(); ?>
 <div class="values">
 
 	<div>
-		<h2>Title</h2>
-		<p>Text here</p>
+		<h2>Expertise</h2>
+		<p>With over 50 years experience of delivering stands of every type for our clients, we understand all the ingredients that are essential for exhibition success so you can rely on us to ensure that everything is in place.  </p>
 	</div>
 
 	<div>
-		<h2>Title</h2>
-		<p>Text here</p>
+		<h2>Value</h2>
+		<p>Exhibitions often demand a significant investment in time and money; our products, solutions and services are all designed to enable you to achieve maximum impact and help make your budget go further.</p>
 	</div>
 
 	<div>
-		<h2>Title</h2>
-		<p>Text here</p>
+		<h2>Peace of mind</h2>
+		<p>There’s lots to consider when pulling everything together for an exhibition. Our experience and expertise means we can take much of the weight off your shoulders so you can focus on your priorities.</p>
 	</div>
 
 </div>
