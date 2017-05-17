@@ -300,8 +300,10 @@
 }
 
 .footer__navigation {
-	@include grid-row();
 	border-top:solid 5px $brand-purple;
+
+.footer__navigation__container {
+	@include grid-row();
 
 	.footer__navigation__menu {
 		@include grid-column(12);
@@ -371,7 +373,7 @@
 			}
 	}
 }
-
+}
 .footer__contact {
 	width:100%;
 	background:$grey-3;

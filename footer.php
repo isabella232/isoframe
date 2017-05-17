@@ -11,23 +11,25 @@
 ?>
 
 <div class="footer__navigation">
-	<div class="footer__navigation__menu">
-		<ul>
-			<li><a href="#">News</a></li>
-			<li><a href="#">Case studies</a></li>
-			<li><a href="#">Privacy, Terms & Disclamiers</a></li>
-			<li><a href="#">Warranty</a></li>
-			<li><a href="#">Sitemap</a></li>
-		</ul>
-	</div>
-	<div class="footer__navigation__social">
-		<ul>
-			<li><a href="#" class="twitter">T</a></li>
-			<li><a href="#" class="facebook">F</a></li>
-			<li><a href="#" class="youtube">Y</a></li>
-			<li><a href="#" class="pinterest">P</a></li>
-			<li><a href="#" class="google">G</a></li>
-		</ul>
+	<div class="footer__navigation__container">
+		<div class="footer__navigation__menu">
+			<ul>
+				<li><a href="#">News</a></li>
+				<li><a href="#">Case studies</a></li>
+				<li><a href="#">Privacy, Terms & Disclamiers</a></li>
+				<li><a href="#">Warranty</a></li>
+				<li><a href="#">Sitemap</a></li>
+			</ul>
+		</div>
+		<div class="footer__navigation__social">
+			<ul>
+				<li><a href="#" class="twitter">T</a></li>
+				<li><a href="#" class="facebook">F</a></li>
+				<li><a href="#" class="youtube">Y</a></li>
+				<li><a href="#" class="pinterest">P</a></li>
+				<li><a href="#" class="google">G</a></li>
+			</ul>
+		</div>
 	</div>
 </div>
 
