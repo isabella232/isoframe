@@ -12,8 +12,8 @@
 			@include breakpoint(large) {
 				@include grid-column(4, 0);
 				flex: 1 1 33.3333%;
+				margin:20px;
 			}
-		margin:20px;
 
 		h2 {
 			font-size:rem-calc(24);
@@ -476,7 +476,7 @@
 		.footer__copyright__container--copyright {
 			@include grid-column(12);
 			text-align:left;
-			
+
 			@include breakpoint(large) {
 				@include grid-column(4);
 				text-align:right;
@@ -592,5 +592,12 @@
 	background: url("../images/icons/google.svg") no-repeat center center;
 	&:hover {
 		opacity: 0.5;
+	}
+}
+
+.menu-icon {
+	&:hover {
+		border-radius:0px!important;
+		background:none;
 	}
 }

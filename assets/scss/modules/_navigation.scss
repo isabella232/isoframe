@@ -1,7 +1,24 @@
 .header {
   @include grid-row();
 }
+#mobile-menu ul {
+  padding-left:0px!important;
 
+  li:last-of-type {
+    display:none;
+  }
+}
+.title-bar {
+  background:$white;
+  padding:20px;
+  .menu-icon { 
+    border-radius:0!important; 
+    padding-bottom:0px!important; 
+    padding-top:0px; height:21px; 
+    float:right; 
+    margin-top:20px;
+  }
+}
 // Navigation breakpoints
 .desktop-menu, .top-bar-left {
   @include show-for(medium);

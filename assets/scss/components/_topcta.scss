@@ -1,4 +1,8 @@
 .headerCTA {
+	display:none;
+	@include breakpoint(large) {
+		display:block;
+	}
 	background-color:$brand-purple;
 	padding:15px 0px;
 	margin-top:25px;
@@ -28,12 +32,17 @@
 		background-position:center;
 		text-align:center;
 		background-repeat:no-repeat;
-		height:429px;
+		height:300px;
+		@include breakpoint(large) {
+			height:429px;
+		}
 
 		img {
 			position:relative;
+			@include breakpoint(large) {
 			top:15px;
 			left:80px;
+			}
 		}
 		.titleText{
 			background:$brand-purple;
@@ -42,7 +51,10 @@
 			div{
 				@include grid-row();
 				padding:20px 20px;
-				margin-top:-105px;
+				margin-top:-60px;
+				@include breakpoint(large) {
+					margin-top:-105px;
+				}
 				text-align:left;
 				font-family: $site-font;
 				font-weight:500;
