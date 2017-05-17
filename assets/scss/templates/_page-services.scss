@@ -60,7 +60,8 @@
 		 	padding:15px 60px;
 		 	@include breakpoint(large) {
 		 		display:inline-block;
-		 		padding:10px 60px;
+		 		width:auto;
+		 		padding:15px 60px;
 		 	}
 		 }
 	}
@@ -101,7 +102,8 @@
 			 	padding:15px 60px;
 			 	@include breakpoint(large) {
 			 		display:inline-block;
-			 		padding:10px 60px;
+			 		width:auto;
+			 		padding:15px 60px;
 			 	}
 			 }
 		}
