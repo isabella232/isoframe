@@ -1,0 +1,33 @@
+.contact--page {
+	@include grid-row();
+
+	.contact--page__details {
+		@include grid-column(8);
+
+		h1 {
+			text-transform:uppercase;
+			color:$brand-purple;
+		}
+		a {
+			color:$brand-purple;
+			font-size:rem-calc(20);
+			text-decoration:none;
+			&:hover {
+				color:$grey-1;
+			}
+		}
+		p {
+			font-weight:bold;
+		}
+	}
+	.contact--page__form {
+		@include grid-column(4);
+		background:$grey-4;
+		margin-top:30px;
+		font-size:rem-calc(22);
+		color:$brand-purple;
+		padding:5px 30px!important;
+		height:400px;
+
+		}
+}
