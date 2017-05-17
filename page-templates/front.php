@@ -19,24 +19,24 @@ get_header(); ?>
 <div class="actionBoxes">
 
 	<div>
-		<img src="#">
-		<h2>Title</h2>
-		<p>Text here</p>
-		<a href="#">Button</a>
+		<img src="<?php echo get_template_directory_uri(); ?>/assets/images/homepage-isoframe-custom.jpg">
+		<h2>Custom Exhibition Stands</h2>
+		<p>Exhibition stands that are designed and manufactured to your exact specifications.</p>
+		<a href="#" class="button">See product range</a>
 	</div>
 
 	<div>
-		<img src="#">
-		<h2>Title</h2>
-		<p>Text here</p>
-		<a href="#">Button</a>
+		<img src="<?php echo get_template_directory_uri(); ?>/assets/images/homepage-isoframe-modular.jpg">
+		<h2>Modular Exhibition Stands</h2>
+		<p>Flexible exhibition stand systems that can easily be re-configured, transported and re-used for multiple events.</p>
+		<a href="#" class="button">See product range</a>
 	</div>
 
 	<div>
-		<img src="#">
-		<h2>Title</h2>
-		<p>Text here</p>
-		<a href="#">Button</a>
+		<img src="<?php echo get_template_directory_uri(); ?>/assets/images/homepage-isoframe-portable.jpg">
+		<h2>Portable Displays</h2>
+		<p>Self-build exhibition stands that are easy to assemble and transport including pop-ups, pull-ups, counters and more.</p>
+		<a href="#" class="button">See product range</a>
 	</div>
 
 </div>
