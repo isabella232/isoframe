@@ -157,6 +157,7 @@
     .footer__contact__container--newsletter {
       display:none;
       @include breakpoint(large) {
+        display:block;
         @include grid-column(6);
       }
 

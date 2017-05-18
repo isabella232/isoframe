@@ -13,9 +13,6 @@
 }
 
 .email {
-	@include breakpoint(large) {
-		margin-left:25px;
-	}
 
 	&:before {
 		display:inline-block;
