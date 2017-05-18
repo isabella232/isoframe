@@ -49,3 +49,10 @@ require_once( 'library/responsive-images.php' );
 
 /** If your site requires protocol relative url's for theme assets, uncomment the line below */
 // require_once( 'library/protocol-relative-theme-assets.php' );
+
+// admin options page
+if( function_exists('acf_add_options_page') ) {
+	
+	acf_add_options_page();
+	
+}
