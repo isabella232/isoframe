@@ -98,7 +98,7 @@
 
   .menu .active > a { background-color: $white; }
 
-  .menu>li:not(.menu-text)>a { padding: 1rem 30px; font-size:rem-calc(16); font-weight:normal;  }
+  .menu>li:not(.menu-text)>a { padding: 1rem 25px; font-size:rem-calc(16); font-weight:normal;  }
   .menu li:not(:last-child) { border-right: none; }
 
   .dropdown.menu .submenu { border: 0; }

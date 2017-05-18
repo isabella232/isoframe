@@ -1,6 +1,7 @@
 .page--default {
 	@include grid-row();
 	padding-bottom:30px;
+	clear:both;
 
 	.content {
 		@include grid-column(12);
