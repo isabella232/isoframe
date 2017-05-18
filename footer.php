@@ -13,17 +13,11 @@
 <div class="footer__navigation">
 	<div class="footer__navigation__container">
 		<div class="footer__navigation__menu">
-			<ul>
-				<li><a href="#">News</a></li>
-				<li><a href="#">Case studies</a></li>
-				<li><a href="#">Privacy, Terms & Disclamiers</a></li>
-				<li><a href="#">Warranty</a></li>
-				<li><a href="#">Sitemap</a></li>
-			</ul>
+			<?php foundationpress_footer_nav(); ?>
 		</div>
 		<div class="footer__navigation__social">
 			<ul>
-				<li><a href="<?php the_field('twitter', 'option'); ?><" class="twitter">T</a></li>
+				<li><a href="<?php the_field('twitter', 'option'); ?>" class="twitter">T</a></li>
 				<li><a href="<?php the_field('facebook', 'option'); ?>" class="facebook">F</a></li>
 				<li><a href="<?php the_field('youtube', 'option'); ?>" class="youtube">Y</a></li>
 				<li><a href="<?php the_field('pinterest', 'option'); ?>" class="pinterest">P</a></li>
