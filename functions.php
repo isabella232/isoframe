@@ -107,6 +107,7 @@ function products() {
 		'exclude_from_search'   => false,
 		'publicly_queryable'    => true,
 		'capability_type'       => 'page',
+		'rewrite' => array('slug' => 'product'),
 	);
 	register_post_type( 'products', $args );
 
@@ -146,6 +147,7 @@ function product_type() {
 		'show_admin_column'          => true,
 		'show_in_nav_menus'          => true,
 		'show_tagcloud'              => true,
+		'rewrite' => array('slug' => 'products'),
 	);
 	register_taxonomy( 'product_Type', array( 'products' ), $args );
 
