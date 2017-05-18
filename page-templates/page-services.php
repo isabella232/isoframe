@@ -6,85 +6,51 @@ get_header(); ?>
 
 <div class="services__header">
   <div class="services__header--content">
-    <h1>More than a<br />manufacturer</h1>
-    <h2>Design, stand hire, installation, storage and more</h2>
-    <p>Services introduction text needs writing. This is placeholder: The ISOframe Wave is a portable exhibition system with a display that can be formed into any shape and reduced or extended in size without the need to reprint graphics. The Wave is ideal for shell-schemes or space only events and where you need the flexibility to adapt to different size exhibition spaces.</p>
+    <h1><?php the_field('heading'); ?></h1>
+    <h2><?php the_field('sub_heading'); ?></h2>
+    <p><?php the_field('content'); ?></p>
   </div>
 </div>
 
+  <?php
+  $i;
+  if( have_rows('sections') ):
+      while ( have_rows('sections') ) : the_row();
+    $i++;
+
+    if($i % 2 != 0) {?>
 <div class="services__row--normal">
   <div class="services__row--normal__image">
-   <img src="<?php echo get_template_directory_uri(); ?>/assets/images/service1.jpg ">
+   <img src="<?php the_sub_field('image'); ?>">
   </div>
 
   <div class="services__row--normal__text">
-    <h2>3D design</h2>
-    <p>This is placeholder text: We work closely with you to understand your exact requirements and realise your vision. We take care of everything but involve you at key stages to ensure you’re happy that everything is in line with your expectations and plans.</p>
-    <a href="#" class="button">Find out more</a>
+    <h2><?php the_sub_field('title', false); ?></h2>
+    <p><?php the_sub_field('content', false); ?></p>
+    <a href="<?php the_sub_field('url'); ?>" class="button">Find out more</a>
   </div>
 </div>
-
+    <?php } else { ?>
 <div class="services__row--coloured">
   <div class="services__row--coloured--spacer">
     <div class="services__row--coloured__image">
-     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/service2.jpg ">
+     <img src="<?php the_sub_field('image'); ?>">
     </div>
     
     <div class="services__row--coloured__text">
-      <h2>3D design</h2>
-      <p>This is placeholder text: We work closely with you to understand your exact requirements and realise your vision. We take care of everything but involve you at key stages to ensure you’re happy that everything is in line with your expectations and plans.</p>
-      <a href="#" class="button">Find out more</a>
+      <h2><?php the_sub_field('title', false); ?></h2>
+      <p><?php the_sub_field('content', false); ?></p>
+      <a href="<?php the_sub_field('url'); ?>" class="button">Find out more</a>
     </div>
   </div>
 </div>
+  <?php } ?>
 
-<div class="services__row--normal">
-  <div class="services__row--normal__image">
-   <img src="<?php echo get_template_directory_uri(); ?>/assets/images/service3.jpg ">
-  </div>
+  <?php  
+    endwhile;
+  endif;
+  ?>
 
-  <div class="services__row--normal__text">
-    <h2>3D design</h2>
-    <p>This is placeholder text: We work closely with you to understand your exact requirements and realise your vision. We take care of everything but involve you at key stages to ensure you’re happy that everything is in line with your expectations and plans.</p>
-    <a href="#" class="button">Find out more</a>
-  </div>
-</div>
-
-<div class="services__row--coloured">
-  <div class="services__row--coloured--spacer">
-    <div class="services__row--coloured__image">
-     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/service4.jpg ">
-    </div>
-    
-    <div class="services__row--coloured__text">
-      <h2>3D design</h2>
-      <p>This is placeholder text: We work closely with you to understand your exact requirements and realise your vision. We take care of everything but involve you at key stages to ensure you’re happy that everything is in line with your expectations and plans.</p>
-      <a href="#" class="button">Find out more</a>
-    </div>
-  </div>
-</div>
-
-<div class="services__row--normal">
-  <div class="services__row--normal__image">
-   <img src="<?php echo get_template_directory_uri(); ?>/assets/images/service5.jpg ">
-  </div>
-
-  <div class="services__row--normal__text">
-    <h2>3D design</h2>
-    <p>This is placeholder text: We work closely with you to understand your exact requirements and realise your vision. We take care of everything but involve you at key stages to ensure you’re happy that everything is in line with your expectations and plans.</p>
-    <a href="#" class="button">Find out more</a>
-  </div>
-</div>
-
-<div class="footerCTAbg">
-  <div class="footerCTA">
-    <div class="footerCTA--content">
-    Have an upcoming exhibition but need help to maximise impact and make the most of your investment?
-    </div>
-    <div class="footerCTA--link">
-      <a href="#" class="button">We can help</a>
-    </div>
-  </div>
-</div>
+<?php get_template_part( 'template-parts/footer-cta', 'footer-cta' ); ?>
 
 <?php get_footer();

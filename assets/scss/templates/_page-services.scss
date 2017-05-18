@@ -81,14 +81,14 @@
 		@include breakpoint(large) {
 			@include grid-column(6);
 		}
-			float:right;
+			float:right!important;
 		}
 		.services__row--coloured__text {
 		@include grid-column(12);
 		@include breakpoint(large) {
 			@include grid-column(6);
 		}
-			float:left;
+			float:left!important;
 			h2 {
 				text-transform:uppercase;
 				color:$brand-purple;
