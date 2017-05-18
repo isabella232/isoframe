@@ -46,8 +46,4 @@
 	</header>
 </div>
 
-<div class="headerCTA">
-	<div class="headerCTA--content">
-	Not sure what you need? Give us a call on <a href="tel:01283 575097">01283 575097</a> or <a href="/contact">contact us</a>
-	</div>
-</div>
+<?php include('template-parts/header-cta.php'); ?>
