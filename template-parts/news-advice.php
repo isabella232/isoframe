@@ -16,6 +16,6 @@
 			<a href='<?php echo get_permalink($recent["ID"]); ?> '>Read more ></a>
 		</div>
 
-<?php } wp_reset_query(); b?>
+<?php } wp_reset_query(); ?>
 	</div>
 </div>

@@ -45,5 +45,3 @@
 		</nav>
 	</header>
 </div>
-
-<?php include('template-parts/header-cta.php'); ?>
