@@ -23,38 +23,24 @@ get_header(); ?>
   </div>
 </div>
 
+
+<?php $terms = get_terms( 'product_Type', array(
+    'hide_empty' => false,
+) );
+foreach ($terms as $term) {
+  $term_link = get_term_link( $term );
+  ?>
 <div class="frameFinder__results">
   <div class="frameFinder__results--image">
-  <img src="<?php echo get_template_directory_uri(); ?>/assets/images/isoframe-custom.jpg">
+ <?php echo get_the_post_thumbnail($term->id); ?>
   </div>
   <div class="frameFinder__results--content">
-    <h2>Custom Hire</h2>
-    <p>ISOframe Installed Solutions are a range of exhibition stand packages that provide you with options for stand sizes, accessories and support services. Available to hire or buy, Installed Solutions are ideal when you need a quick and easy way to get everything you need for an upcoming exhibition.</p>
-    <a href="#" class="button">Find out more</a>
+    <h2> <?php echo $term->name; ?></h2>
+    <p><?php echo $term->description; ?></p>
+    <a href="<?php echo $term_link; ?>" class="button">Find out more</a>
   </div>
 </div>
-
-<div class="frameFinder__results">
-  <div class="frameFinder__results--image">
-  <img src="<?php echo get_template_directory_uri(); ?>/assets/images/wave.jpg">
-  </div>
-  <div class="frameFinder__results--content">
-    <h2>Wave</h2>
-    <p>The ISOframe Wave is a portable exhibition system with a display that can be formed into any shape and reduced or extended in size without the need to reprint graphics. The Wave is ideal for shell-schemes or space only events and where you need the flexibility to adapt to different size exhibition spaces.</p>
-    <a href="#" class="button">Find out more</a>
-  </div>
-</div>
-
-<div class="frameFinder__results last">
-  <div class="frameFinder__results--image">
-  <img src="<?php echo get_template_directory_uri(); ?>/assets/images/express.jpg">
-  </div>
-  <div class="frameFinder__results--content">
-    <h2>Express pop-up</h2>
-    <p>The ISOframe Express Pop-up is a quick to assemble and easy to transport exhbition stand. The Express Pop-up is perfect for shell-scheme exhibition spaces and when your event space is similar at different venues.</p>
-    <a href="#" class="button">Find out more</a>
-  </div>
-</div>
+<?php } ?>
 
 <?php get_template_part( 'template-parts/designer-pull-out', 'designer-pull-out' ); ?>
 

@@ -51,21 +51,33 @@ echo '</ul>';
 </div>
 
 <div class="productType__action">
-	<div class="productType__action--box">
-		<img src="<?php echo get_template_directory_uri(); ?>/assets/images/exhibit-small.jpg">
-		<h2>Exhibit</h2>
-		<a href="#">Find out more ></a>
+
+<?php
+$args = array(
+	'post_type' => 'products',
+	'posts_per_page' => 3,
+	'tax_query' => array(
+		array(
+			'taxonomy' => 'product_Type',
+			'field'    => 'id',
+			'terms'    => $term_id,
+		),
+	),
+);
+$the_query = new WP_Query( $args );
+
+// The Loop
+while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+
+ 		<div class="productType__action--box">
+		<?php the_post_thumbnail(); ?>
+		<h2><?php the_title(); ?></h2>
+		<a href="<?php the_permalink(); ?>">Find out more ></a>
 	</div>
-	<div class="productType__action--box">
-		<img src="<?php echo get_template_directory_uri(); ?>/assets/images/wave-small.jpg">
-		<h2>Wave</h2>
-		<a href="#">Find out more ></a>
-	</div>
-	<div class="productType__action--box">
-		<img src="<?php echo get_template_directory_uri(); ?>/assets/images/fabric-small.jpg">
-		<h2>Fabric</h2>
-		<a href="#">Find out more ></a>
-	</div>
+
+<?php endwhile; ?>
+
+
 	<div class="productType__action--box">
 		<?php the_field('not_sure_message', $termID, false); ?>
 	</div>

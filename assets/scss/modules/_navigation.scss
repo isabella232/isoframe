@@ -1,5 +1,6 @@
 .header {
   @include grid-row();
+  margin-bottom:25px;
 }
 #mobile-menu ul {
   padding-left:0px!important;
