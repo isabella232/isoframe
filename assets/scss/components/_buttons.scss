@@ -23,3 +23,20 @@
 
 	}
 }
+
+.button--red {
+	@extend .button;
+	display:block!important;
+	width:300px;
+	margin-top:30px;
+	background:$brand-red;
+}
+
+.button--white {
+	@extend .button;
+	display:block!important;
+	width:100%;
+	margin-top:30px;
+	background:$white;
+	color:$brand-purple;
+}
