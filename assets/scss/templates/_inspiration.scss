@@ -6,13 +6,24 @@
 	> div {
 		@include grid-row();
 		h2 {
-			@include grid-column(8);
-			font-size:rem-calc(26);
+			@include grid-column(12);
+			margin:10px 0 0 0;
+			@include breakpoint(large) {
+				@include grid-column(8);
+				font-size:rem-calc(26);
+				margin-top:22px;
+			}
 			color:$white;
 			font-weight:normal;
 		}
 		select {
-			@include grid-column(4);
+			@include grid-column(12);
+			margin-bottom:15px;
+			@include breakpoint(large) {
+				@include grid-column(4);
+				
+			}
+			background: $white url('../images/dropdown.svg') center right 20px no-repeat;
 			margin-top:17px;
 			height:50px;
 			padding:15px;
@@ -27,15 +38,19 @@
 }
 
 .inspirationImage {
-	background:$grey-3;
+	background:$grey-4;
 	text-align:center;
 	padding:30px 0;
 	position:relative;
 
 	.inspirationImage--option {
+		display:none;
+		@include breakpoint(large) {
+			display:block;
+		}
+
 		position:absolute;
 		left:50%!important;
-		display:block;
 		background: url('../images/hotspot.svg') center center no-repeat;
 		background-size:contain;
 		height:45px;
@@ -72,6 +87,102 @@
 				border-right-color: #ffffff;
 				border-width: 15px;
 				margin-top: -30px;
+			}
+		}
+	}
+}
+
+
+.inspirationType {
+	width:100%;
+	background:$grey-3;
+	padding:20px;
+
+	div {
+		@include grid-row();
+	}
+}
+
+
+.inspirationImages {
+	@include grid-row();
+
+	> div{
+		@include grid-column(12, 0);
+		@include breakpoint(large) {
+
+			display:flex;
+			margin-top:40px;
+			justify-content:space-between;
+		}
+
+		img {
+			width:100%;
+			@include breakpoint(large) {
+				width:auto;
+				flex: 1 1 1;
+			}
+		}
+
+		div {
+			@include breakpoint(large) {
+				max-width:370px;
+			}
+			width:100%;
+			background:$brand-purple;
+			color:$white;
+			font-weight:bold;
+			padding:20px 30px
+		}
+	}
+}
+
+.inspirationGallery {
+	background: $grey-1;
+	width:100%;
+	margin-top:50px;
+	margin-bottom:40px;
+
+	h2 {
+		@include grid-row();
+		color:$white;
+		font-weight:bold;
+		text-transform:uppercase;
+		padding-left:30px;
+		padding-top:30px;
+		padding-bottom:0px;
+		margin-top:0px;
+		margin-bottom:0px;
+	}
+	.inspirationGallery__content {
+		@include grid-row();
+		padding-top:25px;
+		@include breakpoint(large) {
+			padding:25px;
+			display:flex;
+			flex-wrap:wrap;
+			align-items:space-between;
+		}
+
+		img, div {
+			@include grid-column(12,0);
+			width:100%;
+			@include breakpoint(large) {
+				flex: 1 1 25%;
+				margin:10px;
+				max-width:30%;
+			}
+		}
+
+		div {
+			background:$grey-2;
+			padding:20px;
+			font-size:rem-calc(22);
+			p {
+				margin:0px;
+				padding:0px;
+				color:$white;
+				font-weight:bold;
 			}
 		}
 	}

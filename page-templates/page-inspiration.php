@@ -8,6 +8,7 @@ get_header(); ?>
   <div>
     <h2>Select a product category to see insipiration and ideas</h2>
     <select name="filter">
+        <option name="">Choose an installation type</option>
         <option name="Custom">Custom</option>
         <option name="Modular">Modular</option>
         <option name="other">Other</option>
@@ -37,19 +38,19 @@ get_header(); ?>
 
 <div class="inspirationType">
   <div>
-      <img src="#" alt="isoFrame Type">
+      <img src="<?php echo get_template_directory_uri(); ?>/assets/images/custom-logo.png" alt="isoFrame Type">
   </div>
 </div>
 
 <div class="inspirationImages"> 
   <div>
-    <img src="#">
-    <img src="#">
-    <img src="#">
+    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/gallery/custom-images-1.jpg">
+    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/gallery/custom-images-1.jpg">
+    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/gallery/custom-images-2.jpg">
   </div>
   <div>
-    <img src="#">
-    <img src="#">
+    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/gallery/custom-images-3.jpg">
+    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/gallery/custom-images-4.jpg">
     <div class="inspirationImages__text">
       <p>ISOframe is a unique, patented system. Built-to-last, many of our stands can be reused and reconfigured for use at multiple exhibitions so you can get more out of your budget this year, next and beyond.</p>
     </div>
@@ -59,19 +60,21 @@ get_header(); ?>
 <?php get_template_part( 'template-parts/footer-cta', 'footer-cta' ); ?>
 
 <div class="inspirationGallery">
+<h2>Inspiration gallery</h2>
   <div class="inspirationGallery__content">
 
-    <img src="#" alt="#" /> 
-    <img src="#" alt="#" />
-    <img src="#" alt="#" /> 
-    <img src="#" alt="#" />
-    <img src="#" alt="#" /> 
-    <img src="#" alt="#" />
-    <img src="#" alt="#" /> 
-    <img src="#" alt="#" />
+    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/gallery/custom-inspiration.jpg" alt="#" /> 
+    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/gallery/custom-inspiration.jpg" alt="#" />
+    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/gallery/custom-inspiration.jpg" alt="#" />
+    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/gallery/custom-inspiration.jpg" alt="#" />
+    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/gallery/custom-inspiration.jpg" alt="#" />
+    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/gallery/custom-inspiration.jpg" alt="#" />
+    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/gallery/custom-inspiration.jpg" alt="#" />
+    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/gallery/custom-inspiration.jpg" alt="#" />
             
     <div>
-      <p>Text Here</p>
+      <p>See how other have used modular stands and get inspiration for your next exhibition</p>
+      <a href="#" class="button--white">Show me</a>
     </div>
 
   </div>
