@@ -1,0 +1,49 @@
+.caseFeatured {
+	background: $grey-3;
+	padding:30px 10px;
+	div {
+		@include grid-row();
+
+		.caseFeatured--image {
+			@include grid-column(4);
+			position:relative;
+			&:after {
+				display:block;
+				top:0px;
+				background: url('../images/featured-casestudy.svg') no-repeat top left;
+				width:250px;
+				height:45px;
+				position:absolute;
+			}
+		}
+		.caseFeatured--content {
+			@include grid-column(8);
+
+			img {
+				margin-top:-0px;
+			}
+
+			h2 {
+				font-weight:normal;
+				font-size:rem-calc(26);
+				margin-bottom:0px;
+				margin-top:0px;
+				padding:0px;
+				color:$brand-purple;
+			}
+
+			p {
+				color:$brand-purple;
+			}
+
+			a {
+				text-decoration:none;
+				color:$brand-purple;
+				transition: all 0.2s;
+				&:hover {
+					color:$brand-orange;
+				}
+			}
+		}
+	}
+}

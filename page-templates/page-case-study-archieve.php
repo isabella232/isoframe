@@ -8,17 +8,17 @@ get_header(); ?>
 <?php include('template-parts/header-cta.php'); ?>
 
 <div class="caseFeatured">
-
-  <div class="caseFeatured--image">
-      <img src="#">
+  <div>
+    <div class="caseFeatured--image">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/casestudy-custom.png">
+    </div>
+    <div class="caseFeatured--content">
+      <img src="<?php echo get_template_directory_uri(); ?>/assets/images/custom-logo.png">
+      <h2>Why SPAL moved away from a traditional shell scheme</h2>
+      <p>SPAL UK is one of the world’s leading designers and manufacturers of high-performance fans to the automotive, construction, agricultural & transport industries.</p>
+      <a href="#">Read Case Study > </a>
+    </div>
   </div>
-  <div class="caseFeatured--content">
-    <img src="#">
-    <h2>Why SPAL moved away from a traditional shell scheme</h2>
-    <p>SPAL UK is one of the world’s leading designers and manufacturers of high-performance fans to the automotive, construction, agricultural & transport industries.</p>
-    <a href="#">Read Case Study</a>
-  </div>
-
 </div>
 
 <div class="case-grid">
