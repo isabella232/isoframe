@@ -16,23 +16,12 @@ get_header(); ?>
 </div>
 
 <div class="inspirationImage">
-  <img src="#">
+  <img src="<?php echo get_template_directory_uri(); ?>/assets/images/inspiriation-custom.png">
 
-  <div class="inspirationImage--option" style="position:absolute; top:0px; left:0px;">
-    <p>Text Here</p>
+  <div class="inspirationImage--option" style="margin-left:-20px; top:20px;">
+    <div class="arrow_box">Text Here</div>
   </div>
 
-  <div class="inspirationImage--option" style="position:absolute; top:0px; left:0px;">
-    <p>Text Here</p>
-  </div>
-
-  <div class="inspirationImage--option" style="position:absolute; top:0px; left:0px;">
-    <p>Text Here</p>
-  </div>
-
-  <div class="inspirationImage--option" style="position:absolute; top:0px; left:0px;">
-    <p>Text Here</p>
-  </div>
 </div>
 
 <div class="inspirationType">
