@@ -88,9 +88,7 @@
 		div {
 			@include grid-column(6);
 			padding:10px 10px;
-			@include breakpoint(large) {
-				padding:10px 0px;
-			}
+	
 			h2 {
 				color:$white;
 				margin:0px;
