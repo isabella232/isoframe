@@ -7,20 +7,37 @@ get_header(); ?>
 
 <?php include('template-parts/header-cta.php'); ?>
 
+
+<?php 
+    query_posts(array( 
+        'post_type' => 'case_studies',
+        'showposts' => 1
+    ) );  
+?>
+<?php while (have_posts()) : the_post(); ?>
+        <h2><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
+        <p><?php echo get_the_excerpt(); ?></p>
+
+
+
 <div class="caseFeatured">
   <div>
     <div class="caseFeatured--image">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/casestudy-custom.png">
+          <?php 
+            if ( has_post_thumbnail() ) {
+              the_post_thumbnail();
+            }  
+          ?>
     </div>
     <div class="caseFeatured--content">
-      <img src="<?php echo get_template_directory_uri(); ?>/assets/images/custom-logo.png">
-      <h2>Why SPAL moved away from a traditional shell scheme</h2>
-      <p>SPAL UK is one of the world’s leading designers and manufacturers of high-performance fans to the automotive, construction, agricultural & transport industries.</p>
-      <a href="#">Read Case Study > </a>
+      <img src="<?php the_field('type_logo', the_ID()); ?>">
+      <h2><?php the_title(); ?></h2>
+      <p><?php echo get_the_excerpt(); ?></p>
+      <a href="<?php the_permalink(); ?>">Read Case Study > </a>
     </div>
   </div>
 </div>
-
+<?php endwhile;?>
 <div class="case-grid">
 
 
