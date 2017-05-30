@@ -8,51 +8,57 @@ get_header(); ?>
   <div>
     <h2>Select a product category to see insipiration and ideas</h2>
     <select name="filter">
-        <option name="">Choose an installation type</option>
-        <option name="Custom">Custom</option>
-        <option name="Modular">Modular</option>
-        <option name="other">Other</option>
+    <option value="">Select a product type</option>
+    <?php 
+    $childArgs = array(
+        'sort_order' => 'ASC',
+        'sort_column' => 'menu_order',
+        'child_of' => 151
+    );
+    $childList = get_pages($childArgs);
+
+    foreach ($childList as $child) { ?>
+        <option value="<?php echo $child->post_name; ?>">
+        <?php echo $child->post_title; ?>
+        </option> 
+    <?php }?>
     </select>
   </div>
 </div>
 
 <div class="inspirationImage">
-  <img src="<?php echo get_template_directory_uri(); ?>/assets/images/inspiriation-custom.png">
+  <img src="<?php the_field('image'); ?>">
 
-  <div class="inspirationImage--option" style="margin-left:-50px; top:520px;">
-    <div class="arrow_box">Text Here</div>
-  </div>
 
-  <div class="inspirationImage--option" style="margin-left:-420px; top:300px;">
-    <div class="arrow_box">Text Here</div>
+<?php if( have_rows('points') ):  while ( have_rows('points') ) : the_row(); ?>
+ <div class="inspirationImage--option" style="margin-left:<?php the_sub_field('left') ?>; top:<?php the_sub_field('top') ?>;">
+    <div class="arrow_box"><?php the_sub_field('content', false, false) ?></div>
   </div>
-
-  <div class="inspirationImage--option" style="margin-left:350px; top:100px;">
-    <div class="arrow_box">Text Here</div>
-  </div>
-
-  <div class="inspirationImage--option" style="margin-left:-60px; top:20px;">
-    <div class="arrow_box">Text Here</div>
-  </div>
+<?php endwhile; endif; ?>
 </div>
 
 <div class="inspirationType">
   <div>
-      <img src="<?php echo get_template_directory_uri(); ?>/assets/images/custom-logo.png" alt="isoFrame Type">
+      <img src="<?php the_field('inspiration_type_logo'); ?>" alt="isoFrame Type">
   </div>
 </div>
 
 <div class="inspirationImages"> 
   <div>
-    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/gallery/custom-images-1.jpg">
-    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/gallery/custom-images-1.jpg">
-    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/gallery/custom-images-2.jpg">
-  </div>
-  <div>
-    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/gallery/custom-images-3.jpg">
-    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/gallery/custom-images-4.jpg">
+  <?php $inspiration_gallery = get_field('inspiration_gallery');
+if( $inspiration_gallery ): ?>
+        <?php $i; foreach( $inspiration_gallery  as $image ): $i++; ?>
+          <?php if($i == 3) {?>
+                     <img src="<?php echo $image['sizes']['large']; ?>" alt="<?php echo $image['alt']; ?>" />
+              </div>
+        <div> 
+        <?php } else { ?>
+        <img src="<?php echo $image['sizes']['large']; ?>" alt="<?php echo $image['alt']; ?>" />
+        <?php } ?>
+        <?php endforeach; ?>
+<?php endif; ?>
     <div class="inspirationImages__text">
-      <p>ISOframe is a unique, patented system. Built-to-last, many of our stands can be reused and reconfigured for use at multiple exhibitions so you can get more out of your budget this year, next and beyond.</p>
+      <p><?php the_field('inspiration_gallery_text'); ?></p>
     </div>
   </div>
 </div>
@@ -62,19 +68,15 @@ get_header(); ?>
 <div class="inspirationGallery">
 <h2>Inspiration gallery</h2>
   <div class="inspirationGallery__content">
-
-    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/gallery/custom-inspiration.jpg" alt="#" /> 
-    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/gallery/custom-inspiration.jpg" alt="#" />
-    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/gallery/custom-inspiration.jpg" alt="#" />
-    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/gallery/custom-inspiration.jpg" alt="#" />
-    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/gallery/custom-inspiration.jpg" alt="#" />
-    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/gallery/custom-inspiration.jpg" alt="#" />
-    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/gallery/custom-inspiration.jpg" alt="#" />
-    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/gallery/custom-inspiration.jpg" alt="#" />
-            
+ <?php $inspiration_gallery2 = get_field('inspiration_gallery_2');
+if( $inspiration_gallery2 ): ?>
+        <?php  foreach( $inspiration_gallery2  as $image ): ?>
+        <img src="<?php echo $image['sizes']['large']; ?>" alt="<?php echo $image['alt']; ?>" />
+        <?php endforeach; ?>
+<?php endif; ?>
     <div>
-      <p>See how other have used modular stands and get inspiration for your next exhibition</p>
-      <a href="#" class="button--white">Show me</a>
+       <p><?php the_field('inspiration_gallery_message_2'); ?></p>
+      <a href="<?php the_field('show_me_button'); ?>" class="button--white">Show me</a>
     </div>
 
   </div>
