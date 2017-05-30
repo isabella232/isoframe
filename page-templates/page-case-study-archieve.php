@@ -23,45 +23,55 @@ get_header(); ?>
 
 <div class="case-grid">
 
-  <div class="case-grid--content">
 
     <div>
-      <img src='#'>
-      <h2>Title</h2>
-      <a href='# '>Read more ></a>
+      <img src='<?php echo get_template_directory_uri(); ?>/assets/images/casestudySample.jpg'>
+      <div>
+        <h2>Why SPAL moved away from a traditional shell scheme</h2>
+        <a href='# '>Read more ></a>
+      </div>
     </div>
 
     <div>
-      <img src='#'>
-      <h2>Title</h2>
-      <a href='# '>Read more ></a>
+      <img src='<?php echo get_template_directory_uri(); ?>/assets/images/casestudySample.jpg'>
+      <div>
+        <h2>Why SPAL moved away from a traditional shell scheme</h2>
+        <a href='# '>Read more ></a>
+      </div>
     </div>
 
     <div>
-      <img src='#'>
-      <h2>Title</h2>
-      <a href='# '>Read more ></a>
+      <img src='<?php echo get_template_directory_uri(); ?>/assets/images/casestudySample.jpg'>
+      <div>
+        <h2>Why SPAL moved away from a traditional shell scheme</h2>
+        <a href='# '>Read more ></a>
+      </div>
     </div>
 
     <div>
-      <img src='#'>
-      <h2>Title</h2>
-      <a href='# '>Read more ></a>
+      <img src='<?php echo get_template_directory_uri(); ?>/assets/images/casestudySample.jpg'>
+      <div>
+        <h2>Why SPAL moved away from a traditional shell scheme</h2>
+        <a href='# '>Read more ></a>
+      </div>
     </div>
 
     <div>
-      <img src='#'>
-      <h2>Title</h2>
-      <a href='# '>Read more ></a>
+      <img src='<?php echo get_template_directory_uri(); ?>/assets/images/casestudySample.jpg'>
+      <div>
+        <h2>Why SPAL moved away from a traditional shell scheme</h2>
+        <a href='# '>Read more ></a>
+      </div>
     </div>
 
     <div>
-      <img src='#'>
-      <h2>Title</h2>
-      <a href='# '>Read more ></a>
+      <img src='<?php echo get_template_directory_uri(); ?>/assets/images/casestudySample.jpg'>
+      <div>
+        <h2>Why SPAL moved away from a traditional shell scheme</h2>
+        <a href='# '>Read more ></a>
+      </div>
     </div>
 
-  </div>
 </div>
 
 <?php get_template_part( 'template-parts/footer-cta', 'footer-cta' ); ?>

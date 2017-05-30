@@ -5,8 +5,17 @@
 		@include grid-row();
 
 		.caseFeatured--image {
-			@include grid-column(4);
+			@include grid-column(12);
+			@include breakpoint(large) {
+				@include grid-column(4);
+			}
+
+			img {
+				width:100%;
+				max-width:100%;
+			}
 			position:relative;
+
 			&:after {
 				display:block;
 				top:0px;
@@ -17,7 +26,10 @@
 			}
 		}
 		.caseFeatured--content {
-			@include grid-column(8);
+			@include grid-column(12);
+				@include breakpoint(large) {
+					@include grid-column(8);
+				}
 
 			img {
 				margin-top:-0px;
@@ -40,6 +52,57 @@
 				text-decoration:none;
 				color:$brand-purple;
 				transition: all 0.2s;
+				&:hover {
+					color:$brand-orange;
+				}
+			}
+		}
+	}
+}
+
+.case-grid {
+	@include grid-row();
+		@include breakpoint(large) {
+			display:flex;
+			justify-content: space-around;
+			flex-wrap:wrap;
+		}
+	margin-top:25px;
+
+	> div {
+		@include grid-column(12, 0);
+		margin-bottom:15px;
+		@include breakpoint(large) {
+			@include grid-column(4,0);
+			flex: 1 1 30%;
+			margin:10px;
+		}
+
+		background:$brand-purple;
+
+		img {
+			@include grid-column(6,0);
+			
+			text-align:left;
+		}
+		div {
+			@include grid-column(6);
+			padding:10px 10px;
+			@include breakpoint(large) {
+				padding:10px 0px;
+			}
+			h2 {
+				color:$white;
+				margin:0px;
+				font-size:rem-calc(18);
+				font-weight:normal;
+				margin-bottom:20px;
+			}
+			a {
+				color:$white;
+				font-size:rem-calc(14);
+				font-weight:bold;
+				text-decoration:none;
 				&:hover {
 					color:$brand-orange;
 				}
