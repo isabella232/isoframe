@@ -30,7 +30,76 @@ get_header(); ?>
   </form>
   </div>
 </div>
+<?php 
 
+$b = $_GET['budget'];
+$i = $_GET['installation-type'];
+$e = $_GET['exhibition-size'];
+
+// 1K
+if($b == 1 && $i == 1 && $e == 1) { $products = array("110","111","113"); }
+if($b == 1 && $i == 1 && $e == 2) { $products = array("110","111","113"); }
+if($b == 1 && $i == 1 && $e == 3) { $products = array("110","111","113"); }
+if($b == 1 && $i == 1 && $e == 4) { $products = array("110","111","113"); }
+
+if($b == 1 && $i == 2 && $e == 1) { $products = array("110","111","113"); }
+if($b == 1 && $i == 2 && $e == 2) { $products = array("110","111","113"); }
+if($b == 1 && $i == 2 && $e == 3) { $products = array("110","111","113"); }
+if($b == 1 && $i == 2 && $e == 4) { $products = array("110","111","113"); }
+
+if($b == 1 && $i == 3 && $e == 1) { $products = array("110","111","113"); }
+if($b == 1 && $i == 3 && $e == 2) { $products = array("110","111","113"); }
+if($b == 1 && $i == 3 && $e == 3) { $products = array("110","111","113"); }
+if($b == 1 && $i == 3 && $e == 4) { $products = array("110","111","113"); }
+
+// 1K-5K
+if($b == 2 && $i == 1 && $e == 1) { $products = array("113","111","110"); }
+if($b == 2 && $i == 1 && $e == 2) { $products = array("113","111","110"); }
+if($b == 2 && $i == 1 && $e == 3) { $products = array("113","111","110"); }
+if($b == 2 && $i == 1 && $e == 4) { $products = array("113","111","110"); }
+
+if($b == 2 && $i == 2 && $e == 1) { $products = array("113","111","110"); }
+if($b == 2 && $i == 2 && $e == 2) { $products = array("113","111","110"); }
+if($b == 2 && $i == 2 && $e == 3) { $products = array("116","111","110"); }
+if($b == 2 && $i == 2 && $e == 4) { $products = array("113","111","110"); }
+
+if($b == 2 && $i == 3 && $e == 1) { $products = array("113","111","110"); }
+if($b == 2 && $i == 3 && $e == 2) { $products = array("113","111","110"); }
+if($b == 2 && $i == 3 && $e == 3) { $products = array("116","111","110"); }
+if($b == 2 && $i == 3 && $e == 4) { $products = array("113","111","110"); }
+
+// 5k-10k
+if($b == 3 && $i == 1 && $e == 1) { $products = array("113","114","115"); }
+if($b == 3 && $i == 1 && $e == 2) { $products = array("113","114","115"); }
+if($b == 3 && $i == 1 && $e == 3) { $products = array("113","114","115"); }
+if($b == 3 && $i == 1 && $e == 4) { $products = array("113","114","115"); }
+
+if($b == 3 && $i == 2 && $e == 1) { $products = array("115","116","113"); }
+if($b == 3 && $i == 2 && $e == 2) { $products = array("115","116","113"); }
+if($b == 3 && $i == 2 && $e == 3) { $products = array("115","116","113"); }
+if($b == 3 && $i == 2 && $e == 4) { $products = array("115","116","113"); }
+
+if($b == 3 && $i == 3 && $e == 1) { $products = array("116","113","114"); }
+if($b == 3 && $i == 3 && $e == 2) { $products = array("116","113","114"); }
+if($b == 3 && $i == 3 && $e == 3) { $products = array("116","113","114"); }
+if($b == 3 && $i == 3 && $e == 4) { $products = array("116","113","114"); }
+
+// 10k+
+if($b == 4 && $i == 1 && $e == 1) { $products = array("113","115","116"); }
+if($b == 4 && $i == 1 && $e == 2) { $products = array("113","115","116"); }
+if($b == 4 && $i == 1 && $e == 3) { $products = array("113","115","116"); }
+if($b == 4 && $i == 1 && $e == 4) { $products = array("113","115","116"); }
+
+if($b == 4 && $i == 2 && $e == 1) { $products = array("115","116","113"); }
+if($b == 4 && $i == 2 && $e == 2) { $products = array("115","116","113"); }
+if($b == 4 && $i == 2 && $e == 3) { $products = array("115","116","113"); }
+if($b == 4 && $i == 2 && $e == 4) { $products = array("115","116","113"); }
+
+if($b == 4 && $i == 3 && $e == 1) { $products = array("115","116","113"); }
+if($b == 4 && $i == 3 && $e == 2) { $products = array("115","116","113"); }
+if($b == 4 && $i == 3 && $e == 3) { $products = array("115","116","113"); }
+if($b == 4 && $i == 3 && $e == 4) { $products = array("115","116","113"); }
+?>
 <div class="frameFinder__results">
   <div class="frameFinder__results--image">
   <img src="<?php echo get_template_directory_uri(); ?>/assets/images/isoframe-custom.jpg">
