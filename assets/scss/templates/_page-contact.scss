@@ -48,27 +48,23 @@
 		    background-color: #fefefe;
 		    padding: 15px;
 		    border: solid 0.5px #BEB4BE;
-		    margin-top: 20px;
-		    margin-bottom: 20px;
+		    margin-top: 0px;
+		    margin-bottom: 0px;
 		    font-family: "AvenirNextLTPro-Medium", sans-serif;
 		    text-align: left;
 		    font-size: 1.125rem;
 		    color: #4C484C;
 		}
 		textarea {
-			height: 200px;
-		    max-height: 200px;
-		    width: 100%;
-		    max-width:100%;
+			height: 200px!important;
+		    max-height: 200px!important;
+		    width: 100%!important;
+		    max-width:100%!important;
 		}
 		input[type="submit"] {
 			@extend .button--red;
 		}
 
-		p {
-			margin:0px;
-			padding:0px;
-		}
 
 		}
 }
