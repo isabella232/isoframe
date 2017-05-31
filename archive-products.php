@@ -134,7 +134,7 @@ foreach ($terms as $term) {
   ?>
 <div class="frameFinder__results">
   <div class="frameFinder__results--image">
-  <?php the_field('category_image', 'term_' . $term->id); ?>
+  <img src="<?php the_field('category_image', 'term_' . $term->term_id); ?>">
   </div>
   <div class="frameFinder__results--content">
     <h2> <?php echo $term->name; ?></h2>
