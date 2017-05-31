@@ -1,28 +1,132 @@
 <?php
-/*
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+get_header(); 
 
-*/
-get_header(); ?>
+$b = $_GET['budget'];
+$i = $_GET['installation-type'];
+$e = $_GET['exhibition-size'];
+?>
 
 <div class="frameFinder">
   <div class="frameFinder__form">
   <h1>Frame Finder</h1>
   <p>Enter your requirements and we’ll help find the perfect stand for you</p>
-  <form>
+  <form action="<?php echo site_url(); ?>/product/" method="get">
+    <select name="budget">
+      <option value="1" <?php if($b == 1) { echo "selected"; } ?>>£1k</option>
+      <option value="2" <?php if($b == 2) { echo "selected"; } ?>>£1k-£5k</option>
+      <option value="3" <?php if($b == 3) { echo "selected"; } ?>>£5k-£10k</option>
+      <option value="4" <?php if($b == 4) { echo "selected"; } ?>>£10k+</option>
+    </select>
     <select name="installation-type">
-      <option value="test">test</option>
+      <option value="1" <?php if($i == 1) { echo "selected"; } ?>>A stand I can build myself</option>
+      <option value="2" <?php if($i == 2) { echo "selected"; } ?>>I want an installation team</option>
+      <option value="3" <?php if($i == 3) { echo "selected"; } ?>>I don't know yet</option>
     </select>
     <select name="exhibition-size">
-      <option value="test">44x44</option>
-    </select>
-    <select name="budget">
-      <option value="test">100-1000</option>
+      <option value="1" <?php if($e == 1) { echo "selected"; } ?>>I have a back wall shell scheme</option>
+      <option value="2" <?php if($e == 2) { echo "selected"; } ?>>I have a corner shell scheme</option>
+      <option value="3" <?php if($e == 3) { echo "selected"; } ?>>I have an island stand</option>
+      <option value="4" <?php if($e == 4) { echo "selected"; } ?>>I haveen't booked a stand yet</option>
     </select>
     <button type="submit">Find stand</button>
   </form>
   </div>
 </div>
+<?php 
 
+// 1K
+if($b == 1 && $i == 1 && $e == 1) { $products = array("110","111","113");}
+elseif($b == 1 && $i == 1 && $e == 2) { $products = array("110","111","113"); }
+elseif($b == 1 && $i == 1 && $e == 3) { $products = array("110","111","113"); }
+elseif($b == 1 && $i == 1 && $e == 4) { $products = array("110","111","113"); }
+
+elseif($b == 1 && $i == 2 && $e == 1) { $products = array("110","111","113"); }
+elseif($b == 1 && $i == 2 && $e == 2) { $products = array("110","111","113"); }
+elseif($b == 1 && $i == 2 && $e == 3) { $products = array("110","111","113"); }
+elseif($b == 1 && $i == 2 && $e == 4) { $products = array("110","111","113"); }
+
+elseif($b == 1 && $i == 3 && $e == 1) { $products = array("110","111","113"); }
+elseif($b == 1 && $i == 3 && $e == 2) { $products = array("110","111","113"); }
+elseif($b == 1 && $i == 3 && $e == 3) { $products = array("110","111","113"); }
+elseif($b == 1 && $i == 3 && $e == 4) { $products = array("110","111","113"); }
+
+// 1K-5K
+elseif($b == 2 && $i == 1 && $e == 1) { $products = array("113","111","110"); }
+elseif($b == 2 && $i == 1 && $e == 2) { $products = array("113","111","110"); }
+elseif($b == 2 && $i == 1 && $e == 3) { $products = array("113","111","110"); }
+elseif($b == 2 && $i == 1 && $e == 4) { $products = array("113","111","110"); }
+
+elseif($b == 2 && $i == 2 && $e == 1) { $products = array("113","111","110"); }
+elseif($b == 2 && $i == 2 && $e == 2) { $products = array("113","111","110"); }
+elseif($b == 2 && $i == 2 && $e == 3) { $products = array("116","111","110"); }
+elseif($b == 2 && $i == 2 && $e == 4) { $products = array("113","111","110"); }
+
+elseif($b == 2 && $i == 3 && $e == 1) { $products = array("113","111","110"); }
+elseif($b == 2 && $i == 3 && $e == 2) { $products = array("113","111","110"); }
+elseif($b == 2 && $i == 3 && $e == 3) { $products = array("116","111","110"); }
+elseif($b == 2 && $i == 3 && $e == 4) { $products = array("113","111","110"); }
+
+// 5k-10k
+elseif($b == 3 && $i == 1 && $e == 1) { $products = array("113","114","115"); }
+elseif($b == 3 && $i == 1 && $e == 2) { $products = array("113","114","115"); }
+elseif($b == 3 && $i == 1 && $e == 3) { $products = array("113","114","115"); }
+elseif($b == 3 && $i == 1 && $e == 4) { $products = array("113","114","115"); }
+
+elseif($b == 3 && $i == 2 && $e == 1) { $products = array("115","116","113"); }
+elseif($b == 3 && $i == 2 && $e == 2) { $products = array("115","116","113"); }
+elseif($b == 3 && $i == 2 && $e == 3) { $products = array("115","116","113"); }
+elseif($b == 3 && $i == 2 && $e == 4) { $products = array("115","116","113"); }
+
+elseif($b == 3 && $i == 3 && $e == 1) { $products = array("116","113","114"); }
+elseif($b == 3 && $i == 3 && $e == 2) { $products = array("116","113","114"); }
+elseif($b == 3 && $i == 3 && $e == 3) { $products = array("116","113","114"); }
+elseif($b == 3 && $i == 3 && $e == 4) { $products = array("116","113","114"); }
+
+// 10k+
+elseif($b == 4 && $i == 1 && $e == 1) { $products = array("113","115","116"); }
+elseif($b == 4 && $i == 1 && $e == 2) { $products = array("113","115","116"); }
+elseif($b == 4 && $i == 1 && $e == 3) { $products = array("113","115","116"); }
+elseif($b == 4 && $i == 1 && $e == 4) { $products = array("113","115","116"); }
+
+elseif($b == 4 && $i == 2 && $e == 1) { $products = array("115","116","113"); }
+elseif($b == 4 && $i == 2 && $e == 2) { $products = array("115","116","113"); }
+elseif($b == 4 && $i == 2 && $e == 3) { $products = array("115","116","113"); }
+elseif($b == 4 && $i == 2 && $e == 4) { $products = array("115","116","113"); }
+
+elseif($b == 4 && $i == 3 && $e == 1) { $products = array("115","116","113"); }
+elseif($b == 4 && $i == 3 && $e == 2) { $products = array("115","116","113"); }
+elseif($b == 4 && $i == 3 && $e == 3) { $products = array("115","116","113"); }
+elseif($b == 4 && $i == 3 && $e == 4) { $products = array("115","116","113"); }
+
+if($products) {
+
+$query = new WP_Query(array(
+   'post_type' => 'products',
+   'post__in'      => $products,
+) );
+
+while ($query->have_posts()) : $query->the_post(); ?>
+
+
+<div class="frameFinder__results">
+  <div class="frameFinder__results--image">
+      <?php 
+            if ( has_post_thumbnail() ) {
+              the_post_thumbnail();
+            }  
+          ?>
+  </div>
+  <div class="frameFinder__results--content">
+    <h2> <?php the_title(); ?></h2>
+    <p><?php the_excerpt(); ?></p>
+    <a href="<?php the_permalink(); ?>" class="button">Find out more</a>
+  </div>
+</div>
+<?php endwhile;?>
+<?php } else { ?>
 
 <?php $terms = get_terms( 'product_Type', array(
     'hide_empty' => false,
@@ -40,7 +144,7 @@ foreach ($terms as $term) {
     <a href="<?php echo $term_link; ?>" class="button">Find out more</a>
   </div>
 </div>
-<?php } ?>
+<?php } } ?>
 
 <?php get_template_part( 'template-parts/designer-pull-out', 'designer-pull-out' ); ?>
 
