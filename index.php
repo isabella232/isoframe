@@ -37,7 +37,7 @@ get_header(); ?>
     query_posts(array( 
        'post_type' => 'posts',
         'showposts' => 9,
-        'cat' => 9
+        'cat' => 9,
         'offset' => 1
     ) );  
 ?>
