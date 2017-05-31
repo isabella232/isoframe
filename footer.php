@@ -83,6 +83,18 @@ $('.searchIcon').click(function() {
 });
 
 
+    $(function(){
+      // bind change event to select
+      $('#inspiriationFilter').on('change', function () {
+          var url = $(this).val(); // get selected value
+          if (url) { // require a URL
+              window.location = '<?php echo site_url(); ?>/inspiration/' + url; // redirect
+          }
+          return false;
+      });
+    });
+
+
 </script>
 </body>
 </html>

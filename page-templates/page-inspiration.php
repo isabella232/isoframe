@@ -7,7 +7,7 @@ get_header(); ?>
 <div class="inspirationFilter">
   <div>
     <h2>Select a product category to see insipiration and ideas</h2>
-    <select name="filter">
+    <select name="filter" id="inspiriationFilter">
     <option value="">Select a product type</option>
     <?php 
     $childArgs = array(
