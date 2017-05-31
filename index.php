@@ -7,7 +7,6 @@ get_header(); ?>
 <div class="blog__featured">
 <?php 
     query_posts(array( 
-        'post_type' => 'posts',
         'showposts' => 1,
         'cat' => 9
     ) );  
@@ -35,7 +34,6 @@ get_header(); ?>
   <div class="blog__grid--content">
 <?php 
     query_posts(array( 
-       'post_type' => 'posts',
         'showposts' => 9,
         'cat' => 9,
         'offset' => 1
@@ -60,7 +58,6 @@ get_header(); ?>
   <div class="blog__news-grid--content">
 <?php 
     query_posts(array( 
-       'post_type' => 'posts',
         'showposts' => 9,
         'cat' => 10
     ) );  
