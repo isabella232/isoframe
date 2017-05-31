@@ -17,7 +17,7 @@ get_header(); ?>
   </div>
   <div class="contact--page__form">
   <p>Contact us for help & advice, information on options and prices or to book a demonstration</p>
-  < form will go here >
+  <?php echo do_shortcode( '[contact-form-7 id="292" title="Contact form 1"]' ); ?>
   </div>
 </div>
 
