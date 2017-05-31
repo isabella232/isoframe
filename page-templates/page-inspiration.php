@@ -2,6 +2,10 @@
 /*
 Template Name: Inspiration
 */
+
+    global $post;
+    $post_slug=$post->post_name;
+
 get_header(); ?>
 
 <div class="inspirationFilter">
@@ -18,7 +22,7 @@ get_header(); ?>
     $childList = get_pages($childArgs);
 
     foreach ($childList as $child) { ?>
-        <option value="<?php echo $child->post_name; ?>">
+        <option value="<?php echo $child->post_name; ?>" <?php if($post_slug == $child->post_name) { echo "selected"; } ?>>
         <?php echo $child->post_title; ?>
         </option> 
     <?php }?>
