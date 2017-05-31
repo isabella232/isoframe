@@ -37,7 +37,12 @@
 		font-size:rem-calc(22);
 		color:$brand-purple;
 		padding:5px 30px!important;
-
+		form {
+			p {
+				padding:0px;
+				margin:0px;
+			}
+		}
 		label {
 			font-size:rem-calc(16);
 		}
@@ -64,6 +69,7 @@
 		input[type="submit"] {
 			@extend .button--red;
 		}
+
 
 
 		}
