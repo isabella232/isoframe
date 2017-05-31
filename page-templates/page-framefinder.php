@@ -9,14 +9,22 @@ get_header(); ?>
   <h1>Frame Finder</h1>
   <p>Enter your requirements and we’ll help find the perfect stand for you</p>
   <form>
+    <select name="budget">
+      <option value="1">£1k</option>
+      <option value="2">£1k-£5k</option>
+      <option value="3">£5k-£10k</option>
+      <option value="4">£10k+</option>
+    </select>
     <select name="installation-type">
-      <option value="test">test</option>
+      <option value="1">I want a stand I can build myself</option>
+      <option value="2">I want an installation team</option>
+      <option value="3">I don't know yet</option>
     </select>
     <select name="exhibition-size">
-      <option value="test">44x44</option>
-    </select>
-    <select name="budget">
-      <option value="test">100-1000</option>
+      <option value="1">I have a back wall shell scheme</option>
+      <option value="2">I have a corner shell scheme</option>
+      <option value="3">I have an island stand</option>
+      <option value="4">I haveen't booked a stand yet</option>
     </select>
     <button type="submit">Find stand</button>
   </form>
