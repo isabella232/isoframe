@@ -1,5 +1,7 @@
 <?php
-
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
 get_header(); ?>
 
 <div class="blog__featured">
@@ -80,4 +82,4 @@ get_header(); ?>
 </div>
 <?php get_template_part( 'template-parts/footer-cta', 'footer-cta' ); ?>
 
-<?php get_footer();
+<?php get_footer(); ?>
