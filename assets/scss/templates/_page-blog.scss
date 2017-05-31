@@ -82,6 +82,7 @@
 
 		 	h2 {
 		 		font-size:rem-calc(18);
+		 		line-height:rem-calc(18);
 		 	}
 		 	img {
 		 		@include grid-column(6,0);
@@ -135,6 +136,7 @@
 		 	h2 {
 		 		font-size:rem-calc(18);
 		 		color:$white;
+		 		line-height:rem-calc(18);
 		 	}
 		 	img {
 		 		@include grid-column(6,0);
