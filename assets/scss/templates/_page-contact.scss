@@ -37,14 +37,29 @@
 		font-size:rem-calc(22);
 		color:$brand-purple;
 		padding:5px 30px!important;
-		height:400px;
 
 		label {
 			font-size:rem-calc(16);
 		}
 
 		input {
-			height:60px;
+		    max-width: 300px;
+		    height: 55px;
+		    background-color: #fefefe;
+		    padding: 15px;
+		    border: solid 0.5px #BEB4BE;
+		    margin-top: 20px;
+		    margin-bottom: 20px;
+		    font-family: "AvenirNextLTPro-Medium", sans-serif;
+		    text-align: left;
+		    font-size: 1.125rem;
+		    color: #4C484C;
+		}
+		textarea {
+			height:200px;
+		}
+		input[type="submit"] {
+			@extend .button--red;
 		}
 
 		}
