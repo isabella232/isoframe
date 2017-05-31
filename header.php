@@ -36,6 +36,11 @@
 				</ul>
 			</div>
 			<div class="top-bar-right">
+			<div class="searchbox--frame">
+				<form ation="/" method="get" id="searchform">
+					<input class="searchBox" name="s" placeholder="Search...">
+				</form>
+			</div>
 				<?php foundationpress_top_bar_r(); ?>
 
 				<?php if ( ! get_theme_mod( 'wpt_mobile_menu_layout' ) || get_theme_mod( 'wpt_mobile_menu_layout' ) === 'topbar' ) : ?>
