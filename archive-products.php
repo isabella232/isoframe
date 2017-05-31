@@ -134,7 +134,7 @@ foreach ($terms as $term) {
   ?>
 <div class="frameFinder__results">
   <div class="frameFinder__results--image">
- <?php echo get_the_post_thumbnail($term->id); ?>
+  <?php the_field('category_image', 'product_Type_' . $term->id); ?>
   </div>
   <div class="frameFinder__results--content">
     <h2> <?php echo $term->name; ?></h2>
