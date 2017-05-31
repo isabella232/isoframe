@@ -24,6 +24,9 @@
 .desktop-menu, .top-bar-left {
   @include show-for(medium);
 }
+.desktop-menu {
+  padding-left:0px;
+}
 
 #mobile-menu, .title-bar {
   @include hide-for(medium);
