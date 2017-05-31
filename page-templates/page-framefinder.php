@@ -107,7 +107,7 @@ query_posts(array(
 ) );
 
 while (have_posts()) : the_post(); ?>
-<?php the_title(); ?>
+<?php the_title(); ?> test test
 <?php endwhile;?>
 <div class="frameFinder__results">
   <div class="frameFinder__results--image">
