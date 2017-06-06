@@ -33,7 +33,7 @@
 }
 .product__content {
 	@include grid-row();
-	margin-top:100px;
+	margin-top:230px;
 	margin-bottom:30px;
 	@include breakpoint(large) {
 		//display:flex;
