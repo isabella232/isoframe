@@ -20,8 +20,7 @@
 	?>
 
 		<div style="background-image:url('<?php the_sub_field('background_image'); ?>');">
-		<?php if(the_sub_field('foreground_image')) {?><img src="<?php the_sub_field('foreground_image'); ?>"> <?php } else {?><img src="https://placeholdit.imgix.net/~text?txtsize=33&txt=Image%20required&w=250&h=250">
-			<?php } ?>
+		<img src="<?php the_sub_field('foreground_image'); ?>">
 			<div class="titleText">
 				<div>
 					<h2><?php the_sub_field('title_text', false); ?></h2>
