@@ -63,7 +63,7 @@ get_header(); ?>
     </div>
 
     <div class="caseStudy-single__section--second__content">
-      <?php the_field('main_image'); ?>
+      <?php the_field('solution_text'); ?>
     </div>
   </div>
 </div>
