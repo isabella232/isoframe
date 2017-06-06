@@ -170,6 +170,7 @@
 			width:25%;
 			max-width:25%;
 		}
+		padding:10px;
 		margin:15px;
 		background:$brand-orange;
 
@@ -181,7 +182,7 @@
 			background:$tint-orange-1;
 				padding:10px 20px;
 			@include breakpoint(large) {
-				padding:0px 20px;
+				padding:20px 20px;
 			}
 
 			font-weight:bold;
@@ -195,7 +196,7 @@
 		h2 {
 			font-weight:normal;
 			padding-left:15px;
-			font-size:rem-calc(28);
+			font-size:rem-calc(26);
 			margin:10px 0px 0px 0px;
 		}
 		a { 
