@@ -23,7 +23,7 @@
  <?php while ( have_posts() ) : the_post(); ?>
   <div class="content" style="width:100%;">
   	<h1><?php the_title(); ?></h1>
-           <?php the_excerpt(); ?>
+           <?php the_field('openning_caption'); ?>
 	</div>
  <?php endwhile;?>
 
