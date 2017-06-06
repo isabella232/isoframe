@@ -24,7 +24,7 @@ get_header(); ?>
   <div class="caseStudy-single__featuredSection--content">
     <img src="<?php the_field('main_image'); ?>">
 
-    <?php the_field('content'); ?>
+    <?php the_content(); ?>
   </div>
 
   <div class="caseStudy-single__featuredSection--sidebar">
