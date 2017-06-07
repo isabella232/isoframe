@@ -119,7 +119,7 @@ while ($query->have_posts()) : $query->the_post(); ?>
   </div>
   <div class="frameFinder__results--content">
     <h2> <?php the_title(); ?></h2>
-    <p><?php the_excerpt(); ?></p>
+    <p><?php the_field('openning_caption'); ?></p>
     <a href="<?php the_permalink(); ?>" class="button">Find out more</a>
   </div>
 </div>
