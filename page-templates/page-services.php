@@ -27,7 +27,6 @@ get_header(); ?>
   <div class="services__row--normal__text">
     <h2><?php the_sub_field('title', false); ?></h2>
     <p><?php the_sub_field('content', false); ?></p>
-    <a href="<?php the_sub_field('url'); ?>" class="button">Find out more</a>
   </div>
 </div>
     <?php } else { ?>
@@ -40,7 +39,6 @@ get_header(); ?>
     <div class="services__row--coloured__text">
       <h2><?php the_sub_field('title', false); ?></h2>
       <p><?php the_sub_field('content', false); ?></p>
-      <a href="<?php the_sub_field('url'); ?>" class="button">Find out more</a>
     </div>
   </div>
 </div>
