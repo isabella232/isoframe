@@ -64,6 +64,7 @@ get_header(); ?>
     </div>
 
     <div class="caseStudy-single__section--second__content">
+    <h2>The Solution</h2>
       <?php the_field('solution_text'); ?>
     </div>
   </div>
