@@ -12,28 +12,15 @@
 
  get_header(); ?>
 
- <div class="slider">
+<div class="inspirationImage">
+  <img src="<?php the_field('image'); ?>">
 
-	<?php
-	if( have_rows('slider') ):
-	    while ( have_rows('slider') ) : the_row();
-	?>
 
-		<div style="background-image:url('<?php the_sub_field('background_image'); ?>');">
-		<img src="<?php the_sub_field('foreground_image'); ?>">
-			<div class="titleText">
-				<div>
-					<h2><?php the_sub_field('title_text', false); ?></h2>
-					<?php the_sub_field('sub_text', false); ?>
-				</div>
-			</div>
-		</div>
-
-	<?php  
-		endwhile;
-	endif;
-	?>
-
+<?php if( have_rows('points') ):  while ( have_rows('points') ) : the_row(); ?>
+ <div class="inspirationImage--option" style="margin-left:<?php the_sub_field('left') ?>; top:<?php the_sub_field('top') ?>;">
+    <div class="arrow_box"><?php the_sub_field('content', false, false) ?></div>
+  </div>
+<?php endwhile; endif; ?>
 </div>
 
 <div class="color--purple productsPage">
