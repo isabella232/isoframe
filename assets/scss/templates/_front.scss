@@ -239,10 +239,12 @@
 
 			h2 {
 				font-size:rem-calc(16);
+				line-height:rem-calc(20);
+
 				@include breakpoint(large) {
 					padding:0px 20px;
 				}
-				height:50px;
+				height:100px;
 			}
 			a {
 				@include breakpoint(large) {
