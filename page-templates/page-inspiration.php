@@ -8,6 +8,11 @@ Template Name: Inspiration
 
 get_header(); ?>
 
+
+<div class="inspirationImage">
+  <img src="<?php the_field('image'); ?>">
+</div>
+
 <div class="inspirationFilter">
   <div>
     <h2>Select a product category to see insipiration and ideas</h2>
@@ -28,17 +33,6 @@ get_header(); ?>
     <?php }?>
     </select>
   </div>
-</div>
-
-<div class="inspirationImage">
-  <img src="<?php the_field('image'); ?>">
-
-
-<?php if( have_rows('points') ):  while ( have_rows('points') ) : the_row(); ?>
- <div class="inspirationImage--option" style="margin-left:<?php the_sub_field('left') ?>; top:<?php the_sub_field('top') ?>;">
-    <div class="arrow_box"><?php the_sub_field('content', false, false) ?></div>
-  </div>
-<?php endwhile; endif; ?>
 </div>
 
 <div class="inspirationType">
