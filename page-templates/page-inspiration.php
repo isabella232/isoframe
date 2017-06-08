@@ -18,7 +18,7 @@ get_header(); ?>
     <h2>Select a product category to see insipiration and ideas</h2>
     <select name="filter" id="inspiriationFilter">
     <option value="">Select a product type</option>
-        <option value="/" <?php if($post_slug == "inspiriation") { echo "selected"; } ?>>
+        <option value="/" <?php if($post_slug == "inspiration") { echo "selected"; } ?>>
         Custom Solutions
         </option> 
     <?php 
