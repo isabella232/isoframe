@@ -5,7 +5,7 @@
 	    while ( have_rows('slider') ) : the_row();
 	?>
 
-		<div style="background-image:url('<?php the_sub_field('background_image'); ?>'); background-size: cover;">
+		<div style="background-image:url('<?php the_sub_field('background_image'); ?>');">
 		<img src="<?php the_sub_field('foreground_image'); ?>">
 			<div class="titleText">
 				<div>
