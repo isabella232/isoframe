@@ -18,6 +18,9 @@ get_header(); ?>
     <h2>Select a product category to see insipiration and ideas</h2>
     <select name="filter" id="inspiriationFilter">
     <option value="">Select a product type</option>
+        <option value="/">
+        Custom Solutions
+        </option> 
     <?php 
     $childArgs = array(
         'sort_order' => 'ASC',
