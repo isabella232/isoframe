@@ -253,6 +253,10 @@
 		
 			flex: 1 1 30%;
 			margin:10px;
+			@include breakpoint(large) {
+				max-width: 30%;
+    			height: 250px;
+			}
 		}
 
 		div {
