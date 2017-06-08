@@ -47,6 +47,7 @@
 		.titleText{
 			background:$brand-purple;
 			width:100%;
+			padding-right: 30%;
 
 			div{
 				@include grid-row();
