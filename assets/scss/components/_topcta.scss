@@ -47,12 +47,13 @@
 		.titleText{
 			background:$brand-purple;
 			width:100%;
-			padding-right: 30%;
+
 
 			div{
 				@include grid-row();
 				padding:20px 20px;
 				margin-top:-60px;
+				padding-right: 30%;
 				@include breakpoint(large) {
 					margin-top:-105px;
 				}
