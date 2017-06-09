@@ -40,7 +40,7 @@ get_header(); ?>
 
 <div class="inspirationType">
   <div>
-      <img src="<?php the_field('inspiration_type_logo'); ?>" alt="isoFrame Type">
+      <h2><?php the_field('inspiration_type_logo'); ?></h2>
   </div>
 </div>
 
