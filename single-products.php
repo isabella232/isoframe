@@ -12,7 +12,7 @@
 
  get_header(); ?>
 
-<div class="slider">
+<div class="slider" style="margin-bottom:<?php the_field('slider_bottom'); ?>">
 
 	<?php
 	if( have_rows('slider') ):
