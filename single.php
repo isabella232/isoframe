@@ -12,13 +12,13 @@
 
  get_header(); ?>
 
-<div class="single--featured">
+<!-- <div class="single--featured">
 	<?php
 		if ( has_post_thumbnail() ) {
 			the_post_thumbnail();
 		} 
 	?>
-</div>
+</div> -->
  <div class="page--default">
 
 
