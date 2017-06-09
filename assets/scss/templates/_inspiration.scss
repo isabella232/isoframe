@@ -119,6 +119,8 @@
 
 		img {
 			width:100%;
+			max-width:30%;
+			height:100%;
 			@include breakpoint(large) {
 				width:auto;
 				flex: 1 1 30%;
@@ -173,6 +175,7 @@
 				flex: 1 1 25%;
 				margin:10px;
 				max-width:30%;
+				height:100%;
 			}
 		}
 
