@@ -122,10 +122,11 @@
 			max-width:30%;
 			height:100%;
 			@include breakpoint(large) {
-				width:auto;
+				width:100%;
+				max-width:30%;
 				flex: 1 1 30%;
 				padding:10px;
-				height:100%;
+				height:auto
 			}
 		}
 
