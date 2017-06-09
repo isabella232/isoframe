@@ -19,8 +19,8 @@
 	    while ( have_rows('slider') ) : the_row();
 	?>
 
-		<div style="background-image:url('<?php the_sub_field('background_image'); ?>'); height:<?php the_field('background_height'); ?>">
-		<img src="<?php the_sub_field('foreground_image'); ?>" style="left:<?php the_field('image_left'); ?>; top:<?php the_field('image_top'); ?>;">
+		<div style="background-image:url('<?php the_sub_field('background_image'); ?>'); height:<?php the_sub_field('background_height'); ?>">
+		<img src="<?php the_sub_field('foreground_image'); ?>" style="left:<?php the_sub_field('image_left'); ?>; top:<?php the_sub_field('image_top'); ?>;">
 			<div class="titleText">
 				<div>
 					<h2><?php the_sub_field('title_text', false); ?></h2>
