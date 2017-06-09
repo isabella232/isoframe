@@ -106,17 +106,14 @@
 
 .inspirationImages {
 	@include grid-row();
-	display:flex;
-	justify-content:space-between;
 
 	> div{
 		@include grid-column(12, 0);
 		@include breakpoint(large) {
-			@include grid-column(4, 0);
-			flex: 1 1 30%;
-			padding:10px;
+
 			display:flex;
 			margin-top:40px;
+			flex-wrap:wrap;
 			justify-content:space-between;
 		}
 
@@ -124,7 +121,8 @@
 			width:100%;
 			@include breakpoint(large) {
 				width:auto;
-				height:auto;
+				flex: 1 1 30%;
+				padding:10px;
 			}
 		}
 
