@@ -11,7 +11,7 @@
  */
 
  get_header(); ?>
-<!---
+
 <div class="slider" style="margin-bottom:<?php the_field('slider_bottom'); ?>">
 
 	<?php
@@ -35,18 +35,6 @@
 	?>
 
 </div>
--->
-
-<div class="caseStudy-single__Image">
-  <img src="<?php the_field('image'); ?>">
-
-<?php if( have_rows('points') ):  while ( have_rows('points') ) : the_row(); ?>
- <div class="caseStudy-single__Image--option" style="margin-left:<?php the_sub_field('left') ?>; top:<?php the_sub_field('top') ?>;">
-    <div class="arrow_box"><?php the_sub_field('content', false, false) ?></div>
-  </div>
-<?php endwhile; endif; ?>
-</div>
-
 
 <div class="color--purple productsPage">
 
