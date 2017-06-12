@@ -11,7 +11,7 @@
  */
 
  get_header(); ?>
-
+<!---
 <div class="slider" style="margin-bottom:<?php the_field('slider_bottom'); ?>">
 
 	<?php
@@ -35,6 +35,9 @@
 	?>
 
 </div>
+-->
+
+<img src="<?php the_field('image'); ?>">
 
 <div class="color--purple productsPage">
 
