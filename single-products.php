@@ -21,7 +21,7 @@
 
 		<div style="background-image:url('<?php the_sub_field('background_image'); ?>'); height:<?php the_sub_field('background_height'); ?>">
 		<img src="<?php the_sub_field('foreground_image'); ?>" style="left:<?php the_sub_field('image_left'); ?>; top:<?php the_sub_field('image_top'); ?>; z-index:10;">
-			<div class="titleText" style="position:relative; top:<?php the_sub_field('box_top'); ?>; width:90rem; margin:auto;">
+			<div class="titleText" style="position:relative; top:<?php the_sub_field('box_top'); ?>; max-width:90rem; margin:auto;">
 				<div>
 					<h2><?php the_sub_field('title_text', false); ?></h2>
 					<?php the_sub_field('sub_text', false); ?>
