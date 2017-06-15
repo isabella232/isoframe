@@ -100,10 +100,8 @@ $('.searchIcon').click(function() {
 <script>
 
 $("#menu-item-148, .navigationProducts").hover(function() {  
-    $(this).stop().fadeTo('fast',0.5); 
     $(".navigationProducts").stop().slideDown(); 
 }, function() {  
-    $(this).stop().fadeTo('fast',1); 
     $(".navigationProducts").stop().slideUp(); 
 });
 
