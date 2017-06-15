@@ -98,11 +98,15 @@ $('.searchIcon').click(function() {
 </script>
 
 <script>
-$("#menu-item-148 a, .navigationProducts").on("mouseover", function() {
-    $(".navigationProducts").fadeIn();
-}).on("mouseout", function() {
-    $(".navigationProducts").fadeOut();
+
+$("#menu-item-148 a, .navigationProducts").hover(function() {  
+    $(this).stop().fadeTo('fast',1); 
+    $(".navigationProducts").stop().slideDown(); 
+}, function() {  
+    $(this).stop().fadeTo('fast',0.1); 
+    $(".navigationProducts").stop().slideUp(); 
 });
+
 </script>
 </body>
 </html>
