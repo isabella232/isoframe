@@ -142,7 +142,7 @@
 		@include breakpoint(large) {
 
 			display:flex;
-			margin-top:40px;
+			margin-top:10px;
 			flex-wrap:wrap;
 			justify-content:space-between;
 		}
@@ -153,7 +153,7 @@
 			height:100%;
 			@include breakpoint(large) {
 			    width: 100%;
-			    max-width: 30.8%;
+			    max-width: 32.8%;
 			    -webkit-box-flex: 1;
 			    -ms-flex: 1 1 30%;
 			    flex: 0 1 30%;
@@ -163,7 +163,7 @@
 
 		div {
 			@include breakpoint(large) {
-				max-width:370px;
+				max-width:395px;
 			}
 			width:100%;
 			background:$brand-purple;
@@ -206,7 +206,7 @@
 			width:100%;
 			@include breakpoint(large) {
 				flex: 1 1 25%;
-				margin:10px;
+				margin:5px;
 				max-width:30%;
 				height:260px;
 			}
