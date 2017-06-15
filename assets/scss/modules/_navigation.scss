@@ -161,6 +161,9 @@
 
       margin-right: 25px;
        border-right: 1px solid $brand-purple;
+       &:last-of-type {
+        border-right:none;
+       }
 
       h2 {
         font-weight:normal;
