@@ -45,12 +45,14 @@
 }
 .frameFinder__results {
   border-bottom:solid 1px $brand-purple;
+  padding-bottom:15px;
   @include grid-row();
 
 
   .frameFinder__results--image {
     @include grid-column(12);
     margin-top:30px;
+    padding-top: 25px;
     @include breakpoint(large) {
       @include grid-column(6);
       margin-top:0px;
