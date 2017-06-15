@@ -144,19 +144,25 @@
     content-justify:space-between;
 
     .productColumn {
+      @include grid-column(4);
       flex: 1 1 25%;
       max-width:25%;
       width:100%;
 
+      margin-right: 25px;
+       border-right: 1px solid $brand-purple;
+
       h2 {
         font-weight:normal;
+        margin-top:0px;
+        padding-top:0px;
         font-size:rem-calc(18);
       }
 
       ul {
         list-style:none;
-        margin-left:0px;
-        padding-left:0px;
+        margin:0px;
+        padding:0px;
 
         li {
           padding-left:0px;
