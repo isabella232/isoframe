@@ -99,14 +99,13 @@ $('.searchIcon').click(function() {
 
 <script>
 
-$("#menu-item-148 a, .navigationProducts").on("mouseover", function() {
+$("#menu-item-148 a, .navigationProducts").hover(function() {  
     $(this).stop().fadeTo('fast',1); 
     $(".navigationProducts").stop().slideDown(); 
 }, function() {  
     $(this).stop().fadeTo('fast',0.1); 
     $(".navigationProducts").stop().slideUp(); 
 });
-
 
 </script>
 </body>
