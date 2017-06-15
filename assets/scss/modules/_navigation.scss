@@ -126,14 +126,10 @@
 .nav-previous { float:left; }
 .nav-next { float:right; }
 
-#menu-item-148 a:hover ~ .navigationProducts {
-  display:block!important;
-}
 
 .navigationProducts {
   position:relative;
   z-index:10;
-  display:none;
   width:100%;
   height:auto;
   padding-bottom:25px;
