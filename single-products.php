@@ -21,9 +21,9 @@
 
 		<div style="background-image:url('<?php the_sub_field('background_image'); ?>'); height:<?php the_sub_field('background_height'); ?>">
 		<img src="<?php the_sub_field('foreground_image'); ?>" style="left:<?php the_sub_field('image_left'); ?>; top:<?php the_sub_field('image_top'); ?>; z-index:10;">
-			<div class="titleText" style="position:relative; top:<?php the_sub_field('box_top'); ?>; max-width:75rem; margin:auto;">
+			<div class="titleText" style="position:relative; top:<?php the_sub_field('box_top'); ?>; max-width:75rem; margin:auto; background-color:<?php the_field('colour'); ?>">
 				<div>
-					<h2><?php the_sub_field('title_text', false); ?></h2>
+					<h2 style="color:<?php the_field('text_colour'); ?>!important;"><?php the_sub_field('title_text', false); ?></h2>
 					<?php the_sub_field('sub_text', false); ?>
 				</div>
 			</div>
@@ -60,7 +60,7 @@
 		</div>
 	</div>
 <?php if(get_field('call_to_action_on') == 1) { ?>
-	<div class="product__callToAction">
+	<div class="product__callToAction" style="background:<?php the_field('colour'); ?>!important; color:<?php the_field('text_colour'); ?>!important;">
 		<h2><?php the_field('call_to_action_text', false); ?></h2>
 	</div>
 	<?php } ?>
