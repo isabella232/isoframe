@@ -34,7 +34,7 @@
 <?php the_field('contact_us_text', 'option'); ?>
 		</div>
 		<div class="footer__contact__container--newsletter">
-		<h2>Sing up for updates</h2>
+		<h2>Sign up for updates</h2>
 		<p>Stay up-to-date with the latest product & exhibition stand news</p>
 
 
