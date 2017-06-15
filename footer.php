@@ -98,7 +98,7 @@ $('.searchIcon').click(function() {
 </script>
 
 <script>
-$("#menu-item-148 a").on("mouseover", function() {
+$("#menu-item-148 a, .navigationProducts").on("mouseover", function() {
     $(".navigationProducts").fadeIn();
 }).on("mouseout", function() {
     $(".navigationProducts").fadeOut();
