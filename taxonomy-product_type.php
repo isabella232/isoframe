@@ -12,21 +12,6 @@
 
  get_header(); ?>
 
-<div class="productMenu">
-<?php
-$queried_object = get_queried_object(); 
-$term_id = $queried_object->term_id;  
-$termID = 'product_Type_' . $term_id;
-$terms = get_terms('product_Type');
-echo '<ul>';
-foreach ($terms as $term) {
-    echo '<li><a href="'.get_term_link($term).'">'.$term->name.'</a></li>';
-}
-echo '</ul>';
-?>
-
-</div>
-
 <div class="productType--featuredImage">
 	<img src="<?php the_field('image', $termID); ?>">
 </div>
