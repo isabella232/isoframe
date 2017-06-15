@@ -24,8 +24,9 @@ get_header(); ?>
     );
     $childList = get_pages($childArgs);
 
-    foreach ($childList as $child) { ?>
-        <a href="#" class="button<?php if($post_slug == $child->post_slug) { echo "-selected"; } ?>">
+    foreach ($childList as $child) { $slug = $child->slug; ?>
+
+        <a href="#" class="button<?php if($post_slug == $slug) { echo "-selected"; } ?>">
         <?php echo $child->post_title; ?>
         </a> 
     <?php }?>
