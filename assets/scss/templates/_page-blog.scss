@@ -18,6 +18,7 @@
 	}
 	.blog__featured--content {
 		@include grid-column(12);
+		font-size:rem-calc(16);
 		padding-bottom:25px;
 		text-align:center;
 		@include breakpoint(large) {
