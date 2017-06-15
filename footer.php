@@ -39,7 +39,7 @@
 
 
 			<form name="form_subscribe" method="get" action="http://s5.newzapp.co.uk/t/ThankyouSubscribe.aspx">
-			<input type="hidden" name="RedirectURL" id="RedirectURL" value="<?php echo the_site(); ?>/thank-you" />
+			<input type="hidden" name="RedirectURL" id="RedirectURL" value="<?php echo site_url(); ?>/thank-you" />
  <input type="hidden" name="CID" id="CID" value="14736" />
 
   <input type="hidden" name="Group" id="Group" value="website 2017" />
@@ -68,9 +68,6 @@
 
 <?php wp_footer(); ?>
 <?php do_action( 'foundationpress_before_closing_body' ); ?>
-<script id="__bs_script__">//<![CDATA[
-    document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-client.js?v=2.18.8'><\/script>".replace("HOST", location.hostname));
-//]]></script>
 
 <script>
 
@@ -86,18 +83,6 @@ $('.searchIcon').click(function() {
   }
   $(this).data("clicks", !clicks);
 });
-
-
-    $(function(){
-      // bind change event to select
-      $('#inspiriationFilter').on('change', function () {
-          var url = $(this).val(); // get selected value
-          if (url) { // require a URL
-              window.location = '<?php echo site_url(); ?>/inspiration/' + url; // redirect
-          }
-          return false;
-      });
-    });
 
 
 </script>
