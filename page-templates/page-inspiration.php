@@ -26,7 +26,7 @@ get_header(); ?>
 
     foreach ($childList as $child) { $slug = $child->slug; ?>
 
-        <a href="<?php echo site_url(); ?>/inspiriation/<?php echo $post_slug; ?>" class="button<?php if($post_slug == $slug) { echo "-selected"; } ?>">
+        <a href="<?php echo site_url(); ?>/inspiriation/<?php echo $slug; ?>" class="button<?php if($post_slug == $slug) { echo "-selected"; } ?>">
         <?php echo $child->post_title; ?>
         </a> 
     <?php }?>
