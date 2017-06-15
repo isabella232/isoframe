@@ -2,6 +2,7 @@
 	width:100%;
 	padding:0px 15px;
 	background:$brand-purple;
+	text-align:center;
 
 	> div {
 		@include grid-row();
@@ -15,6 +16,12 @@
 			}
 			color:$white;
 			font-weight:normal;
+		}
+
+		.button {
+			background:$white;
+			color:$brand-purple;
+			@include grid-column(4);
 		}
 		select {
 			@include grid-column(12);

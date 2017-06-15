@@ -15,7 +15,7 @@ get_header(); ?>
 
 <div class="inspirationFilter">
   <div>
-    <h2>Select a product category to see insipiration and ideas</h2>
+    <a href="#">Custom</a>
     <?php 
     $childArgs = array(
         'sort_order' => 'ASC',
