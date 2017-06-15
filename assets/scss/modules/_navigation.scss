@@ -133,7 +133,14 @@
   background-color:$grey3;
 
   > div {
+    @include grid-row();
     display:flex;
+    content-justify:space-between;
 
+    .productColumn {
+      flex: 1 1 25%;
+      max-width:25%;
+      width:100%;
+    }
   }
 }
