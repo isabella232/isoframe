@@ -27,7 +27,9 @@
 			background:$white;
 			color:$brand-purple;
 			@include grid-column(12);
+			margin-top:10px;
 			@include breakpoint(medium) {
+				margin-top:0px;
 				@include grid-column(3);
 			}
 		}
