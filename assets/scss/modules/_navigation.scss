@@ -131,17 +131,17 @@
   width:100%;
   height:auto;
   padding-bottom:25px;
-  padding-top:5px;
+  padding-top:25px;
   background-color:$grey-3;
 
   > a {
     @include grid-row();
     display:block;
-    padding-left:25px;
+    padding-left:15px;
     color:$brand-purple;
     font-weight:bold;
     text-decoration:none;
-    margin-top:25px;
+    padding-bottom:15px;
   }
 
   > div {
