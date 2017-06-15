@@ -39,6 +39,7 @@
 
 
 			<form name="form_subscribe" method="get" action="http://s5.newzapp.co.uk/t/ThankyouSubscribe.aspx">
+			<input type="hidden" name="RedirectURL" id="RedirectURL" value="<?php echo the_site(); ?>/thank-you" />
  <input type="hidden" name="CID" id="CID" value="14736" />
 
   <input type="hidden" name="Group" id="Group" value="website 2017" />
