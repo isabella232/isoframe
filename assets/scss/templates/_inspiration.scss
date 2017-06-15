@@ -23,6 +23,12 @@
 			color:$brand-purple;
 			@include grid-column(4);
 		}
+
+		.button-selected{
+			border:solid 3px $white;
+			background:$brand-purple;
+			color:$white;
+		}
 		select {
 			@include grid-column(12);
 			margin-bottom:15px;

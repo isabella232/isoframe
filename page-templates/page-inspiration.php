@@ -15,7 +15,7 @@ get_header(); ?>
 
 <div class="inspirationFilter">
   <div>
-    <a href="#">Custom</a>
+    <a href="#" class="button<?php if($post_slug == "inspiration") { echo "-selected"; } ?>">Custom</a>
     <?php 
     $childArgs = array(
         'sort_order' => 'ASC',
@@ -25,7 +25,7 @@ get_header(); ?>
     $childList = get_pages($childArgs);
 
     foreach ($childList as $child) { ?>
-        <a href="#" class="button">
+        <a href="#" class="button<?php if($post_slug == $child->post_slug;) { echo "-selected"; } ?>">
         <?php echo $child->post_title; ?>
         </a> 
     <?php }?>
