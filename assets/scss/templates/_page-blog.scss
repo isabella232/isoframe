@@ -82,8 +82,8 @@
 		 	}
 
 		 	h2 {
-		 		font-size:rem-calc(18);
-		 		line-height:rem-calc(20);
+		 		font-size:rem-calc(16);
+		 		line-height:rem-calc(18);
 		 	}
 		 	img {
 		 		@include grid-column(6,0);
@@ -135,9 +135,9 @@
 		 	}
 
 		 	h2 {
-		 		font-size:rem-calc(18);
+		 		font-size:rem-calc(16);
 		 		color:$white;
-		 		line-height:rem-calc(20);
+		 		line-height:rem-calc(18);
 		 	}
 		 	img {
 		 		@include grid-column(6,0);
