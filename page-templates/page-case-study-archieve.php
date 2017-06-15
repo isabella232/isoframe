@@ -5,8 +5,6 @@ Template Name: Case study Archieve
 get_header(); ?>
 
 
-<?php include('template-parts/header-cta.php'); ?>
-
 
 <?php 
     query_posts(array( 

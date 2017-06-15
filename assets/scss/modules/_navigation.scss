@@ -128,11 +128,14 @@
 
 
 .navigationProducts {
+  display:none;
+  @include breakpoint(medium) {
+   display:none;
+}
   position:relative;
   x-index:10;
-  display:none;
   width:100%;
-  height:auto;
+  height:100%;
   padding-bottom:25px;
   padding-top:25px;
   background-color:$grey-3;
@@ -145,9 +148,17 @@
     font-weight:bold;
     text-decoration:none;
     padding-bottom:15px;
+    &:hover {
+      text-decoration:underline;
+    }
   }
 
   > div {
+    display:none;
+    
+@include breakpoint(medium) {
+   display:block;
+}
     @include grid-row();
     display:flex;
     content-justify:space-between;
@@ -183,6 +194,9 @@
           a {
             color:$brand-purple;
             text-decoration:none;
+            &:hover {
+              text-decoration:underline;
+            }
           }
         }
       }

@@ -5,8 +5,6 @@ Template Name: Case study Single
 get_header(); ?>
 
 
-<?php include('template-parts/header-cta.php'); ?>
-
 <div class="caseStudy-single__Image">
   <img src="<?php echo get_template_directory_uri(); ?>/assets/images/inspiriation-custom.png">
 

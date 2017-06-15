@@ -13,8 +13,6 @@
  get_header(); ?>
 
 
-<?php include('template-parts/header-cta.php'); ?>
-
  <div class="page--default">
 
 

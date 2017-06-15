@@ -5,8 +5,6 @@ Template Name: Case study Single
 get_header(); ?>
 
 
-<?php include('template-parts/header-cta.php'); ?>
-
 <div class="caseStudy-single__Image">
   <img src="<?php the_field('image'); ?>">
 

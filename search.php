@@ -12,9 +12,6 @@
 
  get_header(); ?>
 
-
-<?php include('template-parts/header-cta.php'); ?>
-
  <div class="page--default">
 <div class="content">
 		<h2><?php _e( 'Search Results for', 'foundationpress' ); ?> "<?php echo get_search_query(); ?>"</h2>

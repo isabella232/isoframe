@@ -58,28 +58,28 @@
 		<div class="productColumn">
 			<h2>Custom Exhibition Stands</h2>
 			<ul>
-				<li><a href="#">Custom</a></li>
-				<li><a href="#">Custom hire</a></li>
+				<li><a href="<?php echo site_url(); ?>/product/custom-exhibition-stands/">Custom</a></li>
+				<li><a href="<?php echo site_url(); ?>/product/custom-hire-exhibition-stands/">Custom hire</a></li>
 			</ul>
 		</div>
 		<div class="productColumn">
 			<h2>Modular Exhibition Stands</h2>
 			<ul>
-				<li><a href="#">Wave</a></li>
-				<li><a href="#">Fabric</a></li>
+				<li><a href="<?php echo site_url(); ?>/product/wave/">Wave</a></li>
+				<li><a href="<?php echo site_url(); ?>/product/fabric/">Fabric</a></li>
 			</ul>
 		</div>
 		<div class="productColumn">
 			<h2>Portable Displays</h2>
 			<ul>
-				<li><a href="#">Ripple</a></li>
-				<li><a href="#">Express pop-up</a></li>
+				<li><a href="<?php echo site_url(); ?>/product/ripple/">Ripple</a></li>
+				<li><a href="<?php echo site_url(); ?>/product/express-pop-up/">Express pop-up</a></li>
 			</ul>
 		</div>
 		<div class="productColumn">
 			<h2>Counters and accessories</h2>
 			<ul>
-				<li><a href="#">ISObar</a></li>
+				<li><a href="<?php echo site_url(); ?>/product/isobar/">ISObar</a></li>
 			</ul>
 		</div>
 	</div>
