@@ -137,7 +137,7 @@
 	</div>
 <?php } ?>
 
-	<?php get_template_part( 'template-parts/news-advice', 'news-advice' ); ?>
+	<?php get_template_part( 'template-parts/case_studies', 'case_studies' ); ?>
 
 <?php if(get_field('other_in_range_on') == 1) { ?>
 	<div class="product__othersInRange">
