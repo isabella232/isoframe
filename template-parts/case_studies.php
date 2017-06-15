@@ -1,6 +1,6 @@
 <div class="news-advice">
 	
-	<h2>News & Advice</h2>
+	<h2>Case Studies</h2>
 
 	<div class="news-advice--content">
 
