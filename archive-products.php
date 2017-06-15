@@ -127,6 +127,7 @@ while ($query->have_posts()) : $query->the_post(); ?>
 ) );
 foreach ($terms as $term) {
   $term_link = get_term_link( $term );
+  $termid = $term->term_id;
   ?>
 <div class="frameFinder__results">
   <div class="frameFinder__results--image">
@@ -138,6 +139,25 @@ foreach ($terms as $term) {
     <a href="<?php echo $term_link; ?>" class="button">Find out more</a>
   </div>
 </div>
+
+<?php $query = new WP_Query(array(
+   'post_type' => 'products',
+   'term'      => $termid ,
+) );
+
+while ($query->have_posts()) : $query->the_post(); ?>
+<div class="frameFinder__results">
+  <div class="frameFinder__results--image">
+      <img src="<?php the_field('product_long_image'); ?>">
+  </div>
+  <div class="frameFinder__results--content">
+    <h2> <?php the_title(); ?></h2>
+    <p><?php the_field('openning_caption', false, false); ?></p>
+    <a href="<?php the_permalink(); ?>" class="button">Find out more</a>
+  </div>
+</div>
+<?php endwhile;?>
+
 <?php } } ?>
 
 <?php get_template_part( 'template-parts/designer-pull-out', 'designer-pull-out' ); ?>

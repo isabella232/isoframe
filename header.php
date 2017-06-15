@@ -52,7 +52,7 @@
 </div>
 
 <div class="navigationProducts">
-		<a href="#"> View all products </a>
+		<a href="<?php echo site_url(); ?>/product/"> View all products </a>
 	<div>
 
 		<div class="productColumn">
