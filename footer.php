@@ -17,11 +17,11 @@
 		</div>
 		<div class="footer__navigation__social">
 			<ul>
-				<li><a href="<?php the_field('twitter', 'option'); ?>" class="twitter">T</a></li>
-				<li><a href="<?php the_field('facebook', 'option'); ?>" class="facebook">F</a></li>
-				<li><a href="<?php the_field('youtube', 'option'); ?>" class="youtube">Y</a></li>
-				<li><a href="<?php the_field('pinterest', 'option'); ?>" class="pinterest">P</a></li>
-				<li><a href="<?php the_field('google', 'option'); ?>" class="google">G</a></li>
+				<li><a href="<?php the_field('twitter', 'option'); ?>"  target="_blank" class="twitter">T</a></li>
+				<li><a href="<?php the_field('facebook', 'option'); ?>"  target="_blank" class="facebook">F</a></li>
+				<li><a href="<?php the_field('youtube', 'option'); ?>"  target="_blank" class="youtube">Y</a></li>
+				<li><a href="<?php the_field('pinterest', 'option'); ?>"  target="_blank" class="pinterest">P</a></li>
+				<li><a href="<?php the_field('google', 'option'); ?>" target="_blank" class="google">G</a></li>
 			</ul>
 		</div>
 	</div>
