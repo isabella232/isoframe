@@ -8,6 +8,7 @@
 		@include grid-row();
 		display:flex; 
 		flex-wrap:wrap;
+		justify-content:space-between;
 		h2 {
 			@include grid-column(12);
 			margin:10px 0 0 0;
