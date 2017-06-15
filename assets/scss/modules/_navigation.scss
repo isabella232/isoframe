@@ -136,6 +136,10 @@
     @include grid-row();
     display:block;
     padding-left:25px;
+    color:$brand-purple;
+    font-weight:bold;
+    text-decoration:none;
+    margin-top:25px;
   }
 
   > div {
