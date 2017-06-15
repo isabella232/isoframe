@@ -72,6 +72,6 @@ while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
 	<a href="<?php the_field('call_to_action_url', $termID); ?>" class="button"><?php the_field('call_to_action_button_text', $termID); ?></a>
 </div>
 
-<?php get_template_part( 'template-parts/news-advice', 'news-advice' ); ?>
+<?php get_template_part( 'template-parts/case_studies', 'case_studies' ); ?>
 
  <?php get_footer();
