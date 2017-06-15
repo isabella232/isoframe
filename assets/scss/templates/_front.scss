@@ -237,6 +237,11 @@
 			}
 			background:$grey-5;
 
+			img {
+				height:125px;
+				width:100%;
+			}
+
 			h2 {
 				font-size:rem-calc(16);
 				line-height:rem-calc(20);
