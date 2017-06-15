@@ -25,6 +25,7 @@
 		}
 
 		.button-selected{
+			@extend .button;
 			border:solid 3px $white;
 			background:$brand-purple;
 			color:$white;
