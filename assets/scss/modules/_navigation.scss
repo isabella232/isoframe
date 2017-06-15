@@ -130,7 +130,7 @@
 .navigationProducts {
   width:100%;
   height:auto;
-  background-color:$grey3;
+  background-color:$grey-3;
 
   > div {
     @include grid-row();
