@@ -38,8 +38,12 @@
 		<p>Stay up-to-date with the latest product & exhibition stand news</p>
 
 
-			<form method="get" action="#">
-				<input type="text" placeholder="Your email address">
+			<form name="form_subscribe" method="get" action="http://s5.newzapp.co.uk/t/ThankyouSubscribe.aspx">
+ <input type="hidden" name="CID" id="CID" value="14736" />
+
+  <input type="hidden" name="Group" id="Group" value="website 2017" />
+
+				<input type="text" name="Address" placeholder="Your email address">
 				<button type="submit" value="submit">Send me updates</button>
 			</form>
 
