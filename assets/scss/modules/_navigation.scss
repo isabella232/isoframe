@@ -126,8 +126,8 @@
 .nav-previous { float:left; }
 .nav-next { float:right; }
 
-#menu-item-148:hover .navigationProducts {
-  display:block;
+#menu-item-148 a:hover .navigationProducts {
+  display:block!important;
 }
 
 .navigationProducts {
