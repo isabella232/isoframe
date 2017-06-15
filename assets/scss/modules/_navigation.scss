@@ -125,3 +125,15 @@
 
 .nav-previous { float:left; }
 .nav-next { float:right; }
+
+
+.navigationProducts {
+  width:100%;
+  height:auto;
+  background-color:$grey3;
+
+  > div {
+    display:flex;
+
+  }
+}
