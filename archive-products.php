@@ -143,7 +143,13 @@ foreach ($terms as $term) {
 </div>
 <?php $query = new WP_Query(array(
    'post_type' => 'products',
-   'term'      => $termid ,
+  'tax_query' => array(
+    array(
+      'taxonomy' => 'product_Type',
+      'field'    => 'term_id',
+      'terms'    => $termid,
+    ),
+  ),
 ) );
 
 while ($query->have_posts()) : $query->the_post(); ?>
