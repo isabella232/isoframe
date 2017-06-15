@@ -15,7 +15,7 @@ get_header(); ?>
 
 <div class="inspirationFilter">
   <div>
-    <a href="#" class="button<?php if($post_slug == "inspiration") { echo "-selected"; } ?>">Custom</a>
+    <a href="?php echo site_url(); ?>/inspiriation" class="button<?php if($post_slug == "inspiration") { echo "-selected"; } ?>">Custom</a>
     <?php 
     $childArgs = array(
         'sort_order' => 'ASC',
@@ -26,7 +26,7 @@ get_header(); ?>
 
     foreach ($childList as $child) { $slug = $child->slug; ?>
 
-        <a href="#" class="button<?php if($post_slug == $slug) { echo "-selected"; } ?>">
+        <a href="<?php echo site_url(); ?>/inspiriation/<?php echo $post_slug; ?>" class="button<?php if($post_slug == $slug) { echo "-selected"; } ?>">
         <?php echo $child->post_title; ?>
         </a> 
     <?php }?>
