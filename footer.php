@@ -96,5 +96,13 @@ $('.searchIcon').click(function() {
 
 
 </script>
+
+<script>
+$("#menu-item-148 a").on("mouseover", function() {
+    $(".navigationProducts").show();
+}).on("#menu-item-148 a", function() {
+    $(".navigationProducts").hide();
+});
+</script>
 </body>
 </html>
