@@ -16,11 +16,6 @@ get_header(); ?>
 <div class="inspirationFilter">
   <div>
     <h2>Select a product category to see insipiration and ideas</h2>
-    <select name="filter" id="inspiriationFilter">
-    <option value="">Select a product type</option>
-        <option value="/" <?php if($post_slug == "inspiration") { echo "selected"; } ?>>
-        Custom Solutions
-        </option> 
     <?php 
     $childArgs = array(
         'sort_order' => 'ASC',
@@ -30,11 +25,10 @@ get_header(); ?>
     $childList = get_pages($childArgs);
 
     foreach ($childList as $child) { ?>
-        <option value="<?php echo $child->post_name; ?>" <?php if($post_slug == $child->post_name) { echo "selected"; } ?>>
+        <a href="#" class="button">
         <?php echo $child->post_title; ?>
-        </option> 
+        </a> 
     <?php }?>
-    </select>
   </div>
 </div>
 
