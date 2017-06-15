@@ -11,7 +11,11 @@
  */
 
  get_header(); ?>
-
+<?php
+$queried_object = get_queried_object(); 
+$term_id = $queried_object->term_id;  
+$termID = 'product_Type_' . $term_id;
+?>
 <div class="productType--featuredImage">
 	<img src="<?php the_field('image', $termID); ?>">
 </div>
