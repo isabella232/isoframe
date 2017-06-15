@@ -27,7 +27,7 @@ $e = $_GET['exhibition-size'];
       <option value="1" <?php if($e == 1) { echo "selected"; } ?>>I have a back wall shell scheme</option>
       <option value="2" <?php if($e == 2) { echo "selected"; } ?>>I have a corner shell scheme</option>
       <option value="3" <?php if($e == 3) { echo "selected"; } ?>>I have an island stand</option>
-      <option value="4" <?php if($e == 4) { echo "selected"; } ?>>I haveen't booked a stand yet</option>
+      <option value="4" <?php if($e == 4) { echo "selected"; } ?>>I haven't booked a stand yet</option>
     </select>
     <button type="submit">Find stand</button>
   </form>
