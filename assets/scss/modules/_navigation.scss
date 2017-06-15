@@ -134,6 +134,7 @@
 
   > a {
     @include grid-row();
+    display:block;
     padding-left:25px;
   }
 
@@ -146,6 +147,27 @@
       flex: 1 1 25%;
       max-width:25%;
       width:100%;
+
+      h2 {
+        font-weight:normal;
+        font-size:rem-calc(18);
+      }
+
+      ul {
+        list-style:none;
+        margin-left:0px;
+        padding-left:0px;
+
+        li {
+          padding-left:0px;
+          margin-left:0px;
+
+          a {
+            color:$brand-purple;
+            text-decoration:none;
+          }
+        }
+      }
     }
   }
 }
