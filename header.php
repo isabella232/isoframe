@@ -52,9 +52,9 @@
 </div>
 
 <div class="navigationProducts">
-	<div>
 		<a href="#"> View all products </a>
-		
+	<div>
+
 		<div class="productColumn">
 			<h2>Custom Exhibition Stands</h2>
 			<ul>

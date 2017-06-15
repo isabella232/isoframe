@@ -132,6 +132,11 @@
   height:auto;
   background-color:$grey-3;
 
+  > a {
+    @include grid-row();
+    padding-left:25px;
+  }
+
   > div {
     @include grid-row();
     display:flex;
