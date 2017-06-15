@@ -46,7 +46,6 @@
 .frameFinder__results {
   border-bottom:solid 1px $brand-purple;
   @include grid-row();
-  padding-bottom:50px;
 
 
   .frameFinder__results--image {
@@ -55,7 +54,6 @@
     @include breakpoint(large) {
       @include grid-column(6);
       margin-top:0px;
-      padding-top:80px;
     }
   }
   .frameFinder__results--content {
