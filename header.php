@@ -52,25 +52,25 @@
 </div>
 
 <div class="navigationProducts">
-		<a href="<?php echo site_url(); ?>/product/"> View all products </a>
+		<a href="<?php echo site_url(); ?>/products/"> View all products </a>
 	<div>
 
 		<div class="productColumn">
-			<a href="<?php echo site_url(); ?>/products/custom-systems/"><h2>Custom Exhibition Stands</h2></a>
+			<a href="<?php echo site_url(); ?>/types/custom-systems/"><h2>Custom Exhibition Stands</h2></a>
 			<ul>
 				<li><a href="<?php echo site_url(); ?>/product/custom-exhibition-stands/">Custom</a></li>
 				<li><a href="<?php echo site_url(); ?>/product/custom-hire-exhibition-stands/">Custom hire</a></li>
 			</ul>
 		</div>
 		<div class="productColumn">
-			<a href="<?php echo site_url(); ?>/products/modular-systems/"><h2>Modular Exhibition Stands</h2></a>
+			<a href="<?php echo site_url(); ?>/types/modular-systems/"><h2>Modular Exhibition Stands</h2></a>
 			<ul>
 				<li><a href="<?php echo site_url(); ?>/product/wave/">Wave</a></li>
 				<li><a href="<?php echo site_url(); ?>/product/fabric/">Fabric</a></li>
 			</ul>
 		</div>
 		<div class="productColumn">
-			<a href="<?php echo site_url(); ?>/product/portable/"><h2>Portable Displays</h2></a>
+			<a href="<?php echo site_url(); ?>/types/portable/"><h2>Portable Displays</h2></a>
 			<ul>
 				<li><a href="<?php echo site_url(); ?>/product/ripple/">Ripple</a></li>
 				<li><a href="<?php echo site_url(); ?>/product/express-pop-up/">Express pop-up</a></li>
