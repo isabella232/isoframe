@@ -79,6 +79,7 @@
 
 $('.slider').slick({
   slidesToShow: 3,
+  arrows: false,
   slidesToScroll: 1,
   autoplay: false,
   autoplaySpeed: 2000,
