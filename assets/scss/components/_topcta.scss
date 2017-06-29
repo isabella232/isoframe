@@ -182,3 +182,7 @@
 		}
 	}
 }
+
+.homeslider:not(.slick-initialized) {
+	display:none;
+}
