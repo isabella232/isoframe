@@ -127,6 +127,7 @@
 			margin:auto;
 			margin-top:5px;
 			transition: all 0.2s;
+			position: relative;
 
 
 			div{
@@ -168,7 +169,12 @@
 		filter: blur(0px)!important;
 	}
 
-	.titleText div{
-		opacity:1!important;
+	.titleText {
+
+		position: normal;
+		
+		div{
+			opacity:1!important;
+		}
 	}
 }
