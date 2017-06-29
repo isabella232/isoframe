@@ -83,6 +83,7 @@ $('.slider').slick({
   slidesToScroll: 1,
   autoplay: false,
   autoplaySpeed: 2000,
+  centerMode: true,
 });
 
 
