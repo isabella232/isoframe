@@ -67,9 +67,24 @@
 </div>
 
 <?php wp_footer(); ?>
+
+
+<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+				
+
 <?php do_action( 'foundationpress_before_closing_body' ); ?>
 
 <script>
+
+
+$('.slider').slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  autoplay: false,
+  autoplaySpeed: 2000,
+});
+
+
 
 $('.searchIcon').click(function() {
   var clicks = $(this).data('clicks');
