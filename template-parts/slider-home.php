@@ -5,7 +5,7 @@
 	    while ( have_rows('slider') ) : the_row();
 	?>
 
-		<div style="background-image:url('<?php echo get_template_directory_uri(); ?>/assets/images/HEADER1.png');">
+		<div class="slider-items" style="background-image:url('<?php echo get_template_directory_uri(); ?>/assets/images/HEADER1.png');">
 		<img src="<?php the_sub_field('foreground_image'); ?>">
 			<div class="titleText">
 				<div>
@@ -15,7 +15,7 @@
 			</div>
 		</div>
 
-		<div style="background-image:url('<?php echo get_template_directory_uri(); ?>/assets/images/HEADER2.png');">
+		<div class="slider-items" style="background-image:url('<?php echo get_template_directory_uri(); ?>/assets/images/HEADER2.png');">
 		<img src="<?php the_sub_field('foreground_image'); ?>">
 			<div class="titleText">
 				<div>
@@ -25,7 +25,7 @@
 			</div>
 		</div>
 
-		<div style="background-image:url('<?php echo get_template_directory_uri(); ?>/assets/images/HEADER3.png');">
+		<div class="slider-items"style="background-image:url('<?php echo get_template_directory_uri(); ?>/assets/images/HEADER3.png');">
 		<img src="<?php the_sub_field('foreground_image'); ?>">
 			<div class="titleText">
 				<div>
