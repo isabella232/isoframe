@@ -29,6 +29,8 @@
 
 	margin-bottom:150px;
    .slider-items {
+   		display: inline-block;
+    	float: left;
 		background-position:center;
 		text-align:center;
 		background-repeat:no-repeat;
@@ -37,13 +39,6 @@
 			height:429px;
 		}
 
-		img {
-			position:relative;
-			@include breakpoint(large) {
-			top:15px;
-			left:80px;
-			}
-		}
 		.titleText{
 			background:$brand-purple;
 			max-width:90rem;
