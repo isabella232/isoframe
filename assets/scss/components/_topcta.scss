@@ -37,6 +37,9 @@
    .slider-items {
    		display: inline-block;
     	float: left;
+    	height:auto;
+    	border-right:solid 10px $brand-purple;
+    	border-left:solid 10px $brand-purple;
 		background-position:center;
 		text-align:center;
 		background-repeat:no-repeat;
