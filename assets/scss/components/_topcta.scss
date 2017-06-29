@@ -95,6 +95,10 @@
 }
 
 .homeslider {
+	display:none;
+	@include breakpoint(large) {
+		display:block;
+	}
 &:after {
 	display:block;
 	clear:both;
