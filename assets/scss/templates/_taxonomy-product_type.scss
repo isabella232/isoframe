@@ -257,15 +257,25 @@
 .categoryPage-7 {
 	background: $brand-purple;
 	color:$white;
+
+	h2 {
+		color:$white!important;
+	}
+	a {
+		color:$white!important;
+	}
 }
 
 .categoryPage-6 {
-	background: $brand-orange;
+	background: $brand-orange!important;
 	color:$brand-purple;
+	a {
+		color:$white!important;
+	}
 }
 
 .categoryPage-5 {
-	background: #beb4be;
+	background: #beb4be!important;
 	color:$brand-purple;
 }
 
