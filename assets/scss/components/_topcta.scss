@@ -116,7 +116,7 @@
 		background-color:$brand-purple;
 
 		img {
-			filter: blur(10px);
+			filter: blur(6px);
 		}
 
 		.titleText{
@@ -127,6 +127,7 @@
 
 
 			div{
+				display:none;
 				@include grid-row();
 				padding:20px 20px;
 				margin-top:-60px;
@@ -164,6 +165,6 @@
 	}
 
 	.titleText div{
-		display:block;
+		display:block!important;
 	}
 }

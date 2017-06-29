@@ -24,7 +24,7 @@
 			</div>
 		</div>
 
-		<div class="slider-items" style="width:641px;">
+		<div class="slider-items" style="width:648px;">
 		<img src="<?php echo get_template_directory_uri(); ?>/assets/images/HEADER3.png">
 			<div class="titleText">
 				<div>
@@ -54,7 +54,7 @@
 			</div>
 		</div>
 
-		<div class="slider-items" style="width:641px;">
+		<div class="slider-items" tyle="width:648px;">
 		<img src="<?php echo get_template_directory_uri(); ?>/assets/images/HEADER3.png">
 			<div class="titleText">
 				<div>
