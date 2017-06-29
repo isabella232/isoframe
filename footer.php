@@ -81,7 +81,7 @@ $('.homeslider').slick({
   slidesToShow: 3,
   arrows: false,
   slidesToScroll: 1,
-  autoplay: false,
+  autoplay: true,
   autoplaySpeed: 2000,
   centerMode: true,
   variableWidth: true,
