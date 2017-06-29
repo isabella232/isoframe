@@ -26,7 +26,11 @@
 }
 
 .slider {
-
+&:after {
+	display:block;
+	clear:both;
+	content:" ";
+}
 	margin-bottom:150px;
    .slider-items {
    		display: inline-block;
