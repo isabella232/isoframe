@@ -1,4 +1,4 @@
-<div class="slider">
+<div class="homeslider">
 
 	<?php
 	if( have_rows('slider') ):
