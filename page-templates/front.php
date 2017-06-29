@@ -4,7 +4,7 @@ Template Name: Front
 */
 get_header(); ?>
 
-<?php get_template_part( 'template-parts/slider-head', 'slider' ); ?>
+<?php get_template_part( 'template-parts/slider-home', 'slider' ); ?>
 
 <div class="actionBoxes">
 	<?php
