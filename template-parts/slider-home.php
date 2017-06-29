@@ -5,7 +5,7 @@
 	    while ( have_rows('slider') ) : the_row();
 	?>
 		<div class="slider-items" style="background-image:url('<?php echo get_template_directory_uri(); ?>/assets/images/HEADER1.png');">
-		<img src="<?php the_sub_field('foreground_image'); ?>">
+		<img src="<?php echo get_template_directory_uri(); ?>/assets/images/HEADER1.png">
 			<div class="titleText">
 				<div>
 					<h2><?php the_sub_field('title_text', false); ?></h2>
@@ -15,7 +15,7 @@
 		</div>
 
 		<div class="slider-items" style="background-image:url('<?php echo get_template_directory_uri(); ?>/assets/images/HEADER2.png');">
-		<img src="<?php the_sub_field('foreground_image'); ?>">
+		<img src="<?php echo get_template_directory_uri(); ?>/assets/images/HEADER2.png">
 			<div class="titleText">
 				<div>
 					<h2><?php the_sub_field('title_text', false); ?></h2>
@@ -25,7 +25,7 @@
 		</div>
 
 		<div class="slider-items"style="background-image:url('<?php echo get_template_directory_uri(); ?>/assets/images/HEADER3.png');">
-		<img src="<?php the_sub_field('foreground_image'); ?>">
+		<img src="<?php echo get_template_directory_uri(); ?>/assets/images/HEADER3.png">
 			<div class="titleText">
 				<div>
 					<h2><?php the_sub_field('title_text', false); ?></h2>
@@ -33,9 +33,9 @@
 				</div>
 			</div>
 		</div>
-		
+
 		<div class="slider-items" style="background-image:url('<?php echo get_template_directory_uri(); ?>/assets/images/HEADER1.png');">
-		<img src="<?php the_sub_field('foreground_image'); ?>">
+		<img src="<?php echo get_template_directory_uri(); ?>/assets/images/HEADER1.png">
 			<div class="titleText">
 				<div>
 					<h2><?php the_sub_field('title_text', false); ?></h2>
@@ -45,7 +45,7 @@
 		</div>
 
 		<div class="slider-items" style="background-image:url('<?php echo get_template_directory_uri(); ?>/assets/images/HEADER2.png');">
-		<img src="<?php the_sub_field('foreground_image'); ?>">
+		<img src="<?php echo get_template_directory_uri(); ?>/assets/images/HEADER2.png">
 			<div class="titleText">
 				<div>
 					<h2><?php the_sub_field('title_text', false); ?></h2>
@@ -55,7 +55,7 @@
 		</div>
 
 		<div class="slider-items"style="background-image:url('<?php echo get_template_directory_uri(); ?>/assets/images/HEADER3.png');">
-		<img src="<?php the_sub_field('foreground_image'); ?>">
+		<img src="<?php echo get_template_directory_uri(); ?>/assets/images/HEADER3.png">
 			<div class="titleText">
 				<div>
 					<h2><?php the_sub_field('title_text', false); ?></h2>
