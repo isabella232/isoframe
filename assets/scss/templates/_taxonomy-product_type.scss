@@ -256,6 +256,15 @@
 .category-7 {
 	background: $brand-purple;
 	color:$white;
+
+	h2 {
+		color:$white!important;
+	}
+
+	.button {
+		background:$white!important;
+		color:$brand-purple!important;
+	}
 }
 .category-6 {
 	background: $brand-orange;
