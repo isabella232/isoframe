@@ -129,7 +129,7 @@ foreach ($terms as $term) {
   $term_link = get_term_link( $term );
   $termid = $term->term_id;
   ?>
-<div class="categoryBG category-<?php echo $term->term_id; ?>">
+<div class="category-<?php echo $term->term_id; ?>">
   <div class="frameFinder__results">
     <div class="frameFinder__results--image">
     <img src="<?php the_field('category_image', 'term_' . $term->term_id); ?>">
