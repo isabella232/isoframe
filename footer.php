@@ -84,6 +84,7 @@ $('.homeslider').slick({
   autoplay: false,
   autoplaySpeed: 2000,
   centerMode: true,
+  variableWidth: true,
 });
 
 
