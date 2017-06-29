@@ -202,6 +202,7 @@ function case_studies() {
 		'exclude_from_search'   => false,
 		'publicly_queryable'    => true,
 		'capability_type'       => 'page',
+		'rewrite' => array('slug' => 'case-studies'),
 	);
 	register_post_type( 'case_studies', $args );
 
