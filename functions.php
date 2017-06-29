@@ -107,7 +107,7 @@ function products() {
 		'exclude_from_search'   => false,
 		'publicly_queryable'    => true,
 		'capability_type'       => 'page',
-		'rewrite' => array('slug' => 'product'),
+		'rewrite' => array('slug' => 'products'),
 	);
 	register_post_type( 'products', $args );
 
