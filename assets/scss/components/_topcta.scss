@@ -43,10 +43,7 @@
 		background-position:center;
 		text-align:center;
 		background-repeat:no-repeat;
-		height:300px;
-		@include breakpoint(large) {
-			height:429px;
-		}
+		height:auto;
 
 		.titleText{
 			background:$brand-purple;
