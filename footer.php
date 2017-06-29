@@ -77,7 +77,7 @@
 <script>
 
 
-$('.slider').slick({
+$('.homeslider').slick({
   slidesToShow: 3,
   arrows: false,
   slidesToScroll: 1,

@@ -1,10 +1,10 @@
-<div class="slider">
+<div class="homeslider">
 
 	<?php
 	if( have_rows('slider') ):
 	    while ( have_rows('slider') ) : the_row();
 	?>
-		<div class="slider-items">
+		<div class="slider-items" sty;e="height:">
 		<img src="<?php echo get_template_directory_uri(); ?>/assets/images/HEADER1.png">
 			<div class="titleText">
 				<div>
