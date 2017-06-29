@@ -56,21 +56,21 @@
 	<div>
 
 		<div class="productColumn">
-			<h2>Custom Exhibition Stands</h2>
+			<a href="<?php echo site_url(); ?>/products/custom-systems/"><h2>Custom Exhibition Stands</h2></a>
 			<ul>
 				<li><a href="<?php echo site_url(); ?>/product/custom-exhibition-stands/">Custom</a></li>
 				<li><a href="<?php echo site_url(); ?>/product/custom-hire-exhibition-stands/">Custom hire</a></li>
 			</ul>
 		</div>
 		<div class="productColumn">
-			<h2>Modular Exhibition Stands</h2>
+			<a href="<?php echo site_url(); ?>/products/modular-systems/"><h2>Modular Exhibition Stands</h2></a>
 			<ul>
 				<li><a href="<?php echo site_url(); ?>/product/wave/">Wave</a></li>
 				<li><a href="<?php echo site_url(); ?>/product/fabric/">Fabric</a></li>
 			</ul>
 		</div>
 		<div class="productColumn">
-			<h2>Portable Displays</h2>
+			<a href="<?php echo site_url(); ?>/product/portable/"><h2>Portable Displays</h2></a>
 			<ul>
 				<li><a href="<?php echo site_url(); ?>/product/ripple/">Ripple</a></li>
 				<li><a href="<?php echo site_url(); ?>/product/express-pop-up/">Express pop-up</a></li>
