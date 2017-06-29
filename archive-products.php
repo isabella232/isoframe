@@ -148,6 +148,7 @@ foreach ($terms as $term) {
       'taxonomy' => 'product_Type',
       'field'    => 'term_id',
       'terms'    => $termid,
+      'posts_per_page' => '2',
     ),
   ),
 ) );
