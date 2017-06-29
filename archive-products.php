@@ -129,12 +129,12 @@ foreach ($terms as $term) {
   $term_link = get_term_link( $term );
   $termid = $term->term_id;
   ?>
-<div class="categoryBG">
+<div class="categoryBG category-<?php echo $term->term_id; ?>">
   <div class="frameFinder__results">
     <div class="frameFinder__results--image">
     <img src="<?php the_field('category_image', 'term_' . $term->term_id); ?>">
     </div>
-    <div class="frameFinder__results--content category-<?php echo $term->term_id; ?>">
+    <div class="frameFinder__results--content">
       <h2> <?php echo $term->name; ?></h2>
       <p><?php echo $term->description; ?></p>
       <a href="<?php echo $term_link; ?>" class="button">View range</a>
