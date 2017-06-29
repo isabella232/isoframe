@@ -85,6 +85,7 @@ $('.homeslider').slick({
   autoplaySpeed: 2000,
   centerMode: true,
   variableWidth: true,
+  focusOnSelect: true,
 });
 
 
