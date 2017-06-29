@@ -20,7 +20,7 @@ $termID = 'product_Type_' . $term_id;
 	<img src="<?php the_field('image', $termID); ?>">
 </div>
 
-<div class="productType--heading categoryPage-<?php echo $termID; ?>">
+<div class="productType--heading categoryPage-<?php echo $term_id; ?>">
 	<h1><?php the_field('title', $termID); ?></h1>
 </div>
 
@@ -58,7 +58,7 @@ $the_query = new WP_Query( $args );
 // The Loop
 while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
 
- 		<div class="productType__action--box categoryPage-<?php echo $termID; ?>">
+ 		<div class="productType__action--box categoryPage-<?php echo $term_id; ?>">
 		<?php the_post_thumbnail(); ?>
 		<h2><?php the_title(); ?></h2>
 		<a href="<?php the_permalink(); ?>">Find out more ></a>
