@@ -5,7 +5,7 @@
 	<div class="news-advice--content">
 
 	<?php
-		$args = array( 'post_type' => 'case_studies', 'numberposts' => '5' );
+		$args = array(  'post_status' => 'publish', 'post_type' => 'case_studies', 'numberposts' => '5' );
 		$recent_posts = wp_get_recent_posts( $args );
 		foreach( $recent_posts as $recent ){
  	?>
