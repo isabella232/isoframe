@@ -147,7 +147,7 @@ function product_type() {
 		'show_admin_column'          => true,
 		'show_in_nav_menus'          => true,
 		'show_tagcloud'              => true,
-		'rewrite' => array('slug' => 'type'),
+		'rewrite' => array('slug' => 'types'),
 	);
 	register_taxonomy( 'product_Type', array( 'products' ), $args );
 
