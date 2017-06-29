@@ -4,7 +4,7 @@
 	if( have_rows('slider') ):
 	    while ( have_rows('slider') ) : the_row();
 	?>
-		<div class="slider-items" style="background-image:url('<?php echo get_template_directory_uri(); ?>/assets/images/HEADER1.png');">
+		<div class="slider-items">
 		<img src="<?php echo get_template_directory_uri(); ?>/assets/images/HEADER1.png">
 			<div class="titleText">
 				<div>
@@ -14,7 +14,7 @@
 			</div>
 		</div>
 
-		<div class="slider-items" style="background-image:url('<?php echo get_template_directory_uri(); ?>/assets/images/HEADER2.png');">
+		<div class="slider-items">
 		<img src="<?php echo get_template_directory_uri(); ?>/assets/images/HEADER2.png">
 			<div class="titleText">
 				<div>
@@ -24,7 +24,7 @@
 			</div>
 		</div>
 
-		<div class="slider-items"style="background-image:url('<?php echo get_template_directory_uri(); ?>/assets/images/HEADER3.png');">
+		<div class="slider-items">
 		<img src="<?php echo get_template_directory_uri(); ?>/assets/images/HEADER3.png">
 			<div class="titleText">
 				<div>
@@ -34,7 +34,7 @@
 			</div>
 		</div>
 
-		<div class="slider-items" style="background-image:url('<?php echo get_template_directory_uri(); ?>/assets/images/HEADER1.png');">
+		<div class="slider-items">
 		<img src="<?php echo get_template_directory_uri(); ?>/assets/images/HEADER1.png">
 			<div class="titleText">
 				<div>
@@ -44,7 +44,7 @@
 			</div>
 		</div>
 
-		<div class="slider-items" style="background-image:url('<?php echo get_template_directory_uri(); ?>/assets/images/HEADER2.png');">
+		<div class="slider-items">
 		<img src="<?php echo get_template_directory_uri(); ?>/assets/images/HEADER2.png">
 			<div class="titleText">
 				<div>
@@ -54,7 +54,7 @@
 			</div>
 		</div>
 
-		<div class="slider-items"style="background-image:url('<?php echo get_template_directory_uri(); ?>/assets/images/HEADER3.png');">
+		<div class="slider-items">
 		<img src="<?php echo get_template_directory_uri(); ?>/assets/images/HEADER3.png">
 			<div class="titleText">
 				<div>
