@@ -44,6 +44,7 @@
 		text-align:center;
 		background-repeat:no-repeat;
 		height:auto;
+		filter: blur(10px);
 
 		.titleText{
 			background:$brand-purple;
@@ -93,4 +94,8 @@
 		height:45px;
 		padding:10px;
 	}
+}
+
+.slick-center {
+	filter: blur(0px)!important;
 }
