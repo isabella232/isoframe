@@ -127,6 +127,7 @@
 
 
 			div{
+				opacity:0;
 				@include grid-row();
 				padding:20px 20px;
 				margin-top:-60px;
@@ -140,7 +141,6 @@
 				font-sixe:rem-calc(15);
 
 				h2 {
-					opacity:0;
 					font-size:rem-calc(32);
 					line-height:rem-calc(44);
 					color:$brand-orange;
@@ -164,7 +164,7 @@
 		filter: blur(0px)!important;
 	}
 
-	.titleText div h2{
+	.titleText div{
 		opacity:1!important;
 	}
 }
