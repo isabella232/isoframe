@@ -44,7 +44,7 @@
 		text-align:center;
 		background-repeat:no-repeat;
 		height:520px;
-		background-color:$brand-purple;]
+		background-color:$brand-purple;
 
 		img {
 			filter: blur(10px);
@@ -58,7 +58,6 @@
 
 			div{
 				@include grid-row();
-				display:none;
 				padding:20px 20px;
 				margin-top:-60px;
 				@include breakpoint(large) {
