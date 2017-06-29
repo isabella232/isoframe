@@ -37,7 +37,7 @@
 			</div>
 			<div class="top-bar-right">
 			<div class="searchbox--frame">
-				<form ation="/" method="get" id="searchform">
+				<form ation="/products/" method="get" id="searchform">
 					<input class="searchBox" name="s" placeholder="Search...">
 				</form>
 			</div>
