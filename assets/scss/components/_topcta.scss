@@ -44,6 +44,7 @@
 		text-align:center;
 		background-repeat:no-repeat;
 		height:auto;
+		background-color:$brand-purple;
 		filter: blur(10px);
 
 		.titleText{
@@ -54,6 +55,7 @@
 
 			div{
 				@include grid-row();
+				display:none;
 				padding:20px 20px;
 				margin-top:-60px;
 				@include breakpoint(large) {
@@ -98,4 +100,8 @@
 
 .slick-center {
 	filter: blur(0px)!important;
+
+	.titleText div{
+		display:block;
+	}
 }
