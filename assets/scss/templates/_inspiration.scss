@@ -167,7 +167,12 @@
 			}
 			width:100%;
 			margin-top:10px;
+			&:last-of-type {
+				padding:10px;
+				background:$brand-purple;
+			}
 		}
+
 	}
 }
 
