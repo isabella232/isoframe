@@ -71,14 +71,14 @@
 			 	width:100%;
 			 	margin:10px;
 		 	}
-
+			border:$white solid 1px;
 		 	transition: all 0.2s;
 
 		 	&:hover {
 		 		border:$brand-purple solid 1px;
 		 		background:$grey-3;
 		 	}
-		 	background:$grey-3;
+		 	background:$white;
 		 	color:$brand-purple;
 
 		 	a {
@@ -140,7 +140,7 @@
 
 		 	&:hover {
 		 		border:$brand-purple solid 1px;
-		 		background:$white;
+		 		background:$brand-purple;
 		 	}
 		 	a {
 		 		color:$white;
