@@ -15,11 +15,11 @@ get_header(); ?>
 <?php while (have_posts()) : the_post(); ?>
   <div>
     <div class="blog__featured--image">
-     <?php 
+    <a href="<?php the_permalink(); ?>"> <?php 
             if ( has_post_thumbnail() ) {
               the_post_thumbnail();
             }  
-          ?>
+          ?></a>
     </div>
     <div class="blog__featured--content">
       <h2><?php the_title(); ?></h2>
@@ -43,11 +43,11 @@ get_header(); ?>
 ?>
 <?php while (have_posts()) : the_post(); ?>
   <div>
-           <?php 
+      <a href="<?php the_permalink(); ?>">     <?php 
             if ( has_post_thumbnail() ) {
               the_post_thumbnail();
             }  
-          ?>
+          ?></a>
         <h2><?php the_title(); ?></h2>
       <a href='<?php the_permalink(); ?>'>Read more ></a>
     </div>
