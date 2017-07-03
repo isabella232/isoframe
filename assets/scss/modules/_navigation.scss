@@ -218,11 +218,15 @@
 
      @include breakpoint(medium down) {
    .top-bar-left {
+        width:100%;
         height:60px;
       }
 
       li.home {
         display:block;
+        a {
+          text-align:center;
+        }
       }
       #menu-item-9 {
         display:none;
