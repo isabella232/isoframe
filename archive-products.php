@@ -123,7 +123,7 @@ while ($query->have_posts()) : $query->the_post(); ?>
 <?php } else { ?>
 
 <?php $terms = get_terms( 'product_Type', array(
-    'hide_empty' => false,
+    'hide_empty' => false, 'exclude' => 11,
 ) );
 foreach ($terms as $term) {
   $term_link = get_term_link( $term );
