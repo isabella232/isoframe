@@ -104,7 +104,7 @@
 }
 
 
-.spacing-icon {
+.spacing-icon:before {
 	display:block;
 	content:" ";
 	height:50px;
@@ -112,7 +112,7 @@
 	background: url("../images/icons.svg") no-repeat top left;
 }
 
-.spacingup-icon {
+.spacingup-icon:before {
 	display:block;
 	content:" ";
 	height:50px;
@@ -120,7 +120,7 @@
 	background: url("../images/icons.svg") no-repeat top left -50px;
 }
 
-.paperpile-icon {
+.paperpile-icon:before {
 	display:block;
 	content:" ";
 	height:50px;
@@ -128,7 +128,7 @@
 	background: url("../images/icons.svg") no-repeat top left -100px;
 }
 
-.multipleup-icon {
+.multipleup-icon:before {
 	display:block;
 	content:" ";
 	height:50px;
@@ -136,7 +136,7 @@
 	background: url("../images/icons.svg") no-repeat top left -150px;
 }
 
-.moveacross-icon {
+.moveacross-icon:before {
 	display:block;
 	content:" ";
 	height:50px;
@@ -144,7 +144,7 @@
 	background: url("../images/icons.svg") no-repeat top left -200px;
 }
 
-.telescope-icon {
+.telescope-icon:before {
 	display:block;
 	content:" ";
 	height:50px;
@@ -152,7 +152,7 @@
 	background: url("../images/icons.svg") no-repeat top left -250px;
 }
 
-.bin-icon {
+.bin-icon:before {
 	display:block;
 	content:" ";
 	height:50px;
@@ -160,7 +160,7 @@
 	background: url("../images/icons.svg") no-repeat top left -300px;
 }
 
-.lamp-icon {
+.lamp-icon:before {
 	display:block;
 	content:" ";
 	height:50px;
@@ -168,7 +168,7 @@
 	background: url("../images/icons.svg") no-repeat top -50px left 0px;
 }
 
-.people-icon {
+.people-icon:before {
 	display:block;
 	content:" ";
 	height:50px;
@@ -176,7 +176,7 @@
 	background: url("../images/icons.svg") no-repeat top -50px left -50px;
 }
 
-.multipleboard-icon {
+.multipleboard-icon:before {
 	display:block;
 	content:" ";
 	height:50px;
@@ -184,7 +184,7 @@
 	background: url("../images/icons.svg") no-repeat top -50px left -100px;
 }
 
-.weight-icon {
+.weight-icon:before {
 	display:block;
 	content:" ";
 	height:50px;
@@ -192,7 +192,7 @@
 	background: url("../images/icons.svg") no-repeat top -50px left -150px;
 }
 
-.figureofeight-icon {
+.figureofeight-icon:before {
 	display:block;
 	content:" ";
 	height:50px;
@@ -200,14 +200,14 @@
 	background: url("../images/icons.svg") no-repeat top -50px left -200px;
 }
 
-.pig-icon {
+.pig-icon:before {
 	display:block;
 	content:" ";
 	height:50px;
 	width:50px;
 	background: url("../images/icons.svg") no-repeat top -50px left -250px;
 }
-.openbox-icon {
+.openbox-icon:before {
 	display:block;
 	content:" ";
 	height:50px;
@@ -216,7 +216,7 @@
 }
 
 
-.fourm-icon {
+.fourm-icon:before {
 	display:block;
 	content:" ";
 	height:50px;
@@ -224,7 +224,7 @@
 	background: url("../images/icons.svg") no-repeat top -100px left 0px;
 }
 
-.sandflat-icon {
+.sandflat-icon:before {
 	display:block;
 	content:" ";
 	height:50px;
@@ -232,7 +232,7 @@
 	background: url("../images/icons.svg") no-repeat top -100px left -50px;
 }
 
-.weights-icon {
+.weights-icon:before {
 	display:block;
 	content:" ";
 	height:50px;
@@ -240,7 +240,7 @@
 	background: url("../images/icons.svg") no-repeat top -100px left -100px;
 }
 
-.tapemeasure-icon {
+.tapemeasure-icon:before {
 	display:block;
 	content:" ";
 	height:50px;
@@ -248,7 +248,7 @@
 	background: url("../images/icons.svg") no-repeat top -100px left -150px;
 }
 
-.personassembly-icon {
+.personassembly-icon:before {
 	display:block;
 	content:" ";
 	height:50px;
@@ -256,7 +256,7 @@
 	background: url("../images/icons.svg") no-repeat top -100px left -200px;
 }
 
-.screwdrivethrough-icon {
+.screwdrivethrough-icon:before {
 	display:block;
 	content:" ";
 	height:50px;
@@ -264,7 +264,7 @@
 	background: url("../images/icons.svg") no-repeat top -100px left -250px;
 }
 
-.sboardsquare-icon {
+.sboardsquare-icon:before {
 	display:block;
 	content:" ";
 	height:50px;
@@ -274,7 +274,7 @@
 
 
 
-.moveableboards-icon {
+.moveableboards-icon:before {
 	display:block;
 	content:" ";
 	height:50px;
@@ -282,7 +282,7 @@
 	background: url("../images/icons.svg") no-repeat top -150px left 0px;
 }
 
-.carspace-icon {
+.carspace-icon:before {
 	display:block;
 	content:" ";
 	height:50px;
@@ -290,7 +290,7 @@
 	background: url("../images/icons.svg") no-repeat top -150px left -50px;
 }
 
-.smallsboard-icon {
+.smallsboard-icon:before {
 	display:block;
 	content:" ";
 	height:50px;
@@ -298,7 +298,7 @@
 	background: url("../images/icons.svg") no-repeat top -150px left -100px;
 }
 
-.door-icon {
+.door-icon:before {
 	display:block;
 	content:" ";
 	height:50px;
@@ -306,7 +306,7 @@
 	background: url("../images/icons.svg") no-repeat top -150px left -150px;
 }
 
-.threed-icon {
+.threed-icon:before {
 	display:block;
 	content:" ";
 	height:50px;
@@ -314,7 +314,7 @@
 	background: url("../images/icons.svg") no-repeat top -150px left -200px;
 }
 
-.telephone-icon {
+.telephone-icon:before {
 	display:block;
 	content:" ";
 	height:50px;
@@ -322,7 +322,7 @@
 	background: url("../images/icons.svg") no-repeat top -150px left -250px;
 }
 
-.tapemeasuretwo-icon {
+.tapemeasuretwo-icon:before {
 	display:block;
 	content:" ";
 	height:50px;
@@ -330,7 +330,7 @@
 	background: url("../images/icons.svg") no-repeat top -150px left -300px;
 }
 
-.world-icon {
+.world-icon:before {
 	display:block;
 	content:" ";
 	height:50px;
@@ -338,7 +338,7 @@
 	background: url("../images/icons.svg") no-repeat top -200px left 0px;
 }
 
-.magnifying-icon {
+.magnifying-icon:before {
 	display:block;
 	content:" ";
 	height:50px;
@@ -346,7 +346,7 @@
 	background: url("../images/icons.svg") no-repeat top -200px left -50px;
 }
 
-.letteropen-icon {
+.letteropen-icon:before {
 	display:block;
 	content:" ";
 	height:50px;
@@ -354,7 +354,7 @@
 	background: url("../images/icons.svg") no-repeat top -200px left -100px;
 }
 
-.british-icon {
+.british-icon:before {
 	display:block;
 	content:" ";
 	height:50px;
@@ -362,7 +362,7 @@
 	background: url("../images/icons.svg") no-repeat top -200px left -150px;
 }
 
-.floorspace-icon {
+.floorspace-icon:before {
 	display:block;
 	content:" ";
 	height:50px;
@@ -370,7 +370,7 @@
 	background: url("../images/icons.svg") no-repeat top -200px left -200px;
 }
 
-.curvedwithback-icon {
+.curvedwithback-icon:before {
 	display:block;
 	content:" ";
 	height:50px;
@@ -378,7 +378,7 @@
 	background: url("../images/icons.svg") no-repeat top -200px left -250px;
 }
 
-.thermostat-icon {
+.thermostat-icon:before {
 	display:block;
 	content:" ";
 	height:50px;
@@ -388,7 +388,7 @@
 
 
 
-.eye-icon {
+.eye-icon:before {
 	display:block;
 	content:" ";
 	height:50px;
@@ -396,7 +396,7 @@
 	background: url("../images/icons.svg") no-repeat top -250px left -0px;
 }
 
-.print-icon {
+.print-icon:before {
 	display:block;
 	content:" ";
 	height:50px;
@@ -404,7 +404,7 @@
 	background: url("../images/icons.svg") no-repeat top -250px left -50px;
 }
 
-.recycle-icon {
+.recycle-icon:before {
 	display:block;
 	content:" ";
 	height:50px;
@@ -412,7 +412,7 @@
 	background: url("../images/icons.svg") no-repeat top -250px left -100px;
 }
 
-.percent-icon {
+.percent-icon:before {
 	display:block;
 	content:" ";
 	height:50px;
@@ -420,7 +420,7 @@
 	background: url("../images/icons.svg") no-repeat top -250px left -150px;
 }
 
-.play-icon {
+.play-icon:before {
 	display:block;
 	content:" ";
 	height:50px;
@@ -428,7 +428,7 @@
 	background: url("../images/icons.svg") no-repeat top -250px left -200px;
 }
 
-.standback-icon {
+.standback-icon:before {
 	display:block;
 	content:" ";
 	height:50px;
@@ -436,7 +436,7 @@
 	background: url("../images/icons.svg") no-repeat top -250px left -250px;
 }
 
-.twostandheight-icon {
+.twostandheight-icon:before {
 	display:block;
 	content:" ";
 	height:50px;
@@ -444,7 +444,7 @@
 	background: url("../images/icons.svg") no-repeat top -250px left -300px;
 }
 
-.timer-icon {
+.timer-icon:before {
 	display:block;
 	content:" ";
 	height:50px;
@@ -452,7 +452,7 @@
 	background: url("../images/icons.svg") no-repeat top -300px left -0px;
 }
 
-.books-icon {
+.books-icon:before {
 	display:block;
 	content:" ";
 	height:50px;
@@ -461,7 +461,7 @@
 }
 
 
-.boxarrows-icon {
+.boxarrows-icon:before {
 	display:block;
 	content:" ";
 	height:50px;
@@ -469,7 +469,7 @@
 	background: url("../images/icons.svg") no-repeat top -300px left -100px;
 }
 
-.stamp-icon {
+.stamp-icon:before {
 	display:block;
 	content:" ";
 	height:50px;
@@ -477,7 +477,7 @@
 	background: url("../images/icons.svg") no-repeat top -300px left -150px;
 }
 
-.stamphole-icon {
+.stamphole-icon:before {
 	display:block;
 	content:" ";
 	height:50px;
@@ -485,7 +485,7 @@
 	background: url("../images/icons.svg") no-repeat top -300px left -200px;
 }
 
-.tickdot-icon {
+.tickdot-icon:before {
 	display:block;
 	content:" ";
 	height:50px;
