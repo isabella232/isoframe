@@ -216,9 +216,9 @@
     }
   }
 
-     @include breakpoint(medium down) {
+     @include breakpoint(medium only) {
    .top-bar-left {
-        width:100%;
+        width:100%!important;
         height:60px;
       }
 
