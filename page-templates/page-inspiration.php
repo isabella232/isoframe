@@ -59,11 +59,8 @@ if( $inspiration_gallery ): ?>
   </div>
 </div>
 
-<?php get_template_part( 'template-parts/footer-cta', 'footer-cta' ); ?>
-
-<div class="inspirationGallery">
-<h2>Inspiration gallery</h2>
-  <div class="inspirationGallery__content">
+<div class="inspirationImages"> 
+  <div>
  <?php $inspiration_gallery2 = get_field('inspiration_gallery_2');
 if( $inspiration_gallery2 ): ?>
         <?php  foreach( $inspiration_gallery2  as $image ): ?>
