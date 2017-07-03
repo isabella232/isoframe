@@ -51,6 +51,23 @@
 	<?php the_field('key_features'); ?>
 	</div>
 
+
+<?php if(get_field('gallery_on') == 1) { ?>
+<?php $images = get_field('gallery'); ?>
+	<div class="product__gallery">
+		<div class="product__gallery__content">
+
+		<?php foreach( $images as $image ): ?>
+			<img src="<?php echo $image['sizes']['large']; ?>" alt="<?php echo $image['alt']; ?>" />
+		<?php endforeach; ?>										
+			<div>
+				<?php the_field('gallery_cta_text'); ?>
+			</div>
+		</div>
+	</div>
+<?php } ?>
+
+
 	<div class="product__profile">
 		<div>
 			<img src="<?php the_field('product_long_image'); ?>">
@@ -152,22 +169,6 @@
 	</div>
 </div>
 <?php } ?>
-
-<?php if(get_field('gallery_on') == 1) { ?>
-<?php $images = get_field('gallery'); ?>
-	<div class="product__gallery">
-		<div class="product__gallery__content">
-
-		<?php foreach( $images as $image ): ?>
-			<img src="<?php echo $image['sizes']['large']; ?>" alt="<?php echo $image['alt']; ?>" />
-		<?php endforeach; ?>										
-			<div>
-				<?php the_field('gallery_cta_text'); ?>
-			</div>
-		</div>
-	</div>
-<?php } ?>
-
 
 
 
