@@ -47,8 +47,6 @@ if( $inspiration_gallery ): ?>
         <img src="<?php echo $image['sizes']['large']; ?>" alt="<?php echo $image['alt']; ?>" />
         <?php endforeach; ?>
 <?php endif; ?>
-  </div>
-  <div>
  <?php $inspiration_gallery2 = get_field('inspiration_gallery_2');
 if( $inspiration_gallery2 ): ?>
         <?php  foreach( $inspiration_gallery2  as $image ): ?>
