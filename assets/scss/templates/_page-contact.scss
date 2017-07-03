@@ -70,6 +70,16 @@
 		    width: 100%!important;
 		    max-width:100%!important;
 		    margin-top:0px;
+		    &:focus {
+		    	appearance:none;
+		    	border:1px solid $brand-purple;
+		    }
+		}
+		input[type="email"] {
+			&:focus {
+		    	appearance:none;
+		    	border:1px solid $brand-purple;
+		    }
 		}
 		input[type="submit"] {
 			@extend .button--red;
