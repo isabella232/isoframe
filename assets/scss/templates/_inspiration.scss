@@ -157,7 +157,7 @@
 			width:100%;
 			max-width:30%;
 			height:100%;
-			object-fit: contain;
+			object-fit: cover;
 			@include breakpoint(large) {
 			    width: 100%;
 			    max-width: 32.8%;
