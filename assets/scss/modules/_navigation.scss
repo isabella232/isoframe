@@ -214,27 +214,17 @@
       background: white;
       z-index: 10;
     }
-
-    .top-bar-left {
-      height:60px;
-    }
-
-    li.home {
-      display:block;
-    }
-    #menu-item-9 {
-      display:none;
-    }
   }
 
-   @include breakpoint(large) {
-     #menu-item-9 {
-      display:block;
-     }
-    li.home {
-        display:table-cell;
-    }
-    .top-bar-left {
-      height:auto;
-    }
+     @include breakpoint(medium down) {
+   .top-bar-left {
+        height:60px;
+      }
+
+      li.home {
+        display:block;
+      }
+      #menu-item-9 {
+        display:none;
+      }
    }
