@@ -11,7 +11,7 @@
  	?>
  	
 		<div>
-			<?php echo get_the_post_thumbnail($recent["ID"]); ?>
+			<a href='<?php echo get_permalink($recent["ID"]); ?> '><?php echo get_the_post_thumbnail($recent["ID"]); ?></a>
 			<h2><?php echo $recent["post_title"]; ?></h2>
 			<a href='<?php echo get_permalink($recent["ID"]); ?> '>Read more ></a>
 		</div>
