@@ -28,9 +28,14 @@
 			color:$brand-purple;
 			@include grid-column(12);
 			margin-top:10px;
+			transition: all 0.2s;
 			@include breakpoint(medium) {
 				margin-top:0px;
 				@include grid-column(3);
+			}
+			&:hover {
+			color:$white;
+			background:$brand-purple;
 			}
 		}
 
