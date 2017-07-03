@@ -99,6 +99,7 @@
 
 <?php if(get_field('how_it_works_on') == 1) { ?>
 	<div class="product__howItWorks">
+		<?php if(get_field('how_it_works')) { ?>
 		<div class="product__howItWorks__openning">
 		<h2>How it works</h2>
 			<?php the_field('how_it_works'); ?>
@@ -106,6 +107,7 @@
 		<div class="product__howItWorks__sidebar">
 		<?php the_field('how_it_works_sidebar'); ?>
 		</div>
+		<?php } ?>
 		<div class="product__howItWorks__grid">
 
 <?php if( have_rows('how_it_works_grid') ): while ( have_rows('how_it_works_grid') ) : the_row(); ?>
