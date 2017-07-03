@@ -44,7 +44,7 @@
 
   <input type="hidden" name="Group" id="Group" value="website 2017" />
 
-				<input type="text" name="Address" placeholder="Your email address">
+				<input type="email" name="Address" placeholder="Your email address">
 				<button type="submit" value="submit">Send me updates</button>
 			</form>
 
