@@ -104,10 +104,11 @@
 }
 
 .icons {
-	margin-left:60px;
+	margin-left:0px;
 	&:before {
 		display:inline-block;
 		margin-top:-20px;
+		background-size:360px;
 	}
 }
 
