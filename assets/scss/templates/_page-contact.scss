@@ -59,8 +59,10 @@
 		    text-align: left;
 		    font-size: 1.125rem;
 		    color: #4C484C;
+		    appearance:none;
 		    &:focus {
 		    	appearance:none;
+		    	border:none;
 		    	border:1px solid $brand-purple;
 		    }
 		}
@@ -70,14 +72,18 @@
 		    width: 100%!important;
 		    max-width:100%!important;
 		    margin-top:0px;
+		    appearance:none;
 		    &:focus {
 		    	appearance:none;
+		    	border:none;
 		    	border:1px solid $brand-purple;
 		    }
 		}
 		input[type="email"] {
-			&:focus {
+		    appearance:none;
+		    &:focus {
 		    	appearance:none;
+		    	border:none;
 		    	border:1px solid $brand-purple;
 		    }
 		}
