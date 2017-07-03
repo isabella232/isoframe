@@ -59,6 +59,10 @@
 		    text-align: left;
 		    font-size: 1.125rem;
 		    color: #4C484C;
+		    &:focus {
+		    	appearance:none;
+		    	border:1px solid $brand-purple;
+		    }
 		}
 		textarea {
 			height: 200px!important;
