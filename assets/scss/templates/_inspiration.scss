@@ -126,7 +126,6 @@
 	width:100%;
 	background:$grey-3;
 	padding:20px;
-	margin-bottom:25px;
 
 	div {
 		@include grid-row();
@@ -142,6 +141,7 @@
 
 .inspirationImages {
 	@include grid-row();
+	margin-bottom:25px;
 
 	> div{
 		@include grid-column(12, 0);
