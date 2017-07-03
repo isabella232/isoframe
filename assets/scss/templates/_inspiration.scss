@@ -126,6 +126,7 @@
 	width:100%;
 	background:$grey-3;
 	padding:20px;
+	margin-bottom:25px;
 
 	div {
 		@include grid-row();
