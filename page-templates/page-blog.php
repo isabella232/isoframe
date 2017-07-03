@@ -22,7 +22,7 @@ get_header(); ?>
           ?></a>
     </div>
     <div class="blog__featured--content">
-      <h2><?php the_title(); ?></h2>
+       <a href="<?php the_permalink(); ?>"> <h2><?php the_title(); ?></h2></a>
       <p><?php echo get_the_excerpt(); ?></p>
       <a href="<?php the_permalink(); ?>" class="button--red">Read More</a>
     </div>
@@ -48,7 +48,7 @@ get_header(); ?>
               the_post_thumbnail();
             }  
           ?></a>
-        <h2><?php the_title(); ?></h2>
+        <a href="<?php the_permalink(); ?>">  <h2><?php the_title(); ?></h2></a>
       <a href='<?php the_permalink(); ?>'>Read more ></a>
     </div>
  <?php endwhile;?>
