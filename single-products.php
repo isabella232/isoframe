@@ -100,6 +100,7 @@
 <?php if(get_field('how_it_works_on') == 1) { ?>
 	<div class="product__howItWorks">
 		<div class="product__howItWorks__openning">
+		<h2>How it works</h2>
 			<?php the_field('how_it_works'); ?>
 		</div>
 		<div class="product__howItWorks__sidebar">
