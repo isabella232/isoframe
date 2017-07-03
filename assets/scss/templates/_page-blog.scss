@@ -28,7 +28,7 @@
 	
 			a {
 				width:auto;
-				@include breakpoint(large) {
+				@include breakpoint(medium) {
 					width:100%;
 				}
 			}
@@ -56,7 +56,7 @@
 		margin-bottom:10px;
 	}
 	.blog__grid--content {
-		@include breakpoint(large) {
+		@include breakpoint(medium) {
 			display:flex;
 			flex-wrap:wrap;
 			content-justify:space-around;
@@ -65,7 +65,7 @@
 		 > div {
 		 	@include grid-column(12,0);
 		 	margin-bottom:10px;
-		 	@include breakpoint(large) {
+		 	@include breakpoint(medium) {
 			 	flex: 1 1 31.33%;
 			 	max-width:31.33%;
 			 	width:100%;
@@ -120,7 +120,7 @@
 		margin-bottom:10px;
 	}
 	.blog__news-grid--content {
-			@include breakpoint(large) {
+			@include breakpoint(medium) {
 			display:flex;
 			flex-wrap:wrap;
 			content-justify:space-around;
@@ -130,7 +130,7 @@
 		 	@include grid-column(12,0);
 		 	margin-bottom:10px;
 		 	background:$grey-2;
-		 	@include breakpoint(large) {
+		 	@include breakpoint(medium) {
 			 	flex: 1 1 31.33%;
 			 	max-width:31.33%;
 			 	width:100%;
