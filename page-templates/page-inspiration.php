@@ -53,9 +53,6 @@ if( $inspiration_gallery ): ?>
         <?php } ?>
         <?php endforeach; ?>
 <?php endif; ?>
-    <div class="inspirationImages__text">
-      <p><?php the_field('inspiration_gallery_text'); ?></p>
-    </div>
   </div>
 </div>
 

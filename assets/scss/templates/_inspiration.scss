@@ -147,7 +147,7 @@
 		@include breakpoint(large) {
 
 			display:flex;
-			margin-top:10px;
+			margin-top:25px;
 			flex-wrap:wrap;
 			justify-content:space-between;
 		}
@@ -163,6 +163,7 @@
 			    -ms-flex: 1 1 30%;
 			    flex: 0 1 30%;
 			    height: 275px;
+			    margin-top:25px;
 			}
 		}
 
