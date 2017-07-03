@@ -44,13 +44,17 @@ get_header(); ?>
   <?php $inspiration_gallery = get_field('inspiration_gallery');
 if( $inspiration_gallery ): ?>
         <?php foreach( $inspiration_gallery  as $image ): ?>
+          <div>
         <img src="<?php echo $image['sizes']['large']; ?>" alt="<?php echo $image['alt']; ?>" />
+        </div>
         <?php endforeach; ?>
 <?php endif; ?>
  <?php $inspiration_gallery2 = get_field('inspiration_gallery_2');
 if( $inspiration_gallery2 ): ?>
         <?php  foreach( $inspiration_gallery2  as $image ): ?>
+          <div>
         <img src="<?php echo $image['sizes']['large']; ?>" alt="<?php echo $image['alt']; ?>" />
+        </div>
         <?php endforeach; ?>
 <?php endif; ?>
     <div>
