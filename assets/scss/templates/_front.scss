@@ -133,6 +133,15 @@
 .designerPullOut {
 	background:$grey-5;
 	padding:40px 0px;
+
+	a {	
+		opacity:1;
+		transition:all 0.2s;
+
+		&:hover {
+			opacity:0.8;
+		}
+	}
 	.content {
 		@include grid-row();
 
