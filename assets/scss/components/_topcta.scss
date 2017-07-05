@@ -198,6 +198,14 @@ margin-top:30px;
     left:0px;
     padding-left: 25px;
     z-index: 99999;
+    opacity:0.5;
+    transition:all 0.2s;
+    img{ 
+    	height:250px;
+    }
+    &:hover {
+    	opacity:1;
+    }
 }
 
 .slidernext {
@@ -210,4 +218,12 @@ margin-top:30px;
     right:0px;
     padding-left: 25px;
     z-index: 99999;
+    opacity:0.5;
+    transition:all 0.2s;
+       img{ 
+    	height:250px;
+    }
+       &:hover {
+    	opacity:1;
+    }
 }
