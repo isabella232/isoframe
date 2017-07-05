@@ -12,7 +12,7 @@
  	
 		<div>
 			<a href='<?php echo get_permalink($recent["ID"]); ?> '><?php echo get_the_post_thumbnail($recent["ID"]); ?></a>
-			<small><?php echo date( 'F, Y', strtotime( $recent['post_date'] ) ); ?></small><br />
+			<small style="padding-left:15px;"><?php echo date( 'F, Y', strtotime( $recent['post_date'] ) ); ?></small><br />
 			<h2><?php echo $recent["post_title"]; ?></h2>
 			<a href='<?php echo get_permalink($recent["ID"]); ?> '>Read more ></a>
 		</div>
