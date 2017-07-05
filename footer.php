@@ -79,7 +79,6 @@
 
 $('.homeslider').slick({
   slidesToShow: 3,
-  arrows: false,
   slidesToScroll: 1,
   autoplay: true,
   autoplaySpeed: 4000,
