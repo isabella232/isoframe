@@ -188,3 +188,26 @@ margin-top:30px;
 .homeslider:not(.slick-initialized) {
 	display:none;
 }
+.sliderprevious {
+    display: block;
+    width: 300px;
+    height: 575px;
+    padding-top: 200px;
+    position: absolute;
+    top: 130px;
+    left:0px;
+    padding-left: 25px;
+    z-index: 99999;
+}
+
+.slidernext {
+    display: block;
+    width: 300px;
+    height: 575px;
+    padding-top: 200px;
+    position: absolute;
+    top: 130px;
+    right:0px;
+    padding-left: 25px;
+    z-index: 99999;
+}
