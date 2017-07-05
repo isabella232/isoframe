@@ -71,5 +71,5 @@
 
 </div>
 
-<div class="sliderprevious"><</div>
-<div class="slidernext">></div>
+<div class="sliderprevious"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/previous.svg"></div>
+<div class="slidernext"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/next.svg"></div>
