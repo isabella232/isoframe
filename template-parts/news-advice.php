@@ -14,6 +14,7 @@
 			<a href='<?php echo get_permalink($recent["ID"]); ?> '><?php echo get_the_post_thumbnail($recent["ID"]); ?></a>
 			<h2><?php echo $recent["post_title"]; ?></h2>
 			<a href='<?php echo get_permalink($recent["ID"]); ?> '>Read more ></a>
+			<?php echo date( 'M', strtotime( $recent['post_date'] ) ); ?>
 		</div>
 
 <?php } wp_reset_query(); ?>
