@@ -86,6 +86,8 @@ $('.homeslider').slick({
   centerMode: true,
   variableWidth: true,
   focusOnSelect: true,
+  prevArrow: $('.sliderprevious'),
+  nextArrow: $('.slidernext'),
 });
 
 
