@@ -16,7 +16,6 @@
 			<?php echo date( 'F, Y', strtotime( $recent['post_date'] ) ); ?>
 			<br />
 			<a href='<?php echo get_permalink($recent["ID"]); ?> '>Read more ></a>
-			<?php echo date( 'M', strtotime( $recent['post_date'] ) ); ?>
 		</div>
 
 <?php } wp_reset_query(); ?>
