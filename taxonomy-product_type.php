@@ -76,6 +76,39 @@ while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
 	<a href="<?php the_field('call_to_action_url', $termID); ?>" class="button"><?php the_field('call_to_action_button_text', $termID); ?></a>
 </div>
 
+<div class="navigationProductsCategory" style="display:block;">
+			<a href="<?php echo site_url(); ?>/products/"> View all products </a>
+		<div>
+
+			<div class="productColumn">
+				<a href="<?php echo site_url(); ?>/types/custom-stands/"><h2>Custom Exhibition Stands</h2></a>
+				<ul>
+					<li><a href="<?php echo site_url(); ?>/product/custom-exhibition-stands/">Custom</a></li>
+					<li><a href="<?php echo site_url(); ?>/product/custom-hire-exhibition-stands/">Custom hire</a></li>
+				</ul>
+			</div>
+			<div class="productColumn">
+				<a href="<?php echo site_url(); ?>/types/modular-systems/"><h2>Modular Exhibition Stands</h2></a>
+				<ul>
+					<li><a href="<?php echo site_url(); ?>/product/wave/">Wave</a></li>
+					<li><a href="<?php echo site_url(); ?>/product/fabric/">Fabric</a></li>
+				</ul>
+			</div>
+			<div class="productColumn">
+				<a href="<?php echo site_url(); ?>/types/portable/"><h2>Portable Displays</h2></a>
+				<ul>
+					<li><a href="<?php echo site_url(); ?>/product/ripple/">Ripple</a></li>
+					<li><a href="<?php echo site_url(); ?>/product/express-pop-up/">Express pop-up</a></li>
+				</ul>
+			</div>
+			<div class="productColumn">
+				<h2>Counters and accessories</h2>
+				<ul>
+					<li><a href="<?php echo site_url(); ?>/product/isobar/">ISObar</a></li>
+				</ul>
+			</div>
+		</div>
+</div>
 <?php get_template_part( 'template-parts/case_studies', 'case_studies' ); ?>
 
  <?php get_footer();
