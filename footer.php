@@ -83,7 +83,7 @@ $('.homeslider').slick({
   autoplay: true,
   autoplaySpeed: 4000,
   centerMode: true,
-  variableWidth: true,,
+  variableWidth: true,
   prevArrow: $('.sliderprevious'),
   nextArrow: $('.slidernext'),
 });
