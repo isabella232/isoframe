@@ -67,7 +67,7 @@
 	</div>
 <?php } ?>
 
-
+<!--- 
 	<div class="product__profile">
 		<div>
 			<img src="<?php the_field('product_long_image'); ?>">
@@ -76,6 +76,8 @@
 			<?php the_field('product_profile_text', false); ?>
 		</div>
 	</div>
+-->
+
 <?php if(get_field('call_to_action_on') == 1) { ?>
 	<div class="product__callToAction" style="background:<?php the_field('colour'); ?>!important; color:<?php the_field('text_colour'); ?>!important;">
 		<h2><?php the_field('call_to_action_text', false); ?></h2>
