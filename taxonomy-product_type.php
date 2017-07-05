@@ -77,9 +77,7 @@ while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
 </div>
 
 <div class="navigationProductsCategory" style="display:block;">
-			<a href="<?php echo site_url(); ?>/products/"> View all products </a>
 		<div>
-
 			<div class="productColumn">
 				<a href="<?php echo site_url(); ?>/types/custom-stands/"><h2>Custom Exhibition Stands</h2></a>
 				<ul>
