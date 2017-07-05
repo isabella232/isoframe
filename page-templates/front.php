@@ -47,7 +47,6 @@ get_header(); ?>
 	?>
 </div>
 
-<?php get_template_part( 'template-parts/designer-pull-out', 'designer-pull-out' ); ?>
 
 <?php get_template_part( 'template-parts/news-advice', 'news-advice' ); ?>
 

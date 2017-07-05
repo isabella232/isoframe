@@ -1,7 +1,6 @@
 .footerCTAbg {
     background-color:$brand-orange;
     padding:25px 0px;
-    margin-top:30px;
   .footerCTA {
     @include grid-row();
     .footerCTA--content {
@@ -41,7 +40,7 @@
 }
 
 .footer__navigation {
-  border-top:solid 5px $brand-purple;
+  background:#CEC6CC;
 
 .footer__navigation__container {
   @include grid-row();
