@@ -64,7 +64,7 @@
 		<div>
 
 			<div class="productColumn">
-				<a href="<?php echo site_url(); ?>/types/custom-systems/"><h2>Custom Exhibition Stands</h2></a>
+				<a href="<?php echo site_url(); ?>/types/custom-stands/"><h2>Custom Exhibition Stands</h2></a>
 				<ul>
 					<li><a href="<?php echo site_url(); ?>/product/custom-exhibition-stands/">Custom</a></li>
 					<li><a href="<?php echo site_url(); ?>/product/custom-hire-exhibition-stands/">Custom hire</a></li>
