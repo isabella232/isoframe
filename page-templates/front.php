@@ -11,10 +11,10 @@ get_header(); ?>
 	if( have_rows('action_boxes') ):
 	    while ( have_rows('action_boxes') ) : the_row();
 	?>
-	<div>
+	<div><a href="<?php the_sub_field('button_url', false); ?>">
 		<img src="<?php the_sub_field('image'); ?>">
 		<h2><?php the_sub_field('title', false); ?></h2>
-		<p><?php the_sub_field('text', false); ?></p>
+		<p><?php the_sub_field('text', false); ?></p></a>
 		<a href="<?php the_sub_field('button_url', false); ?>" class="button"><?php the_sub_field('button_text', false); ?></a>
 	</div>
 
