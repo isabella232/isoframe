@@ -45,7 +45,7 @@ get_header(); ?>
 if( $inspiration_gallery ): ?>
         <?php foreach( $inspiration_gallery  as $image ): ?>
           <div>
-       <a href=src="<?php echo $image['sizes']['large']; ?>" data-lightbox="inspiration"> <img src="<?php echo $image['sizes']['large']; ?>" alt="<?php echo $image['alt']; ?>" /></a>
+       <a href="<?php echo $image['sizes']['large']; ?>" data-lightbox="inspiration"> <img src="<?php echo $image['sizes']['large']; ?>" alt="<?php echo $image['alt']; ?>" /></a>
         </div>
         <?php endforeach; ?>
 <?php endif; ?>
@@ -53,7 +53,7 @@ if( $inspiration_gallery ): ?>
 if( $inspiration_gallery2 ): ?>
         <?php  foreach( $inspiration_gallery2  as $image ): ?>
           <div>
-         <a href=src="<?php echo $image['sizes']['large']; ?>" data-lightbox="inspiration"> <img src="<?php echo $image['sizes']['large']; ?>" alt="<?php echo $image['alt']; ?>" /></a>
+         <a href="<?php echo $image['sizes']['large']; ?>" data-lightbox="inspiration"> <img src="<?php echo $image['sizes']['large']; ?>" alt="<?php echo $image['alt']; ?>" /></a>
         </div>
         <?php endforeach; ?>
 <?php endif; ?>
@@ -69,4 +69,6 @@ if( $inspiration_gallery2 ): ?>
 
 <?php get_template_part( 'template-parts/footer-cta', 'footer-cta' ); ?>
 
-<?php get_footer();
+<?php get_footer(); ?>
+
+<script src="<?php echo get_template_directory_uri(); ?>/javascript/lightbox.min.js"></script>
