@@ -26,7 +26,7 @@ get_header(); ?>
 
   <div class="services__row--normal__text">
     <h2><?php the_sub_field('title', false); ?></h2>
-    <p><?php the_sub_field('content', false); ?></p>
+    <p><?php the_sub_field('content'); ?></p>
   </div>
 </div>
     <?php } else { ?>
@@ -38,7 +38,7 @@ get_header(); ?>
     
     <div class="services__row--coloured__text">
       <h2><?php the_sub_field('title', false); ?></h2>
-      <p><?php the_sub_field('content', false); ?></p>
+      <p><?php the_sub_field('content'); ?></p>
     </div>
   </div>
 </div>
