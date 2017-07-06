@@ -156,7 +156,7 @@ foreach ($terms as $term) {
 while ($query->have_posts()) : $query->the_post(); ?>
 <div class="frameFinder__results">
   <div class="frameFinder__results--image">
-      <img src="<?php the_field('product_long_image'); ?>">
+      <img src="<?php the_field('category_image'); ?>">
   </div>
   <div class="frameFinder__results--content">
     <h2> <?php the_title(); ?></h2>
