@@ -10,7 +10,7 @@ $e = $_GET['exhibition-size'];
 <div class="frameFinder">
   <div class="frameFinder__form">
   <h1>ISOframe has the perfect Exhibition Stand for your needs</h1>
-  <p>View all our products or use our handy frame finde</p>
+  <p>View all our products or use our handy frame finder</p>
   <form action="<?php echo site_url(); ?>/products/" method="get">
     <select name="budget">
       <option value="1" <?php if($b == 1) { echo "selected"; } ?>>£1k</option>
