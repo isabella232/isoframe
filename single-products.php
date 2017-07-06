@@ -106,6 +106,8 @@
 		<h2>How it works</h2>
 			<?php the_field('how_it_works'); ?>
 		</div>
+		<?php } ?>
+		<?php if(get_field('how_it_works_sidebar')) { ?>
 		<div class="product__howItWorks__sidebar">
 		<?php the_field('how_it_works_sidebar'); ?>
 		</div>
