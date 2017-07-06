@@ -40,7 +40,7 @@
 
 	<div class="product__content">
 		<div>
-			<?php the_field('video', false,false); ?>
+			<?php the_field('video', false); ?>
 		</div>
 		<div>
 			<?php the_field('content', false); ?>
