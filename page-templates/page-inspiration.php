@@ -16,20 +16,9 @@ get_header(); ?>
 <div class="inspirationFilter">
   <div>
     <a href="<?php echo site_url(); ?>/inspiration" class="button<?php if($post_slug == "inspiration") { echo "-selected"; } ?>">Custom</a>
-    <?php 
-    $childArgs = array(
-        'sort_order' => 'DESC',
-        'sort_column' => 'menu_order',
-        'child_of' => 151
-    );
-    $childList = get_pages($childArgs);
+    <a href="<?php echo site_url(); ?>/inspiration/modular" class="button<?php if($post_slug == "modular") { echo "-selected"; } ?>">Modular</a>
+   <a href="<?php echo site_url(); ?>/inspiration/portable" class="button<?php if($post_slug == "portable") { echo "-selected"; } ?>">Portable</a>
 
-    foreach ($childList as $child) { $slug = $child->post_name; ?>
-
-        <a href="<?php echo site_url(); ?>/inspiration/<?php echo $slug; ?>" class="button<?php if($post_slug == $slug) { echo "-selected"; } ?>">
-        <?php echo $child->post_title; ?>
-        </a> 
-    <?php }?>
   </div>
 </div>
 
