@@ -45,7 +45,7 @@ get_header(); ?>
 if( $inspiration_gallery ): ?>
         <?php foreach( $inspiration_gallery  as $image ): ?>
           <div>
-        <img src="<?php echo $image['sizes']['large']; ?>" alt="<?php echo $image['alt']; ?>" />
+       <a href=src="<?php echo $image['sizes']['large']; ?>" data-lightbox="inspiration"> <img src="<?php echo $image['sizes']['large']; ?>" alt="<?php echo $image['alt']; ?>" /></a>
         </div>
         <?php endforeach; ?>
 <?php endif; ?>
@@ -53,7 +53,7 @@ if( $inspiration_gallery ): ?>
 if( $inspiration_gallery2 ): ?>
         <?php  foreach( $inspiration_gallery2  as $image ): ?>
           <div>
-        <img src="<?php echo $image['sizes']['large']; ?>" alt="<?php echo $image['alt']; ?>" />
+         <a href=src="<?php echo $image['sizes']['large']; ?>" data-lightbox="inspiration"> <img src="<?php echo $image['sizes']['large']; ?>" alt="<?php echo $image['alt']; ?>" /></a>
         </div>
         <?php endforeach; ?>
 <?php endif; ?>
