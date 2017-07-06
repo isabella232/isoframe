@@ -11,7 +11,7 @@ $e = $_GET['exhibition-size'];
   <div class="frameFinder__form">
   <h1>Frame Finder</h1>
   <p>Enter your requirements and we’ll help find the perfect stand for you</p>
-  <form action="<?php echo site_url(); ?>/product/" method="get">
+  <form action="<?php echo site_url(); ?>/products/" method="get">
     <select name="budget">
       <option value="1" <?php if($b == 1) { echo "selected"; } ?>>£1k</option>
       <option value="2" <?php if($b == 2) { echo "selected"; } ?>>£1k-£5k</option>
