@@ -71,4 +71,4 @@ if( $inspiration_gallery2 ): ?>
 
 <?php get_footer(); ?>
 
-<script src="<?php echo get_template_directory_uri(); ?>/javascript/lightbox.min.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/assets/javascript/lightbox.min.js"></script>
