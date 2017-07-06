@@ -18,7 +18,7 @@ get_header(); ?>
     <a href="<?php echo site_url(); ?>/inspiration" class="button<?php if($post_slug == "inspiration") { echo "-selected"; } ?>">Custom</a>
     <?php 
     $childArgs = array(
-        'sort_order' => 'ASC',
+        'sort_order' => 'DESC',
         'sort_column' => 'menu_order',
         'child_of' => 151
     );
