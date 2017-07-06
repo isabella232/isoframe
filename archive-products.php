@@ -7,6 +7,14 @@ $i = $_GET['installation-type'];
 $e = $_GET['exhibition-size'];
 ?>
 
+<div class="services__header">
+  <div class="services__header--content">
+    <h1>ISOframe has the perfect Exhibition Stand for your needs</h1>
+    <h2>View all our products or use our handy frame finder</h2>
+
+  </div>
+</div>
+
 <div class="frameFinder">
   <div class="frameFinder__form">
   <h1>Frame Finder</h1>
