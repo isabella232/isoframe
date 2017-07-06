@@ -400,3 +400,10 @@
 .productsPage {
 	margin-top:150px;
 }
+
+.productType__content--main {
+	a {
+		color:$brand-purple;
+		font-weight:bold;
+	}
+}
