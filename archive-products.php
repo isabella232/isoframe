@@ -7,18 +7,10 @@ $i = $_GET['installation-type'];
 $e = $_GET['exhibition-size'];
 ?>
 
-<div class="services__header">
-  <div class="services__header--content">
-    <h1>ISOframe has the perfect Exhibition Stand for your needs</h1>
-    <h2>View all our products or use our handy frame finder</h2>
-
-  </div>
-</div>
-
 <div class="frameFinder">
   <div class="frameFinder__form">
-  <h1>Frame Finder</h1>
-  <p>Enter your requirements and we’ll help find the perfect stand for you</p>
+  <h1>ISOframe has the perfect Exhibition Stand for your needs</h1>
+  <p>View all our products or use our handy frame finde</p>
   <form action="<?php echo site_url(); ?>/products/" method="get">
     <select name="budget">
       <option value="1" <?php if($b == 1) { echo "selected"; } ?>>£1k</option>
