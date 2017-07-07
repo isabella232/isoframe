@@ -13,8 +13,8 @@
 			color:$white;
 			text-transform:uppercase;
 			font-weight:bold;
-			font-size:rem-calc(40);
-			line-height:rem-calc(45);
+			font-size:rem-calc(36);
+			line-height:rem-calc(42);
 			@include breakpoint(large) {
 				font-size:rem-calc(60);
 				line-height:rem-calc(55);
