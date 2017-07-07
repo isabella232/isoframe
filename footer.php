@@ -114,6 +114,10 @@ $("#menu-item-148, .navigationProducts").hover(function() {
     $(".navigationProducts").stop().slideUp(); 
 });
 
+$('.menu-icon').click(function() {
+	$( "#site-navigation" ).slideToggle();
+});
+
 </script>
 </body>
 </html>
