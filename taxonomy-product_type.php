@@ -76,7 +76,7 @@ while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
 	<a href="<?php the_field('call_to_action_url', $termID); ?>" class="button"><?php the_field('call_to_action_button_text', $termID); ?></a>
 </div>
 
-<div class="navigationProductsCategory" style="display:block;">
+<div class="navigationProductsCategory">
 		<div>
 			<div class="productColumn">
 				<a href="<?php echo site_url(); ?>/types/custom-stands/"><h2>Custom Exhibition Stands</h2></a>

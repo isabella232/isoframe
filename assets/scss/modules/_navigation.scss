@@ -236,3 +236,10 @@
    .menu {
     padding-left:0px;
    }
+
+   .navigationProductsCategory {
+    display:none;
+    @include breakpoint(medium) {
+     display:block;
+    }
+   }
