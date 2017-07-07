@@ -135,8 +135,16 @@
 	@include grid-row();
 	background:$grey-1;
 	max-width: 73rem;
+	text-align:center;
+
+	a {
+		color:$white;
+		text-decoration:none;
+		display:inline-block;
+	}
 
 @include breakpoint(large) {
+	text-align:left;
 	border-top-right-radius:50px;
 	border-bottom-right-radius:50px;
 }
