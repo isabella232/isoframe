@@ -189,9 +189,9 @@ margin-top:30px;
 	display:none;
 }
 .sliderprevious {
-	display:none;
+	display:none!important;
 	@include breakpoint(large) {
-		display:block;
+		display:block!important;
 	}
     
     width: 300px;
@@ -214,9 +214,9 @@ margin-top:30px;
 }
 
 .slidernext {
-	display:none;
+	display:none!important;
 	@include breakpoint(large) {
-		display:block;
+		display:block!important;
 	}
     
     width: 300px;
