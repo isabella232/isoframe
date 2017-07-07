@@ -26,8 +26,11 @@
 }
 
 .slider {
-margin-top:30px;
-	margin-bottom:150px;
+
+	@include breakpoint(medium) {
+		margin-top:150px;
+	margin-bottom:135px;
+	}
 	> div {
 		background-position:center;
 		text-align:center;
