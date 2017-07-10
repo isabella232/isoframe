@@ -267,7 +267,7 @@
 		flex-wrap:wrap;
 		align-items:space-between;
 
-		img, div {
+		a, div {
 		
 			flex: 1 1 50%;
 			margin:10px;
@@ -275,6 +275,11 @@
 				flex: 1 1 30%;
 				max-width: 30%;
     			height: 250px;
+			}
+			img {
+				width:100%;
+				max-width:100%;
+				height:auto;
 			}
 		}
 
