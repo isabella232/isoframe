@@ -11,7 +11,6 @@ $e = $_GET['exhibition-size'];
   <div class="services__header--content">
     <h1>Framefinder</h1>
     <h2>ISOframe has the perfect Exhibition Stand for your needs</h2>
-    <p><?php the_field('content'); ?></p>
   </div>
 </div>
 
