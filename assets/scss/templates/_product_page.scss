@@ -263,7 +263,6 @@
 	margin-bottom:50px;
 	.product__gallery__content {
 		@include grid-row();
-		padding:25px;
 		display:flex;
 		flex-wrap:wrap;
 		align-items:space-between;
