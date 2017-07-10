@@ -92,14 +92,14 @@
 }
 
 .categoryLight-7 {
-  background:lighten($brand-purple, 50%);
+  background:tint($brand-purple, 50%);
 }
 
 .categoryLight-6 {
-  background:lighten($brand-orange, 50%);
+  background:tint($brand-orange, 50%);
   
 }
 
 .categoryLight-5 {
-  background:lighten($brand-grey, 50%);
+  background:tint($brand-grey, 50%);
 }
