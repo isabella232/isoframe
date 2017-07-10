@@ -58,7 +58,9 @@
 		<div class="product__gallery__content">
 
 		<?php foreach( $images as $image ): ?>
+			<div>
 			<a href="<?php echo $image['sizes']['large']; ?>" data-lightbox="inspiration"> <img src="<?php echo $image['sizes']['large']; ?>" alt="<?php echo $image['alt']; ?>" /></a>
+			</div>
 		<?php endforeach; ?>										
 			<div>
 				<?php the_field('gallery_cta_text'); ?>
