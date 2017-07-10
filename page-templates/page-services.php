@@ -48,7 +48,7 @@ get_header(); ?>
     endwhile;
   endif;
   ?>
-<?php get_template_part( 'template-parts/designer-pull-out.php', 'designer-pull-out' ); ?>
+<?php get_template_part( 'template-parts/designer-pull-out', 'designer-pull-out' ); ?>
 
 <?php get_template_part( 'template-parts/footer-cta', 'footer-cta' ); ?>
 
