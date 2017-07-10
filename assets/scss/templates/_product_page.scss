@@ -266,8 +266,7 @@
 		display:flex;
 		flex-wrap:wrap;
 		align-items:space-between;
-
-		a, div {
+ div {
 		
 			flex: 1 1 50%;
 			margin:10px;
@@ -276,13 +275,14 @@
 				max-width: 30%;
     			height: 250px;
 			}
-			img {
-				width:100%;
-				max-width:100%;
-				height:auto;
-				object-fit:cover;
 
-			}
+		img {
+			width:100%;
+			max-width:100%;
+			height:100%;
+			object-fit: cover;
+		}
+		
 		}
 
 		div {
