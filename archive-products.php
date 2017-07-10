@@ -159,7 +159,7 @@ while ($query->have_posts()) : $query->the_post(); ?>
   </div>
   <div class="frameFinder__results--content">
     <h2> <?php the_title(); ?></h2>
-    <p><?php the_field('openning_caption', false, false); ?></p>
+    <p><?php the_field('openning_caption', false); ?></p>
     <a href="<?php the_permalink(); ?>" class="button">View product</a>
   </div>
 </div>
