@@ -15,9 +15,9 @@ get_header(); ?>
 
 <div class="inspirationFilter">
   <div>
-    <a href="<?php echo site_url(); ?>/inspiration" class="button<?php if($post_slug == "inspiration") { echo "-selected"; } ?>">Custom</a>
-    <a href="<?php echo site_url(); ?>/inspiration/modular" class="button<?php if($post_slug == "modular") { echo "-selected"; } ?>">Modular</a>
-   <a href="<?php echo site_url(); ?>/inspiration/portable" class="button<?php if($post_slug == "portable") { echo "-selected"; } ?>">Portable</a>
+    <a href="<?php echo site_url(); ?>/inspiration" class="button<?php if($post_slug == "inspiration") { echo "-selected"; } ?>">Custom stands</a>
+    <a href="<?php echo site_url(); ?>/inspiration/modular" class="button<?php if($post_slug == "modular") { echo "-selected"; } ?>">Modular stands</a>
+   <a href="<?php echo site_url(); ?>/inspiration/portable" class="button<?php if($post_slug == "portable") { echo "-selected"; } ?>">Portable stands</a>
 
   </div>
 </div>
