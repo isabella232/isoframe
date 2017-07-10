@@ -57,12 +57,13 @@ $the_query = new WP_Query( $args );
 
 // The Loop
 while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
-
+<a href="<?php the_permalink(); ?>">
  		<div class="productType__action--box categoryPage-<?php echo $term_id; ?>">
 		<img src="<?php the_field('category_page_image'); ?>" alt="<?php the_title(); ?>">
 		<h2><?php the_title(); ?></h2>
 		<a href="<?php the_permalink(); ?>">Find out more ></a>
 	</div>
+</a>
 
 <?php endwhile; ?>
 
