@@ -285,7 +285,7 @@
 		
 		}
 
-		div {
+		div:last-of-type {
 			background:$grey-2;
 			padding:20px;
 			font-size:rem-calc(22);
