@@ -58,7 +58,7 @@
 		<div class="product__gallery__content">
 
 		<?php foreach( $images as $image ): ?>
-			<img src="<?php echo $image['sizes']['large']; ?>" alt="<?php echo $image['alt']; ?>" />
+			<a href="<?php echo $image['sizes']['large']; ?>" data-lightbox="inspiration"> <img src="<?php echo $image['sizes']['large']; ?>" alt="<?php echo $image['alt']; ?>" /></a>
 		<?php endforeach; ?>										
 			<div>
 				<?php the_field('gallery_cta_text'); ?>
@@ -180,4 +180,5 @@
 
 
 <?php get_template_part( 'template-parts/footer-cta', 'footer-cta' ); ?>
- <?php get_footer();
+ <?php get_footer(); ?>
+ <script src="<?php echo get_template_directory_uri(); ?>/assets/javascript/lightbox.min.js"></script>
