@@ -137,7 +137,6 @@ foreach ($terms as $term) {
     <div class="frameFinder__results--content">
       <h2> <?php echo $term->name; ?></h2>
       <p><?php echo $term->description; ?></p>
-      <a href="<?php echo $term_link; ?>" class="button">View range</a>
     </div>
   </div>
 </div>
