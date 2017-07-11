@@ -2,6 +2,10 @@
 	width:100%;
 	background:$grey-3;
 	padding:25px;
+
+	h2 {
+		margin-bottom:0px;
+	}
 	> div{
 		@include grid-row();
 		background:$white;
