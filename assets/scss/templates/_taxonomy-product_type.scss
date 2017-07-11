@@ -75,7 +75,7 @@
 .productType--heading {
 	width:100%;
 	background:$brand-orange;
-	padding:10px 0px 10px 25px;
+	padding:25px 0px 10px 25px;
 	h1 {
 		font-size:rem-calc(22);
 		@include breakpoint(large) {

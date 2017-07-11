@@ -21,7 +21,7 @@ $termID = 'product_Type_' . $term_id;
 </div>
 
 <div class="productType--heading categoryPage-<?php echo $term_id; ?>">
-	<h1><?php the_field('title', $termID); ?></h1>
+	<h1><img src="<?php echo get_template_directory_uri(); ?>/assets/images/logodark.png" alt="ISOframe" style="width:300px; display:block;"> <?php the_field('title', $termID); ?></h1>
 </div>
 
 <div class="productType--features">
