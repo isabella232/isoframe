@@ -120,7 +120,7 @@ while ($query->have_posts()) : $query->the_post(); ?>
       <img src="<?php the_field('product_long_image'); ?>">
   </div>
   <div class="frameFinder__results--content">
-    <h2> <?php the_title(); ?></h2>
+    <h2><img src="<?php echo get_template_directory_uri(); ?>/assets/images/logodark.png" alt="ISOframe"><?php the_title(); ?></h2>
     <p><?php the_field('openning_caption', false, false); ?></p>
     <a href="<?php the_permalink(); ?>" class="button">Find out more</a>
   </div>
