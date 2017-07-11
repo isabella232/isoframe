@@ -181,3 +181,12 @@
 	width:100%;
 	max-width:100%;
 }
+
+a {
+	color:$brand-purple;
+}
+
+.back {
+	@extend .button;
+	float:left;
+}

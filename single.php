@@ -21,7 +21,7 @@
 </div> -->
  <div class="page--default">
 
-<a href="<?php echo site_url(); ?>/blog/">< Back to latest posts</a>
+<a href="<?php echo site_url(); ?>/blog/" class="back">< Back to latest posts</a>
  <?php while ( have_posts() ) : the_post(); ?>
   <div class="content">
   	<h1><?php the_title(); ?></h1><br />
