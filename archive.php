@@ -14,14 +14,13 @@
 
  <div class="page--default">
 
-
-	 <?php while ( have_posts() ) : the_post(); ?>
 	  <div class="content">
+	 <?php while ( have_posts() ) : the_post(); ?>
 	 	<div>
 		  	<h1><?php the_title(); ?></h1>
 		  	<?php the_date(); ?><br /><br />
 		           <?php the_excerpt(); ?>
-		    </div>
+		</div>
 	 <?php endwhile;?>
 
 	<div class="sidebar">
