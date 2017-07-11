@@ -17,10 +17,11 @@
 
 	 <?php while ( have_posts() ) : the_post(); ?>
 	  <div class="content">
-	  	<h1><?php the_title(); ?></h1>
-	  	<?php the_date(); ?><br /><br />
-	           <?php the_excerpt(); ?>
-		</div>
+	 	<div>
+		  	<h1><?php the_title(); ?></h1>
+		  	<?php the_date(); ?><br /><br />
+		           <?php the_excerpt(); ?>
+		    </div>
 	 <?php endwhile;?>
 
 	<div class="sidebar">
