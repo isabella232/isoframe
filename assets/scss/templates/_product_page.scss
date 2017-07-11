@@ -144,7 +144,7 @@
 	}
 
 @include breakpoint(large) {
-	text-align:left;
+	text-align:center;
 	border-top-right-radius:50px;
 	border-bottom-right-radius:50px;
 }
@@ -169,14 +169,7 @@
 		font-weight:normal;
 	}
 	a {
-		@include grid-column(12);
-		margin-top:25px;
-		@include breakpoint(large) {
-			margin-top:0px;
-			@include grid-column(2);
-		}
-		background:$white;
-		color:$grey-1;
+		color:$white;
 	}
 }
 
