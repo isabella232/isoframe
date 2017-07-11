@@ -131,20 +131,6 @@
 	</div>
 <?php } ?>
 
-<?php if(get_field('build_process')) { ?>
-	<div class="product__buildProcess">
-	<h2>Design and build process</h2>
-		<div class="product__buildProcess__content">
-		<?php if( have_rows('build_process') ): while ( have_rows('build_process') ) : the_row(); ?>
-			<div>
-				<img src="<?php echo the_sub_field('image'); ?>">
-				<h2><?php echo the_sub_field('title'); ?></h2>
-				<p><?php echo the_sub_field('text'); ?></p>
-			</div>
-		<?php endwhile; endif; ?>
-		</div>
-	</div>
-<?php } ?>
 <?php if(get_field('product_grid_on') == 1) { ?>
 	<div class="product__grid">
 	<?php if( have_rows('product_grid') ): while ( have_rows('product_grid') ) : the_row(); ?>
@@ -160,6 +146,21 @@
 		</div>
 	<?php endwhile; endif; ?>
 
+	</div>
+<?php } ?>
+
+<?php if(get_field('build_process')) { ?>
+	<div class="product__buildProcess">
+	<h2>Design and build process</h2>
+		<div class="product__buildProcess__content">
+		<?php if( have_rows('build_process') ): while ( have_rows('build_process') ) : the_row(); ?>
+			<div>
+				<img src="<?php echo the_sub_field('image'); ?>">
+				<h2><?php echo the_sub_field('title'); ?></h2>
+				<p><?php echo the_sub_field('text'); ?></p>
+			</div>
+		<?php endwhile; endif; ?>
+		</div>
 	</div>
 <?php } ?>
 
@@ -186,7 +187,7 @@
 			<?php the_field('tandcs'); ?>
 		</div>
 	</div>
-	
+
 </div>
 
 
