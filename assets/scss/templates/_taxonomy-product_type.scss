@@ -170,10 +170,18 @@
 			width:25%;
 		}
 		margin:15px;
+		text-decoration:none!important;
 		background:$brand-orange;
 
 		img {
 			width:100%;
+		}
+
+		p {
+			padding-left:25px;
+		}
+		&:hover {
+			color:$grey-4;
 		}
 
 		&:last-child {
