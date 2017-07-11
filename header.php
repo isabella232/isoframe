@@ -22,6 +22,9 @@
 			<link rel="manifest" href="<?php echo get_template_directory_uri(); ?>/assets/images/manifest.json">
 			<link rel="mask-icon" href="<?php echo get_template_directory_uri(); ?>/assets/images/safari-pinned-tab.svg" color="#5bbad5">
 			<meta name="theme-color" content="#ffffff">
+			  <!-- Start of HubSpot Embed Code -->
+			  <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/2969598.js"></script>
+			<!-- End of HubSpot Embed Code -->
 
 	</head>
 	<body <?php body_class(); ?>>
