@@ -13,7 +13,7 @@ get_header(); ?>
     <h1>Contact us</h1>
     <a href="tel:01283 575097" class="telephone">01283 575097</a>
     <a href="mailto:sales@isoframe.co.uk" class="email">sales@isoframe.co.uk</a>
-    <p>Display Makers UK Limited, Sovereign House, 10 Lancaster Park<br />Needwood, Burton on Trent, Staffordshire DE13 9PD</p>
+    <p>Display Makers Limited, Sovereign House, 10 Lancaster Park<br />Needwood, Burton on Trent, Staffordshire DE13 9PD</p>
   </div>
   <div class="contact--page__form">
   <p>Contact us for help & advice, information on options and prices or to book a demonstration</p>

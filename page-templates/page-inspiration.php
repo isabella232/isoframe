@@ -48,7 +48,7 @@ if( $inspiration_gallery2 ): ?>
 <?php endif; ?>
     <div>
        <p><?php the_field('inspiration_gallery_message_2'); ?></p>
-      <a href="<?php the_field('show_me_button'); ?>" class="button--white">Show me</a>
+      <a href="<?php the_field('show_me_button'); ?>" class="button--white">Get in touch</a>
     </div>
 
   </div>
