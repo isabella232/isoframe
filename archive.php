@@ -18,7 +18,7 @@
 	 <?php while ( have_posts() ) : the_post(); ?>
 	 	<div>
 		  	<h1><?php the_title(); ?></h1>
-		  	<?php the_date(); ?><br /><br />
+		  	<?php echo get_the_date(); ?><br />
 		           <?php the_excerpt(); ?>
 		</div>
 	 <?php endwhile;?>
