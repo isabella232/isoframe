@@ -20,6 +20,7 @@
 		  	<h1><?php the_title(); ?></h1>
 		  	<?php echo get_the_date(); ?><br />
 		           <?php the_excerpt(); ?>
+		           <a href="<?php the_permalikn(); ?>" class="button">Read more</a>
 		</div>
 	 <?php endwhile;?>
 	 </div>
