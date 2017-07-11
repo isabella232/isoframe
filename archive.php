@@ -15,15 +15,27 @@
  <div class="page--default">
 
 
- <?php while ( have_posts() ) : the_post(); ?>
-  <div class="content">
-  	<h1><?php the_title(); ?></h1>
-  	<?php the_date(); ?><br />
-           <?php the_excerpt(); ?>
+	 <?php while ( have_posts() ) : the_post(); ?>
+	  <div class="content">
+	  	<h1><?php the_title(); ?></h1>
+	  	<?php the_date(); ?><br /><br />
+	           <?php the_excerpt(); ?>
+		</div>
+	 <?php endwhile;?>
+
+	<div class="sidebar">
+		<h1>Category</h1>
+		<ul>
+		    <?php wp_list_categories( array(
+		        'orderby'    => 'name',
+		        'show_count' => false,
+		        'title_li' => false,
+		    ) ); ?> 
+		</ul>
 	</div>
- <?php endwhile;?>
 
 
  </div>
+
 
  <?php get_footer();
