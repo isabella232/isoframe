@@ -132,21 +132,25 @@
 <?php } ?>
 
 <?php if(get_field('product_grid_on') == 1) { ?>
+	<?php if(get_the_ID() == 116) { ?>
+		<div class="product__gridTWO">
+	<?php } else { ?>
 	<div class="product__grid">
-	<?php if( have_rows('product_grid') ): while ( have_rows('product_grid') ) : the_row(); ?>
-		<div>
-			<div class="product__grid--image">
-				<img src="<?php echo the_sub_field('image'); ?>">
-			</div>
+	<?php } ?>
+		<?php if( have_rows('product_grid') ): while ( have_rows('product_grid') ) : the_row(); ?>
+			<div>
+				<div class="product__grid--image">
+					<img src="<?php echo the_sub_field('image'); ?>">
+				</div>
 
-			<div class="product__grid--text">
-			<h2><?php echo the_sub_field('title'); ?></h2>
-				<p><?php echo the_sub_field('content'); ?></p>
+				<div class="product__grid--text">
+				<h2><?php echo the_sub_field('title'); ?></h2>
+					<p><?php echo the_sub_field('content'); ?></p>
+				</div>
 			</div>
+		<?php endwhile; endif; ?>
+
 		</div>
-	<?php endwhile; endif; ?>
-
-	</div>
 <?php } ?>
 
 <?php if(get_field('build_process')) { ?>

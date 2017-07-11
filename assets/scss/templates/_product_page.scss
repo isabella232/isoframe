@@ -246,6 +246,40 @@
 	}
 }
 
+.product__gridTWO {
+	@include grid-row();
+	margin:50px auto;
+@include breakpoint(large) {
+	display:flex;
+	flex-wrap:wrap;
+}
+
+	> div {
+		width:100%;
+
+		img {display:none;}
+		@include breakpoint(large) {
+			max-width:100%;
+			img {display:block;}
+		}
+		background:$grey-3;
+		@include breakpoint(large) {
+			.product__grid--image {
+				@include grid-column(4,0);
+				img{ width:100%; max-width:100%;}
+			}
+		}
+		.product__grid--text {
+			@include grid-column(12);
+			@include breakpoint(large) {
+				@include grid-column(8,50);
+			}
+			padding:50px, 50px, 0, 50px;
+			color:$brand-purple;
+		}
+	}
+}
+
 .productsPage .news-advice {
 	background:$grey-3;
 	h2 {
