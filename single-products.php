@@ -180,7 +180,7 @@
 </div>
 <?php } ?>
 
-<div class="color--purple productsPage">
+<div class="color--purple">
 
 	<div class="product__content">
 		<div>
