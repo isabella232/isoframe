@@ -25,7 +25,7 @@
  <?php while ( have_posts() ) : the_post(); ?>
   <div class="content">
   	<h1><?php the_title(); ?></h1><br />
-  	<?php the_date(); ?>
+  	<?php the_date(); ?><br />
            <?php the_content(); ?>
 	</div>
  <?php endwhile;?>
