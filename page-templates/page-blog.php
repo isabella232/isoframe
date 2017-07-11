@@ -23,6 +23,7 @@ get_header(); ?>
     </div>
     <div class="blog__featured--content">
        <a href="<?php the_permalink(); ?>"> <h2><?php the_title(); ?></h2></a>
+       <?php echo get_the_date(); ?><br />
       <p><?php echo get_the_excerpt(); ?></p>
       <a href="<?php the_permalink(); ?>" class="button--red">Read More</a>
     </div>
@@ -49,6 +50,7 @@ get_header(); ?>
             }  
           ?></a>
         <a href="<?php the_permalink(); ?>">  <h2><?php the_title(); ?></h2></a>
+        <?php echo get_the_date(); ?><br />
       <a href='<?php the_permalink(); ?>'>Read more ></a>
     </div>
  <?php endwhile;?>
@@ -74,6 +76,7 @@ get_header(); ?>
           ?>
         <h2><?php the_title(); ?></h2>
       <a href='<?php the_permalink(); ?>'>Read more ></a>
+      <?php echo get_the_date(); ?><br />
     </div>
  <?php endwhile;?>
 
