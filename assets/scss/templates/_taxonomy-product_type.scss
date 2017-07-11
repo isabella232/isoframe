@@ -191,6 +191,9 @@
 				padding: 40px;
 				font-size:rem-calc(20);
 			}
+				&:hover { 
+					background:$tint-orange-1;
+				}
 
 			font-weight:bold;
 			a {
