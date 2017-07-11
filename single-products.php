@@ -179,6 +179,15 @@
 </div>
 <?php } ?>
 
+<div class="color--purple productsPage">
+
+	<div class="product__content">
+		<div>
+			<?php the_field('tandcs'); ?>
+		</div>
+	</div>
+	
+</div>
 
 
 <?php get_template_part( 'template-parts/footer-cta', 'footer-cta' ); ?>
