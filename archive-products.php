@@ -159,14 +159,16 @@ foreach ($terms as $term) {
 ) );
 
 while ($query->have_posts()) : $query->the_post(); ?>
-<div class="frameFinder__results categoryLight-<?php echo $term->term_id; ?>">
-  <div class="frameFinder__results--image">
-      <img src="<?php the_field('category_page_image'); ?>">
-  </div>
-  <div class="frameFinder__results--content">
-    <h2> <?php the_title(); ?></h2>
-    <p><?php the_field('openning_caption', false); ?></p>
-    <a href="<?php the_permalink(); ?>" class="button">View product</a>
+<div class="categoryLight-<?php echo $term->term_id; ?>">
+  <div class="frameFinder__results">
+    <div class="frameFinder__results--image">
+        <img src="<?php the_field('category_page_image'); ?>">
+    </div>
+    <div class="frameFinder__results--content">
+      <h2> <?php the_title(); ?></h2>
+      <p><?php the_field('openning_caption', false); ?></p>
+      <a href="<?php the_permalink(); ?>" class="button">View product</a>
+    </div>
   </div>
 </div>
 <?php endwhile;?>
