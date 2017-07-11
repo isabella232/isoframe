@@ -98,6 +98,7 @@
 		 	h2 {
 		 		font-size:rem-calc(16);
 		 		line-height:rem-calc(18);
+		 		margin-bottom:0px;
 		 	}
 		 	img {
 		 		@include grid-column(6,0);
@@ -141,6 +142,7 @@
 			 	margin:10px;
 		 	}
  			transition: all 0.2s;
+ 			color:$white; 
 
 		 	&:hover {
 		 		border:$brand-purple solid 1px;
@@ -160,6 +162,7 @@
 		 		font-size:rem-calc(16);
 		 		color:$white;
 		 		line-height:rem-calc(18);
+		 		margin-bottom:0px;
 		 	}
 		 	img {
 		 		@include grid-column(6,0);
