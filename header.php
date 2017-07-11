@@ -45,7 +45,7 @@
 				</div>
 				<div class="top-bar-right">
 				<div class="searchbox--frame">
-					<form action="<?php echo site_url(); ?>/products/" method="get" id="searchform">
+					<form action="<?php echo site_url(); ?>" method="get" id="searchform">
 						<input class="searchBox" name="s" placeholder="Search...">
 					</form>
 				</div>
