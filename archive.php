@@ -23,6 +23,18 @@
 		           <a href="<?php the_permalink(); ?>" class="button">Read more</a>
 		</div>
 	 <?php endwhile;?>
+
+	 		<?php
+		if ( function_exists( 'foundationpress_pagination' ) ) :
+			foundationpress_pagination();
+		elseif ( is_paged() ) :
+		?>
+			<nav id="post-nav">
+				<div class="post-previous"><?php next_posts_link( __( '&larr; Older posts', 'foundationpress' ) ); ?></div>
+				<div class="post-next"><?php previous_posts_link( __( 'Newer posts &rarr;', 'foundationpress' ) ); ?></div>
+			</nav>
+		<?php endif; ?>
+		
 	 </div>
 	<div class="sidebar">
 		<h1>Category</h1>
