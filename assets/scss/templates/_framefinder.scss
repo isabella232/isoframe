@@ -1,7 +1,6 @@
 .frameFinder {
   background: $grey-4;
-  margin-top:20px;
-  padding:1px 0 10px 0px;
+  padding:10px 0 10px 0px;
 
   .frameFinder__form {
     @include grid-row();
