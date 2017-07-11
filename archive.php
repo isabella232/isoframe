@@ -22,7 +22,7 @@
 		           <?php the_excerpt(); ?>
 		</div>
 	 <?php endwhile;?>
-
+	 </div>
 	<div class="sidebar">
 		<h1>Category</h1>
 		<ul>
