@@ -138,14 +138,14 @@ foreach ($terms as $term) {
 <div class="category-<?php echo $term->term_id; ?>">
   <div class="frameFinder__results">
     <div class="frameFinder__results--image">
-    <img src="<?php the_field('category_image', 'term_' . $term->term_id); ?>">
+    <img src="<?php the_field('category_image', 'term_' . $term->term_id); ?>"><br />
+          <img src="<?php the_field('smaller_image1', 'term_' . $term->term_id); ?>" style="width:120px;"> 
+      <img src="<?php the_field('smaller_image2', 'term_' . $term->term_id); ?>" style="width:120px;">
+      <div><?php the_field('price_options', 'term_' . $term->term_id); ?></div>
     </div>
     <div class="frameFinder__results--content">
       <h2><img src="<?php echo get_template_directory_uri(); ?>/assets/images/logodark.png" alt="ISOframe" style="width:300px; display:block;"> <?php echo $term->name; ?></h2>
       <p><?php echo $term->description; ?></p>
-      <img src="<?php the_field('smaller_image1', 'term_' . $term->term_id); ?>" style="width:200px;"> 
-      <img src="<?php the_field('smaller_image2', 'term_' . $term->term_id); ?>" style="width:200px;">
-      <div><?php the_field('price_options', 'term_' . $term->term_id); ?></div>
     </div>
   </div>
 </div>
