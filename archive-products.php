@@ -9,7 +9,7 @@ $e = $_GET['exhibition-size'];
 
 <div class="services__header">
   <div class="services__header--content">
-    <h1>ISOframe has the perfect Exhibition Stand for your need</h1>
+    <h1>The perfect exhibition stand for your needs</h1>
     <h2>View our range or use our handy Frame Finder</h2>
   </div>
 </div>
