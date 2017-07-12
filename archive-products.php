@@ -139,8 +139,8 @@ foreach ($terms as $term) {
   <div class="frameFinder__results">
     <div class="frameFinder__results--image">
     <img src="<?php the_field('category_image', 'term_' . $term->term_id); ?>"><br />
-          <img src="<?php the_field('smaller_image1', 'term_' . $term->term_id); ?>" style="margin-top:10px; height:120px; width:auto!important;"> 
-      <img src="<?php the_field('smaller_image2', 'term_' . $term->term_id); ?>" style="margin-top:10px;  height:120px; width:auto!important;">
+          <img src="<?php the_field('smaller_image1', 'term_' . $term->term_id); ?>" style="margin-top:10px; height:100px; width:auto!important;"> 
+      <img src="<?php the_field('smaller_image2', 'term_' . $term->term_id); ?>" style="margin-top:10px;  height:100px; width:auto!important;">
       <div style="display:inline-block; padding-left:25px; font-size:1.2rem; font-weight:bold;"><?php the_field('price_options', 'term_' . $term->term_id); ?></div>
     </div>
     <div class="frameFinder__results--content">
