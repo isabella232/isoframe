@@ -35,7 +35,7 @@ get_header(); ?>
     </div>
 
     <div>
-      <h3>Shows</h3>
+      <h3>Latest shows</h3>
       <?php the_field('upcoming_shows'); ?>
     </div>
 
