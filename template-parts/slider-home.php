@@ -14,7 +14,7 @@
 			</div>
 		</div>
 
-		<div class="slider-items" style="width:929px;">
+		<div class="slider-items" style="width:949px;">
 		<img src="<?php echo get_template_directory_uri(); ?>/assets/images/HEADER2.png">
 			<div class="titleText">
 				<div>
@@ -24,7 +24,7 @@
 			</div>
 		</div>
 
-		<div class="slider-items" style="width:648px;">
+		<div class="slider-items" style="width:634px;">
 		<img src="<?php echo get_template_directory_uri(); ?>/assets/images/HEADER3.png">
 			<div class="titleText">
 				<div>
@@ -44,7 +44,7 @@
 			</div>
 		</div>
 
-		<div class="slider-items" style="width:929px;">
+		<div class="slider-items" style="width:949px;">
 		<img src="<?php echo get_template_directory_uri(); ?>/assets/images/HEADER2.png">
 			<div class="titleText">
 				<div>
@@ -54,7 +54,7 @@
 			</div>
 		</div>
 
-		<div class="slider-items" style="width:648px;">
+		<div class="slider-items" style="width:634px;">
 		<img src="<?php echo get_template_directory_uri(); ?>/assets/images/HEADER3.png">
 			<div class="titleText">
 				<div>
