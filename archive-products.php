@@ -184,6 +184,7 @@ while ($query->have_posts()) : $query->the_post(); ?>
 <?php get_template_part( 'template-parts/footer-cta', 'footer-cta' ); ?>
 
 <?php get_footer();
+?>
 
 <script src="<?php echo get_template_directory_uri(); ?>/assets/javascript/lightbox.min.js"></script>
 
