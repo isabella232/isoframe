@@ -8,8 +8,7 @@
 		<img src="<?php the_field('slider_1', false); ?>">
 			<div class="titleText">
 				<div>
-					<h2><?php the_field('title_text', false); ?></h2>
-					<?php the_field('sub_text', false); ?>
+					<h2><?php the_field('title_text', false); ?></h2><?php the_field('sub_text', false); ?>
 				</div>
 			</div>
 		</div>
@@ -18,8 +17,7 @@
 		<img src="<?php the_field('slider_2', false); ?>">
 			<div class="titleText">
 				<div>
-					<h2><?php the_field('title_text', false); ?></h2>
-					<?php the_field('sub_text', false); ?>
+					<h2><?php the_field('title_text', false); ?></h2><?php the_field('sub_text', false); ?>
 				</div>
 			</div>
 		</div>
@@ -28,8 +26,7 @@
 		<img src="<?php the_field('slider_3', false); ?>">
 			<div class="titleText">
 				<div>
-					<h2><?php the_field('title_text', false); ?></h2>
-					<?php the_field('sub_text', false); ?>
+					<h2><?php the_field('title_text', false); ?></h2><?php the_field('sub_text', false); ?>
 				</div>
 			</div>
 		</div>
@@ -38,8 +35,7 @@
 		<img src="<?php the_field('slider_1', false); ?>">
 			<div class="titleText">
 				<div>
-					<h2><?php the_field('title_text', false); ?></h2>
-					<?php the_field('sub_text', false); ?>
+					<h2><?php the_field('title_text', false); ?></h2><?php the_field('sub_text', false); ?>
 				</div>
 			</div>
 		</div>
@@ -48,8 +44,7 @@
 		<img src="<?php the_field('slider_2', false); ?>">
 			<div class="titleText">
 				<div>
-					<h2><?php the_field('title_text', false); ?></h2>
-					<?php the_field('sub_text', false); ?>
+					<h2><?php the_field('title_text', false); ?></h2><?php the_field('sub_text', false); ?>
 				</div>
 			</div>
 		</div>
@@ -58,8 +53,7 @@
 		<img src="<?php the_field('slider_3', false); ?>">
 			<div class="titleText">
 				<div>
-					<h2><?php the_field('title_text', false); ?></h2>
-					<?php the_field('sub_text', false); ?>
+					<h2><?php the_field('title_text', false); ?></h2><?php the_field('sub_text', false); ?>
 				</div>
 			</div>
 		</div>
