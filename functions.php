@@ -208,3 +208,30 @@ function case_studies() {
 
 }
 add_action( 'init', 'case_studies', 0 );
+
+
+remove_action('load-update-core.php','wp_update_plugins');
+add_filter('pre_site_transient_update_plugins','__return_null');
+
+
+
+function remove_menus(){
+  
+  remove_menu_page( 'index.php' );                  //Dashboard
+  remove_menu_page( 'jetpack' );                    //Jetpack* 
+  //remove_menu_page( 'edit.php' );                   //Posts
+  //remove_menu_page( 'upload.php' );                 //Media
+  //remove_menu_page( 'edit.php?post_type=page' );    //Pages
+  remove_menu_page( 'edit.php?post_type=acf-field-group' );    //fields
+  remove_menu_page( 'admin.php?page=Wordfence' );    //fields
+  remove_menu_page( 'edit-comments.php' );          //Comments
+  remove_menu_page( 'themes.php' );                 //Appearance
+  remove_menu_page( 'plugins.php' );                //Plugins
+  //remove_menu_page( 'users.php' );                  //Users
+  //remove_menu_page( 'tools.php' );                  //Tools
+  remove_menu_page( 'options-general.php' );        //Settings
+  
+}
+add_action( 'admin_menu', 'remove_menus' );
+
+
