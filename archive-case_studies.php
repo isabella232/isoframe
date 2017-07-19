@@ -24,6 +24,7 @@ get_header(); ?>
     </div>
     <div class="caseFeatured--content">
       <h2><?php the_field('openning_title'); ?></h2>
+      <p><?php the_field('openning_content'); ?></p>
       <a href="<?php the_permalink(); ?>">Read Case Study > </a>
     </div>
   </div>
