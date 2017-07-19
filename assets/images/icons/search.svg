@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="28px" height="28px" viewBox="0 0 28 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44 (41411) - http://www.bohemiancoding.com/sketch -->
+    <title>icon / search</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M17.7058824,0 C23.3912,0 28,4.6088 28,10.2941176 C28,15.9794353 23.3912,20.5882353 17.7058824,20.5882353 C15.7587294,20.5882353 13.9378235,20.0475882 12.3529412,19.1409647 L4.92050588,26.5734824 C3.95565882,27.5382471 2.39136471,27.5382471 1.42651765,26.5734824 C0.461752941,25.6086353 0.461752941,24.0443412 1.42651765,23.0794941 L8.89172941,15.6149412 C7.95241176,14.0621765 7.41176471,12.2412706 7.41176471,10.2941176 C7.41176471,4.6088 12.0205647,0 17.7058824,0 Z M17.7058824,3.29411765 C13.8399059,3.29411765 10.7058824,6.42814118 10.7058824,10.2941176 C10.7058824,14.1600941 13.8399059,17.2941176 17.7058824,17.2941176 C21.5718588,17.2941176 24.7058824,14.1600941 24.7058824,10.2941176 C24.7058824,6.42814118 21.5718588,3.29411765 17.7058824,3.29411765 Z" id="path-1"></path>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="element-/-header" transform="translate(-1277.000000, -35.000000)">
+            <g id="icon-/-search" transform="translate(1291.000000, 49.000000) scale(-1, 1) translate(-1291.000000, -49.000000) translate(1275.000000, 33.000000)">
+                <g id="check" transform="translate(2.000000, 2.000000)">
+                    <g id="colour-/-l-grey-3">
+                        <g>
+                            <mask id="mask-2" fill="white">
+                                <use xlink:href="#path-1"></use>
+                            </mask>
+                            <use id="Mask" fill="#000000" fill-rule="nonzero" xlink:href="#path-1"></use>
+                        </g>
+                    </g>
+                </g>
+                <g id="appbar.magnify" transform="translate(2.000000, 2.000000)"></g>
+            </g>
+        </g>
+    </g>
+</svg>

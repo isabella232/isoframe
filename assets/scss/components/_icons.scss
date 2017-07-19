@@ -1,0 +1,457 @@
+.telephone {
+	&:before {
+		display:inline-block;
+		position:relative;
+		content:" ";
+		height:32px;
+		width:32px;
+		top:9px;
+		margin-right:5px;
+		background: url("../images/icons/phone.svg") no-repeat center center;
+
+	}
+}
+
+.email {
+
+	&:before {
+		display:inline-block;
+		position:relative;
+		content:" ";
+		height:32px;
+		width:32px;
+		top:9px;
+		margin-right:5px;
+		background: url("../images/icons/email.svg") no-repeat center center;
+
+	}
+}
+
+.twitter {
+	display:block;
+	content:" ";
+	height:32px;
+	width:32px;
+	margin: 0px 10px;
+	background: url("../images/icons/twitter.svg") no-repeat center center;
+	&:hover {
+		opacity: 0.5;
+	}
+}
+.facebook {
+	display:block;
+	content:" ";
+	height:32px;
+	width:32px;
+	margin: 0px 10px;
+	background: url("../images/icons/facebook.svg") no-repeat center center;
+	&:hover {
+		opacity: 0.5;
+	}
+}
+.youtube {
+	display:block;
+	content:" ";
+	height:32px;
+	width:32px;
+	margin: 0px 10px;
+	background: url("../images/icons/youtube.svg") no-repeat center center;
+	&:hover {
+		opacity: 0.5;
+	}
+}
+.pinterest {
+	display:block;
+	content:" ";
+	height:32px;
+	width:32px;
+	margin: 0px 10px;
+	background: url("../images/icons/pinterest.svg") no-repeat center center;
+	&:hover {
+		opacity: 0.5;
+	}
+}
+.google {
+	display:block;
+	content:" ";
+	height:32px;
+	width:32px;
+	margin: 0px 10px;
+	background: url("../images/icons/google.svg") no-repeat center center;
+	&:hover {
+		opacity: 0.5;
+	}
+}
+
+.searchIcon a{
+	display:block;
+	content:" ";
+	height:32px;
+	width:32px;
+	margin: 0px 10px;
+	font-size:0!important;
+	background: url("../images/icons/search.svg") no-repeat center center;
+	&:hover {
+		opacity: 0.5!important;
+	}
+}
+
+.menu-icon {
+	&:hover {
+		border-radius:0px!important;
+		background:none;
+	}
+}
+
+.icons {
+	margin-left:0px;
+	&:before {
+		display:inline-block;
+		margin-top:-20px;
+		margin-right:25px;
+		margin-top:-7px;
+		background-size:350px!important;
+		float:left;
+	}
+}
+
+.spacing-icon:before {
+	content:" ";
+	height:50px;
+	width:50px;
+	background: url("../images/icons.svg") no-repeat top left;
+}
+
+.spacingup-icon:before {
+	content:" ";
+	height:50px;
+	width:50px;
+	background: url("../images/icons.svg") no-repeat top left -50px;
+}
+
+.paperpile-icon:before {
+	content:" ";
+	height:50px;
+	width:50px;
+	background: url("../images/icons.svg") no-repeat top left -100px;
+}
+
+.multipleup-icon:before {
+	content:" ";
+	height:50px;
+	width:50px;
+	background: url("../images/icons.svg") no-repeat top left -150px;
+}
+
+.moveacross-icon:before {
+	content:" ";
+	height:50px;
+	width:50px;
+	background: url("../images/icons.svg") no-repeat top left -200px;
+}
+
+.telescope-icon:before {
+	content:" ";
+	height:50px;
+	width:50px;
+	background: url("../images/icons.svg") no-repeat top left -250px;
+}
+
+.bin-icon:before {
+	content:" ";
+	height:50px;
+	width:50px;
+	background: url("../images/icons.svg") no-repeat top left -300px;
+}
+
+.lamp-icon:before {
+	content:" ";
+	height:50px;
+	width:50px;
+	background: url("../images/icons.svg") no-repeat top -50px left 0px;
+}
+
+.people-icon:before {
+	content:" ";
+	height:50px;
+	width:50px;
+	background: url("../images/icons.svg") no-repeat top -50px left -50px;
+}
+
+.multipleboard-icon:before {
+	content:" ";
+	height:50px;
+	width:50px;
+	background: url("../images/icons.svg") no-repeat top -50px left -100px;
+}
+
+.weight-icon:before {
+	content:" ";
+	height:50px;
+	width:50px;
+	background: url("../images/icons.svg") no-repeat top -50px left -150px;
+}
+
+.figureofeight-icon:before {
+	content:" ";
+	height:50px;
+	width:50px;
+	background: url("../images/icons.svg") no-repeat top -50px left -200px;
+}
+
+.pig-icon:before {
+	content:" ";
+	height:50px;
+	width:50px;
+	background: url("../images/icons.svg") no-repeat top -50px left -250px;
+}
+.openbox-icon:before {
+	content:" ";
+	height:50px;
+	width:50px;
+	background: url("../images/icons.svg") no-repeat top -50px left -300px;
+}
+
+
+.fourm-icon:before {
+	content:" ";
+	height:50px;
+	width:50px;
+	background: url("../images/icons.svg") no-repeat top -100px left 0px;
+}
+
+.sandflat-icon:before {
+	content:" ";
+	height:50px;
+	width:50px;
+	background: url("../images/icons.svg") no-repeat top -100px left -50px;
+}
+
+.weights-icon:before {
+	content:" ";
+	height:50px;
+	width:50px;
+	background: url("../images/icons.svg") no-repeat top -100px left -100px;
+}
+
+.tapemeasure-icon:before {
+	content:" ";
+	height:50px;
+	width:50px;
+	background: url("../images/icons.svg") no-repeat top -100px left -150px;
+}
+
+.personassembly-icon:before {
+	content:" ";
+	height:50px;
+	width:50px;
+	background: url("../images/icons.svg") no-repeat top -100px left -200px;
+}
+
+.screwdrivethrough-icon:before {
+	content:" ";
+	height:50px;
+	width:50px;
+	background: url("../images/icons.svg") no-repeat top -100px left -250px;
+}
+
+.sboardsquare-icon:before {
+	content:" ";
+	height:50px;
+	width:50px;
+	background: url("../images/icons.svg") no-repeat top -100px left -300px;
+}
+
+
+
+.moveableboards-icon:before {
+	content:" ";
+	height:50px;
+	width:50px;
+	background: url("../images/icons.svg") no-repeat top -150px left 0px;
+}
+
+.carspace-icon:before {
+	content:" ";
+	height:50px;
+	width:50px;
+	background: url("../images/icons.svg") no-repeat top -150px left -50px;
+}
+
+.smallsboard-icon:before {
+	content:" ";
+	height:50px;
+	width:50px;
+	background: url("../images/icons.svg") no-repeat top -150px left -100px;
+}
+
+.door-icon:before {
+	content:" ";
+	height:50px;
+	width:50px;
+	background: url("../images/icons.svg") no-repeat top -150px left -150px;
+}
+
+.threed-icon:before {
+	content:" ";
+	height:50px;
+	width:50px;
+	background: url("../images/icons.svg") no-repeat top -150px left -200px;
+}
+
+.telephone-icon:before {
+	content:" ";
+	height:50px;
+	width:50px;
+	background: url("../images/icons.svg") no-repeat top -150px left -250px;
+}
+
+.tapemeasuretwo-icon:before {
+	content:" ";
+	height:50px;
+	width:50px;
+	background: url("../images/icons.svg") no-repeat top -150px left -300px;
+}
+
+.world-icon:before {
+	content:" ";
+	height:50px;
+	width:50px;
+	background: url("../images/icons.svg") no-repeat top -200px left 0px;
+}
+
+.magnifying-icon:before {
+	content:" ";
+	height:50px;
+	width:50px;
+	background: url("../images/icons.svg") no-repeat top -200px left -50px;
+}
+
+.letteropen-icon:before {
+	content:" ";
+	height:50px;
+	width:50px;
+	background: url("../images/icons.svg") no-repeat top -200px left -100px;
+}
+
+.british-icon:before {
+	content:" ";
+	height:50px;
+	width:50px;
+	background: url("../images/icons.svg") no-repeat top -200px left -150px;
+}
+
+.floorspace-icon:before {
+	content:" ";
+	height:50px;
+	width:50px;
+	background: url("../images/icons.svg") no-repeat top -200px left -200px;
+}
+
+.curvedwithback-icon:before {
+	content:" ";
+	height:50px;
+	width:50px;
+	background: url("../images/icons.svg") no-repeat top -200px left -250px;
+}
+
+.thermostat-icon:before {
+	content:" ";
+	height:50px;
+	width:50px;
+	background: url("../images/icons.svg") no-repeat top -200px left -300px;
+}
+
+
+
+.eye-icon:before {
+	content:" ";
+	height:50px;
+	width:50px;
+	background: url("../images/icons.svg") no-repeat top -250px left -0px;
+}
+
+.print-icon:before {
+	content:" ";
+	height:50px;
+	width:50px;
+	background: url("../images/icons.svg") no-repeat top -250px left -50px;
+}
+
+.recycle-icon:before {
+	content:" ";
+	height:50px;
+	width:50px;
+	background: url("../images/icons.svg") no-repeat top -250px left -100px;
+}
+
+.percent-icon:before {
+	content:" ";
+	height:50px;
+	width:50px;
+	background: url("../images/icons.svg") no-repeat top -250px left -150px;
+}
+
+.play-icon:before {
+	content:" ";
+	height:50px;
+	width:50px;
+	background: url("../images/icons.svg") no-repeat top -250px left -200px;
+}
+
+.standback-icon:before {
+	content:" ";
+	height:50px;
+	width:50px;
+	background: url("../images/icons.svg") no-repeat top -250px left -250px;
+}
+
+.twostandheight-icon:before {
+	content:" ";
+	height:50px;
+	width:50px;
+	background: url("../images/icons.svg") no-repeat top -250px left -300px;
+}
+
+.timer-icon:before {
+	content:" ";
+	height:50px;
+	width:50px;
+	background: url("../images/icons.svg") no-repeat top -300px left -0px;
+}
+
+.books-icon:before {
+	content:" ";
+	height:50px;
+	width:50px;
+	background: url("../images/icons.svg") no-repeat top -300px left -50px;
+}
+
+
+.boxarrows-icon:before {
+	content:" ";
+	height:50px;
+	width:50px;
+	background: url("../images/icons.svg") no-repeat top -300px left -100px;
+}
+
+.stamp-icon:before {
+	content:" ";
+	height:50px;
+	width:50px;
+	background: url("../images/icons.svg") no-repeat top -300px left -150px;
+}
+
+.stamphole-icon:before {
+	content:" ";
+	height:50px;
+	width:50px;
+	background: url("../images/icons.svg") no-repeat top -300px left -200px;
+}
+
+.tickdot-icon:before {
+	content:" ";
+	height:50px;
+	width:50px;
+	background: url("../images/icons.svg") no-repeat top -300px left -250px;
+}

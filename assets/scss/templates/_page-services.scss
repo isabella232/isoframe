@@ -1,0 +1,111 @@
+.services__header {
+	background:$grey-1;
+	padding:1px 0px 20px 0px;;
+
+	.services__header--content {
+		@include grid-row();
+		padding-left:20px;
+		@include breakpoint(large) {
+			padding-right:200px;
+		}
+
+		h1 { 
+			color:$white;
+			text-transform:uppercase;
+			font-weight:bold;
+			font-size:rem-calc(36);
+			line-height:rem-calc(42);
+			@include breakpoint(large) {
+				font-size:rem-calc(60);
+				line-height:rem-calc(55);
+			}
+			margin:45px 0px 0px 0px;
+		}
+		h2 {
+			color:$white;
+			margin-top:10px;
+			font-weight:normal;
+		}
+		p {
+			color:$white;
+		}
+	}
+}
+
+.services__row--normal {
+	@include grid-row();
+	padding:20px 0px 0px 0px;
+
+	.services__row--normal__image {
+		@include grid-column(12);
+		@include breakpoint(large) {
+			@include grid-column(6);
+		}
+	}
+	.services__row--normal__text {
+		@include grid-column(12);
+		@include breakpoint(large) {
+			@include grid-column(6);
+		}
+		h2 {
+			text-transform:uppercase;
+			color:$brand-purple;
+		}
+		 p {
+		 	margin-bottom:30px;
+		 	color:$brand-purple;
+		 }
+		 .button {
+		 	display:block;
+		 	padding:15px 60px;
+		 	@include breakpoint(large) {
+		 		display:inline-block;
+		 		width:auto;
+		 		padding:15px 60px;
+		 	}
+		 }
+	}
+}
+
+.services__row--coloured {
+	background:$grey-3;
+	margin-top:20px;
+
+	.services__row--coloured--spacer {
+		@include grid-row();
+		margin:0px auto;
+		padding:20px 0px 30px 0px;
+
+		.services__row--coloured__image {
+		@include grid-column(12);
+		@include breakpoint(large) {
+			@include grid-column(6);
+		}
+			float:right!important;
+		}
+		.services__row--coloured__text {
+		@include grid-column(12);
+		@include breakpoint(large) {
+			@include grid-column(6);
+		}
+			float:left!important;
+			h2 {
+				text-transform:uppercase;
+				color:$brand-purple;
+			}
+			 p {
+			 	margin-bottom:30px;
+			 	color:$brand-purple;
+			 }
+			 .button {
+			 	display:block;
+			 	padding:15px 60px;
+			 	@include breakpoint(large) {
+			 		display:inline-block;
+			 		width:auto;
+			 		padding:15px 60px;
+			 	}
+			 }
+		}
+	}
+}

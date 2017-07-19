@@ -1,206 +1,282 @@
-// Page header
-#front-hero {
-  .marketing {
-    @include grid-row();
-    max-width: 55rem;
-  }
+.actionBoxes {
+	@include grid-row();
+	@include breakpoint(large) {
+		display:flex;
+		padding-top:35px;
+		padding-bottom:20px;
+	}
+a {
+	text-decoration:none;
+	color:$brand-purple;
+}
+	div {
+		@include grid-column(12, 0);
 
-  @include breakpoint(small) {
-    background: url('../images/demo/hero-bg-foundation-6-small.svg') bottom center;
-    background-size: cover;
-    background-position: bottom;
-    padding: rem-calc(65%) 0;
-    margin: 0 0 rem-calc(32);
-    height: auto;
-    position: relative;
-    text-align: left;
-  }
+			@include breakpoint(large) {
+				@include grid-column(4, 0);
+				flex: 1 1 33.3333%;
+				margin:20px;
+			}
 
-  @include breakpoint(medium) {
-    background: url('../images/demo/hero-bg-foundation-6-large.svg') bottom center;
-    background-size: cover;
-    background-position: center;
-    height: rem-calc(685);
-    margin: 0 0 rem-calc(72);
-  }
+		h2 {
+			font-size:rem-calc(24);
+			font-family:$site-font;
+			text-align:center;
+			padding:0px 20px;
+			margin-top:10px;
+			margin-bottom:0px;
+		}
 
-  #watch {
-    @include breakpoint(small) {
-      @include grid-column(7);
-      @include grid-column-position(-5);
-    }
+		p {
+			font-size:rem-calc(16);
+			color:$brand-purple;
+			padding:0px 20px;
+			margin:10px 0px;
+			text-align:center;
+			min-height:75px;
+		 }
+		img {
+			width:100%;
+		}
+		.button {
+			display:block;
+			width:auto;
+			margin:20px;
+			background:$white;
+			color:$brand-purple;
+			&:hover {
+				background:$brand-purple;
+				color:$white;
+			}
+		}
 
-    @include breakpoint(medium) {
-      @include grid-column(12);
-      @include grid-column-position(0);
-    }
+		&:nth-child(1) {
+			background-color:$grey-4;
+			img {
+				border-bottom:solid 8px $brand-purple;
+			}
+		}
+		&:nth-child(2) {
+			background-color:$tint-orange-1;
+			img {
+				border-bottom:solid 8px $brand-orange;
+			}
+		}
+		&:nth-child(3) {
+			background-color:$grey-5;
 
-    section {
-      display: inline;
-    }
+			img {
+				border-bottom:solid 8px $grey-4;
+			}
+		}
 
-    a {
-      color: #B4C9D1;
-      cursor: pointer;
-      font-weight: 400;
-      margin-right: rem-calc(20);
-    }
+	}
 
-    a:hover {
-      color: #fff;
-    }
-
-    #stargazers {
-      :before {
-        content: "\f09b";
-        font-family: FontAwesome;
-        font-style: normal;
-        font-weight: normal;
-        text-decoration: inherit;
-        color: #B4C9D1;
-        margin-right: rem-calc(8);
-      }
-    }
-
-    #twitter {
-      :before {
-        content: "\f099";
-        font-family: FontAwesome;
-        font-style: normal;
-        font-weight: normal;
-        text-decoration: inherit;
-        color: #B4C9D1;
-        margin-right: rem-calc(8);
-      }
-    }
-
-  }
-
-  .tagline {
-    @include breakpoint(small) {
-      @include grid-column(8);
-    }
-
-    @include breakpoint(medium) {
-      @include grid-column(5);
-      padding-top: 6rem;
-    }
-  }
-
-  h1 {
-    color: #fff;
-    font-weight: 500;
-
-    @include breakpoint(small) {
-      font-size: 2.2rem;
-    }
-
-    @include breakpoint(medium) {
-      font-size: 2.875rem;
-    }
-  }
-
-  h4 {
-    color: #fefefe;
-    font-weight: 300;
-    font-size: 1.3125rem;
-  }
-
-  .download {
-    margin-top: rem-calc(20);
-  }
 }
 
-// Intro
-.intro {
-  @include grid-row();
+.why-choose-us {
+	width:100%;
+	background:$brand-purple;
+	@include breakpoint(large) {
+		height:304px;
+		background:$brand-purple url('../images/homepage-background.jpg') no-repeat center right;
+	}
+	div {
+		@include grid-row();
+		padding-right:20px;
+		@include breakpoint(large) {
+			padding-right:500px;
+		}
+		padding-left:20px;
+		padding-top:19px;
+		padding-bottom:19px;
 
-  .fp-intro {
-    @include breakpoint(small) {
-      @include grid-column(12);
-    }
+		h2 {
+			text-transform:uppercase;
+			color:$white;
+			font-size:rem-calc(32);
+			margin:0px;
+		}
 
-    @include breakpoint(medium) {
-      @include grid-column(10);
-      @include grid-column-offset(1);
-
-      h2 {
-        font-weight: 300;
-        margin-bottom: 1.5rem;
-      }
-
-      h4 {
-        font-size: 1.125rem;
-        line-height: 1.6;
-        color: #777;
-        margin-bottom: 2rem;
-      }
-    }
-  }
+		p {
+			color:$white;
+			&:first-of-type{
+				font-weight:bold;
+			}
+		}
+	}
 }
 
-// Section divider
-.section-divider {
-  @include grid-row();
+.values {
+	@include grid-row();
+	margin-top:30px;
+	margin-bottom:30px;
+	@include breakpoint(large) {
+		display:flex;
+	}
 
-  hr {
-    @include grid-column(12);
-    @extend .dotted;
-    box-sizing: border-box;
-  }
+	div {
+		@include grid-column(12);
+		@include breakpoint(large) {
+			@include grid-column(4,30);
+			flex: 1 1 33.33%;
+			padding:0px 30px;
+		}
+		text-align:center;
+		p {
+			color:$brand-purple;
+		}
+
+		h2 {
+			text-transform:uppercase;
+		}
+	}
 }
 
+.designerPullOut {
+	background:$grey-5;
+	padding:40px 0px;
 
-// Benefits
-.benefits {
-  @include grid-row();
-  text-align: center;
+	a {	
+		opacity:1;
+		transition:all 0.2s;
 
-  header {
-    @include grid-column(12);
+		&:hover {
+			opacity:0.8;
+		}
+	}
+	.content {
+		@include grid-row();
 
-    h2 {
-      font-weight: 300;
-    }
+		.content--image {
+			@include grid-column(12);
 
-    h4 {
-      font-size: 1.125rem;
-      line-height: 1.6;
-      color: #777;
-    }
-  }
+			img{ width:100%; margin-bottom:20px;}
 
-  .semantic,
-  .responsive,
-  .customizable,
-  .professional {
-    @include breakpoint(small) {
-      @include grid-column(12);
-    }
+			@include breakpoint(large) {
+				@include grid-column(4);
+			}
+		}
+		.content--text {
+			@include grid-column(12);
+			text-align:center;
+			@include breakpoint(large) {
+				@include grid-column(8);
+				text-align:left;
+			}
 
-    @include breakpoint(medium) {
-      @include grid-column(3);
-    }
+			h2 {
+				margin:0px;
+				line-height:40px;
+				@include breakpoint(large) {
+					line-height:25px;
+				}
+				font-weight:normal;
+				font-size:rem-calc(28);
+			}
+			p {
+				padding-bottom:15px;
 
-    img {
-      padding: 1.25rem;
-      margin: 1rem auto 0 auto;
-    }
+				&:first-of-type {
+					padding-top:15px;
+					padding-bottom:10px;
+					font-weight:bold;
+					font-size:rem-calc(16);
+					color:$brand-purple;
+				}
+			}
+			.button {
+				font-size:rem-calc(16);
+				padding-top:12px;
+				padding-right:30px;
+				padding-left:30px;
+			}
+			span {
+				display:block;
+				margin-top:30px;
+				text-align:center;
 
-    h3 {
-      color: #0a0a0a;
-      font-weight: 300;
-      font-size: 1.75rem;
-    }
-
-    p {
-      font-size: 0.9375rem;
-    }
-  }
-
-  .why-foundation {
-    @include grid-row();
-    @include grid-column(12);
-    margin-top: 4rem;
-  }
+				@include breakpoint(large) {
+					display:inline-block;
+					text-align:left;
+					margin-top:0px;
+				}
+				font-size:rem-calc(14);
+				font-weight:bold;
+				margin-left:30px;
+				img {
+					margin-right:10px;
+					margin-left:10px;
+				}
+			}
+		}
+	}
 }
+
+.news-advice {
+	display:none;
+	@include breakpoint(large) {
+		display:block;
+	}
+	width:100%;
+	background:$grey-1;
+	padding:10px 0 50px 0;
+
+	> h2 {
+		@include grid-row();
+		padding-left:20px;
+		text-transform:uppercase;
+		color:$white;
+		margin-bottom:20px;
+	}
+
+	.news-advice--content {
+		@include grid-row();
+		@include breakpoint(large) {
+			display:flex;
+		}
+
+		div {
+			@include grid-column(12);
+			padding-top:10px;
+			padding-bottom:10px;
+			padding-top:0px;
+			@include breakpoint(large) {
+				@include grid-column(4, 0);
+				flex: 1 1 33.33%;
+				margin:0px 20px;
+				padding-bottom:20px;
+			}
+			background:$grey-5;
+
+			img {
+				height:125px;
+				width:100%;
+			}
+
+			h2 {
+				font-size:rem-calc(16);
+				line-height:rem-calc(20);
+
+				@include breakpoint(large) {
+					padding:0px 20px;
+				}
+			}
+			a {
+				@include breakpoint(large) {
+					margin:0px 20px;
+					&:first-of-type {
+						margin:0px 0px;
+					}
+				}
+				color:$brand-purple;
+				text-decoration:none;
+				font-weight:bold;
+				&:hover {
+					color:$brand-orange;
+				}
+			}
+		}
+	}
+}
+

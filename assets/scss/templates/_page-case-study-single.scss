@@ -1,0 +1,254 @@
+.caseStudy-single__Image {
+	background:$grey-4;
+	text-align:center;
+	padding:30px 0;
+	position:relative;
+
+	.caseStudy-single__Image--option {
+		display:none;
+		@include breakpoint(large) {
+			display:block;
+		}
+
+		position:absolute;
+		left:50%!important;
+		background: url('../images/hotspot.svg') center center no-repeat;
+		background-size:contain;
+		height:45px;
+		width:45px; 
+		content: " ";
+
+		&:hover {
+			.arrow_box {
+				opacity:1;
+			}
+		}
+
+		.arrow_box {
+			transition: all 0.2s;
+			opacity:0;
+			position: relative;
+			background: #ffffff;
+			height:100px;
+			width:200px;
+			padding:10px;
+			left:65px;
+			top:-25px;
+			text-align:left;
+			&:after {
+				right: 100%;
+				top: 62%;
+				border: solid transparent;
+				content: " ";
+				height: 0;
+				width: 0;
+				position: absolute;
+				pointer-events: none;
+				border-color: rgba(255, 255, 255, 0);
+				border-right-color: #ffffff;
+				border-width: 15px;
+				margin-top: -30px;
+			}
+		}
+	}
+}
+
+.caseStudy-single__featuredSection{
+	@include grid-row();
+
+	> h2 {
+		text-transform:uppercase;
+		font-size:rem-calc(28);
+		@include breakpoint(large) {
+			font-size:rem-calc(40);
+		}
+		padding:0px 10px;
+		color:$brand-purple;
+	}
+
+	.caseStudy-single__featuredSection--content {
+		@include grid-column(12);
+		@include breakpoint(large) {
+			@include grid-column(8);
+		}
+
+		h2 {
+			text-transform:uppercase;
+			color:$brand-purple;
+			margin-bottom:0px;
+		}
+		p {
+			color:$brand-purple;
+		}
+	}
+
+	.caseStudy-single__featuredSection--sidebar {
+		@include grid-column(12);
+		@include breakpoint(large) {
+			@include grid-column(4);
+		}
+
+		div {
+			background:$grey-3;
+			margin-top:10px;
+			padding:15px 15px 15px 15px;
+			color:$brand-purple;
+			span{font-weight:bold;}
+
+			h3 {
+				padding:0px;
+				margin:0px;
+				font-size:rem-calc(28);
+				font-weight:normal;
+			}
+			ol {
+				font-weight:bold;
+				li {
+					padding-bottom:5px;
+				}
+			}
+		}
+	}
+}
+
+.caseStudy-single__section--first {
+	width:100%;
+	background:$grey-3;
+	padding:25px 0 10px 0;
+
+	div {
+		@include grid-row();
+
+		.caseStudy-single__section--first__content {
+			@include grid-column(12);
+			@include breakpoint(large) {
+				@include grid-column(6);
+			}
+
+			h2 {
+				color:$brand-purple;
+				text-transform:uppercase;
+
+			}
+		}
+		.caseStudy-single__section--first__image {
+			@include grid-column(12);
+			@include breakpoint(large) {
+				@include grid-column(6);
+			}
+			img{
+				width:100%;
+				max-width:100%;
+			}
+		}
+	}
+}
+
+.caseStudy-single__section--second {
+	width:100%;
+	padding:25px 0 10px 0;
+
+	div {
+		@include grid-row();
+
+		.caseStudy-single__section--second__content {
+			@include grid-column(12);
+			@include breakpoint(large) {
+				@include grid-column(6);
+			}
+			h2 {
+				color:$brand-purple;
+				text-transform:uppercase;
+				margin-top:0px;
+			}
+		}
+		.caseStudy-single__section--second__image {
+			@include grid-column(12);
+			@include breakpoint(large) {
+				@include grid-column(6);
+			}
+			img{
+				width:100%;
+				max-width:100%;
+			}
+		}
+	}
+}
+
+
+.caseStudy-single__CTA{
+	@include grid-row();
+	background:$grey-1;
+
+@include breakpoint(large) {
+	border-top-right-radius:50px;
+	border-bottom-right-radius:50px;
+}
+	padding:20px;
+	margin-top:40px;
+	margin-bottom:60px;
+
+	h2 {
+		@include grid-column(12);
+		@include breakpoint(large) {
+			@include grid-column(10);
+		}
+		color:$white;
+		font-size:rem-calc(26);
+		line-height:rem-calc(27);
+		margin:0px;
+		padding-top:0px;
+		@include breakpoint(large) {
+			padding-right:100px!important;
+			padding-left:100px!important;
+		}
+		font-weight:normal;
+	}
+	a {
+		@include grid-column(12);
+		margin-top:25px;
+		@include breakpoint(large) {
+			margin-top:0px;
+			@include grid-column(2);
+		}
+		background:$white;
+		color:$grey-1;
+	}
+}
+
+.caseStudy-single__testimonial {
+	width:100%;
+	background:$grey-3;
+	padding:15px;
+	@include breakpoint(large) {
+		padding:15px 0;
+	}
+	margin-bottom:25px;
+
+	div {
+		@include grid-row();
+
+		img {
+			float:left;
+			margin-right:25px;
+			border-radius:60px;
+			height:120px;
+			width:120px;
+			
+		}
+
+		p {
+			@include breakpoint(large) {
+				width:75%;
+			}
+
+			color:$brand-purple;
+			span {
+				display:block;
+				padding-top:10px;
+				color:$white;
+				font-weigt:bold;
+			}
+		}
+	}
+}

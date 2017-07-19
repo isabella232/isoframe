@@ -1,0 +1,104 @@
+.frameFinder {
+  background: $grey-4;
+  padding:10px 0 10px 0px;
+
+  .frameFinder__form {
+    @include grid-row();
+    padding:20px;
+     @include breakpoint(large) {
+      padding:0px;
+     }
+
+    h1 {
+      text-transform:uppercase;
+      color:$brand-purple;
+      margin-bottom:0px;
+    }
+    p {
+      margin-top:0px;
+      margin-bottom:0px;
+      color:$brand-purple;
+    }
+
+    select {
+      @extend input[type="text"];
+      @include grid-column(12);
+      max-width:100%;
+      @include breakpoint(large) {
+       @include grid-column(3);
+     }
+      margin-right:20px;
+    }
+    button {
+      @include grid-column(12);
+      @include breakpoint(large) {
+       @include grid-column(3);
+      display:block;
+      width:20%;
+      cursor:pointer;
+     }
+
+     margin-top:20px;
+     padding-top:14px;
+    }
+  }
+}
+.frameFinder__results {
+  border-bottom:solid 1px $brand-purple;
+  padding-bottom:25px;
+  @include grid-row();
+
+
+  .frameFinder__results--image {
+    @include grid-column(12);
+    margin-top:30px;
+    padding-top: 25px;
+
+    img {
+      width:100%;
+      max-width:100%;
+    }
+    @include breakpoint(large) {
+      @include grid-column(6);
+      margin-top:0px;
+    }
+  }
+  .frameFinder__results--content {
+     @include grid-column(12);
+    @include breakpoint(large) {
+       @include grid-column(6,60);
+    }
+    h2{
+      text-transform:uppercase;
+      color:$brand-purple;
+    }
+    p {
+        padding-bottom:30px;
+    }
+    .button {
+      padding:15px 60px;
+      display:block;
+      @include breakpoint(large) {
+        display:inline-block;
+        width:auto;
+      }
+    }
+  }
+}
+
+.last {
+  border:none!important;
+}
+
+.categoryLight-7 {
+  background:tint($brand-purple, 50%);
+}
+
+.categoryLight-6 {
+  background:tint($brand-orange, 50%);
+  
+}
+
+.categoryLight-5 {
+  background:tint($brand-grey, 50%);
+}

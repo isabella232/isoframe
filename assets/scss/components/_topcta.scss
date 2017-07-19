@@ -1,0 +1,241 @@
+.headerCTA {
+	display:none;
+	@include breakpoint(large) {
+		display:block;
+	}
+	background-color:$brand-purple;
+	padding:15px 0px;
+	margin-top:0px;
+	.headerCTA--content {
+		@include grid-row();
+
+		color:$brand-orange;
+		font-weight:bold;
+		font-size:rem-calc(22.5);
+		text-align:center;
+
+		a {
+			color:$white;
+			text-decoration:none;
+			&:hover {
+				color:$brand-orange;
+			}
+		}
+
+	}
+}
+
+.slider {
+
+	@include breakpoint(medium) {
+		
+	}
+	> div {
+		background-position:center;
+		text-align:center;
+		background-repeat:no-repeat;
+		height:300px;
+		@include breakpoint(large) {
+			height:429px;
+		}
+
+		img {
+			position:relative;
+			@include breakpoint(large) {
+			top:15px;
+			left:80px;
+			}
+		}
+		.titleText{
+			background:$brand-purple;
+			max-width:90rem;
+			margin:auto;
+
+
+			div{
+				@include grid-row();
+				padding:20px 20px;
+				margin-top:-60px;
+				@include breakpoint(large) {
+					margin-top:-105px;
+				}
+				text-align:left;
+				font-family: $site-font;
+				font-weight:500;
+				color:$white;
+				font-sixe:rem-calc(15);
+
+				h2 {
+					font-size:rem-calc(32);
+					line-height:rem-calc(44);
+					color:$brand-orange;
+					font-family:"AvenirNextLTPro-Bold";
+					margin:0px;
+
+					span {
+						display:block;
+						color:$white;
+					}
+				}
+			}
+		}
+	}
+}
+
+.searchbox--frame {
+	display:none;
+	position:absolute;
+	width:100%;
+	max-width:720px!important;
+	
+	.searchBox {
+		width:100%;
+		max-width:720px!important;
+		height:45px;
+		padding:10px;
+	}
+}
+
+.homeslider {
+	display:none;
+	@include breakpoint(large) {
+		display:block;
+	}
+&:after {
+	display:block;
+	clear:both;
+	content:" ";
+}
+	margin-bottom:10px;
+	width:100vw;
+	overflow:hidden;
+
+   .slider-items {
+   		display: inline-block;
+    	float: left;
+    	height:auto;
+    	border-right:solid 10px $brand-purple;
+    	border-left:solid 10px $brand-purple;
+		background-position:center;
+		text-align:center;
+		background-repeat:no-repeat;
+		height:auto;
+		background-color:$brand-purple;
+		transition: all 0.2s;
+
+		img {
+			filter: blur(5px) saturate(0.4);
+			transition: all 0.2s;
+		}
+
+		.titleText{
+			background:$brand-purple;
+			max-width:90rem;
+			margin:auto;
+			margin-top:5px;
+			transition: all 0.2s;
+			position: relative;
+
+
+			div{
+				opacity:0;
+				transition: all 0.2s;
+				@include grid-row();
+				padding:20px 20px;
+				margin-top:-60px;
+				@include breakpoint(large) {
+					margin-top:-105px;
+				}
+				text-align:left;
+				font-family: $site-font;
+				font-weight:500;
+				color:$white;
+				font-sixe:rem-calc(15);
+
+				h2 {
+					font-size:rem-calc(32);
+					line-height:rem-calc(44);
+					color:$brand-orange;
+					font-family:"AvenirNextLTPro-Bold";
+					margin:0px;
+
+					span {
+						display:block;
+						color:$white;
+					}
+				}
+			}
+		}
+	}
+}
+
+
+.slick-center {
+
+	img {
+		filter: blur(0px) saturate(1)!important;
+	}
+
+	.titleText {
+
+		position: inherit!important;
+
+		div{
+			opacity:1!important;
+		}
+	}
+}
+
+.homeslider:not(.slick-initialized) {
+	display:none;
+}
+.sliderprevious {
+	display:none!important;
+	@include breakpoint(large) {
+		display:block!important;
+	}
+    
+    width: 300px;
+    height: 575px;
+    padding-top: 100px;
+    position: absolute;
+    top: 130px;
+    left:0px;
+    padding-left: 25px;
+    z-index: 99999;
+    opacity:0.2;
+    transition:all 0.2s;
+    cursor:pointer;
+    img{ 
+    	height:250px;
+    }
+    &:hover {
+    	opacity:0.8;
+    }
+}
+
+.slidernext {
+	display:none!important;
+	@include breakpoint(large) {
+		display:block!important;
+	}
+    
+    width: 300px;
+    height: 575px;
+    padding-top: 100px;
+    position: absolute;
+    top: 130px;
+    right:0px;
+    padding-right: 25px;
+    z-index: 99999;
+    opacity:0.2;
+    transition:all 0.2s;
+    cursor:pointer;
+    text-align:right;
+       img{ 
+    	height:250px;
+    }
+       &:hover {
+    	opacity:0.8;
+    }
+}

@@ -1,38 +1,30 @@
 <?php
 /**
- * The template for displaying archive pages
+ * The template for displaying pages
  *
- * Used to display archive-type pages if nothing more specific matches a query.
- * For example, puts together date-based pages if no date.php file exists.
- *
- * If you'd like to further customize these archive views, you may create a
- * new template file for each one. For example, tag.php (Tag archives),
- * category.php (Category archives), author.php (Author archives), etc.
- *
- * @link https://codex.wordpress.org/Template_Hierarchy
+ * This is the template that displays all pages by default.
+ * Please note that this is the WordPress construct of pages and that
+ * other "pages" on your WordPress site will use a different template.
  *
  * @package FoundationPress
  * @since FoundationPress 1.0.0
  */
 
-get_header(); ?>
+ get_header(); ?>
 
-<div id="page" role="main">
-	<article class="main-content">
-	<?php if ( have_posts() ) : ?>
+ <div class="page--default">
 
-		<?php /* Start the Loop */ ?>
-		<?php while ( have_posts() ) : the_post(); ?>
-			<?php get_template_part( 'template-parts/content', get_post_format() ); ?>
-		<?php endwhile; ?>
+	  <div class="content">
+	 <?php while ( have_posts() ) : the_post(); ?>
+	 	<div>
+		  	<h1><?php the_title(); ?></h1>
+		  	<?php echo get_the_date(); ?><br />
+		           <?php the_excerpt(); ?>
+		           <a href="<?php the_permalink(); ?>" class="button">Read more</a>
+		</div>
+	 <?php endwhile;?>
 
-		<?php else : ?>
-			<?php get_template_part( 'template-parts/content', 'none' ); ?>
-
-		<?php endif; // End have_posts() check. ?>
-
-		<?php /* Display navigation to next/previous pages when applicable */ ?>
-		<?php
+	 		<?php
 		if ( function_exists( 'foundationpress_pagination' ) ) :
 			foundationpress_pagination();
 		elseif ( is_paged() ) :
@@ -42,10 +34,21 @@ get_header(); ?>
 				<div class="post-next"><?php previous_posts_link( __( 'Newer posts &rarr;', 'foundationpress' ) ); ?></div>
 			</nav>
 		<?php endif; ?>
+		
+	 </div>
+	<div class="sidebar">
+		<h1>Category</h1>
+		<ul>
+		    <?php wp_list_categories( array(
+		        'orderby'    => 'name',
+		        'show_count' => false,
+		        'title_li' => false,
+		    ) ); ?> 
+		</ul>
+	</div>
 
-	</article>
-	<?php get_sidebar(); ?>
 
-</div>
+ </div>
 
-<?php get_footer();
+
+ <?php get_footer();

@@ -10,6 +10,7 @@
 register_nav_menus(array(
 	'top-bar-r'  => 'Right Top Bar',
 	'mobile-nav' => 'Mobile',
+	'footer' => 'Footer',
 ));
 
 
@@ -50,6 +51,22 @@ if ( ! function_exists( 'foundationpress_mobile_nav' ) ) {
 	}
 }
 
+/**
+ * Footer navigation
+ */
+if ( ! function_exists( 'foundationpress_footer_nav' ) ) {
+	function foundationpress_footer_nav() {
+		wp_nav_menu( array(
+			'container'      => false,                         // Remove nav container
+			'menu'           => __( 'footer', 'foundationpress' ),
+			'menu_class'     => '',
+			'theme_location' => 'footer',
+			'items_wrap'     => '<ul>%3$s</ul>',
+			'fallback_cb'    => false,
+			'walker'         => new Foundationpress_Mobile_Walker(),
+		));
+	}
+}
 
 /**
  * Add support for buttons in the top-bar menu:

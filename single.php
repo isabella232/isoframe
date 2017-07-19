@@ -1,41 +1,45 @@
 <?php
 /**
- * The template for displaying all single posts and attachments
+ * Single page template
+ *
+ * This is the template that displays all pages by default.
+ * Please note that this is the WordPress construct of pages and that
+ * other "pages" on your WordPress site will use a different template.
  *
  * @package FoundationPress
  * @since FoundationPress 1.0.0
  */
 
-get_header(); ?>
+ get_header(); ?>
 
-<?php get_template_part( 'template-parts/featured-image' ); ?>
+<!-- <div class="single--featured">
+	<?php
+		if ( has_post_thumbnail() ) {
+			the_post_thumbnail();
+		} 
+	?>
+</div> -->
+ <div class="page--default">
 
-<div id="single-post" role="main">
-
-<?php do_action( 'foundationpress_before_content' ); ?>
-<?php while ( have_posts() ) : the_post(); ?>
-	<article <?php post_class('main-content') ?> id="post-<?php the_ID(); ?>">
-		<header>
-			<h1 class="entry-title"><?php the_title(); ?></h1>
-			<?php foundationpress_entry_meta(); ?>
-		</header>
-		<?php do_action( 'foundationpress_post_before_entry_content' ); ?>
-		<div class="entry-content">
-			<?php the_content(); ?>
-			<?php edit_post_link( __( 'Edit', 'foundationpress' ), '<span class="edit-link">', '</span>' ); ?>
-		</div>
-		<footer>
-			<?php wp_link_pages( array('before' => '<nav id="page-nav"><p>' . __( 'Pages:', 'foundationpress' ), 'after' => '</p></nav>' ) ); ?>
-			<p><?php the_tags(); ?></p>
-		</footer>
-		<?php the_post_navigation(); ?>
-		<?php do_action( 'foundationpress_post_before_comments' ); ?>
-		<?php comments_template(); ?>
-		<?php do_action( 'foundationpress_post_after_comments' ); ?>
-	</article>
-<?php endwhile;?>
-
-<?php do_action( 'foundationpress_after_content' ); ?>
-<?php get_sidebar(); ?>
+<a href="<?php echo site_url(); ?>/blog/" class="back">< Back to latest posts</a>
+ <?php while ( have_posts() ) : the_post(); ?>
+  <div class="content">
+  	<h1><?php the_title(); ?></h1><br />
+  	<?php the_date(); ?><br />
+           <?php the_content(); ?>
+	</div>
+ <?php endwhile;?>
+<div class="sidebar">
+	<h1>Category</h1>
+	<ul>
+    <?php wp_list_categories( array(
+        'orderby'    => 'name',
+        'show_count' => false,
+        'title_li' => false,
+    ) ); ?> 
+</ul>
 </div>
-<?php get_footer();
+
+ </div>
+
+ <?php get_footer();
