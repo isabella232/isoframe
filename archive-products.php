@@ -139,8 +139,9 @@ foreach ($terms as $term) {
   <div class="frameFinder__results">
     <div class="frameFinder__results--image">
     <img src="<?php the_field('category_image', 'term_' . $term->term_id); ?>"><br />
-          <img src="<?php the_field('smaller_image1', 'term_' . $term->term_id); ?>" style="margin-top:10px; height:100px; width:auto!important;"> 
-      <img src="<?php the_field('smaller_image2', 'term_' . $term->term_id); ?>" style="margin-top:10px;  height:100px; width:auto!important;">
+     <a href="<?php the_field('smaller_image1', 'term_' . $term->term_id); ?>" data-lightbox="inspiration">
+          <img src="<?php the_field('smaller_image1', 'term_' . $term->term_id); ?>" style="margin-top:10px; height:100px; width:auto!important;"></a> 
+      <a href="<?php the_field('smaller_image2', 'term_' . $term->term_id); ?>" data-lightbox="inspiration"><img src="<?php the_field('smaller_image2', 'term_' . $term->term_id); ?>" style="margin-top:10px;  height:100px; width:auto!important;"></a>
       <div style="display:inline-block; padding-left:25px; font-size:1.2rem; font-weight:bold;"><?php the_field('price_options', 'term_' . $term->term_id); ?></div>
     </div>
     <div class="frameFinder__results--content">
@@ -183,3 +184,6 @@ while ($query->have_posts()) : $query->the_post(); ?>
 <?php get_template_part( 'template-parts/footer-cta', 'footer-cta' ); ?>
 
 <?php get_footer();
+
+<script src="<?php echo get_template_directory_uri(); ?>/assets/javascript/lightbox.min.js"></script>
+
