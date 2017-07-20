@@ -187,12 +187,11 @@
         background:$brand-red;
         border-top-left-radius:0px;
         border-bottom-left-radius:0px;
-        width:200px;
+        width:210px;
         height:52px;
         margin:0px;
-        padding-top:10px;
         margin-left:-5px;
-        font-size:rem-calc(16);
+        font-size:rem-calc(14);
         cursor:pointer;
         &:hover {
           background:$brand-orange;
