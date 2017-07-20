@@ -155,7 +155,6 @@
 
 <?php if(get_field('build_process')) { ?>
 	<div class="product__buildProcess">
-	<h2>Design and build process</h2>
 		<div class="product__buildProcess__content">
 		<?php if( have_rows('build_process') ): while ( have_rows('build_process') ) : the_row(); ?>
 			<div>
