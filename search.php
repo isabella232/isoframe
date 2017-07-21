@@ -22,7 +22,7 @@
   	<h1><?php the_title(); ?></h1>
            <?php the_field('openning_caption'); ?>
            <?php the_excerpt(); ?>
-           <a href="<?php the_permalink(); ?>" class="button" style="display: block; width: 15%; margin-bottom: 25px;">Read More</a>
+           <a href="<?php the_permalink(); ?>" class="button" style="display: block; width: 15%; margin-top:10px; margin-bottom: 25px;">Read More</a>
 	</div>
  <?php endwhile;?>
 
