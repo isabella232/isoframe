@@ -10,7 +10,7 @@
 			<span>Available on 
 			<a href="<?php the_field('android_link', 'option'); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/android.svg"></a>
 			<a href="<?php the_field('apple_link', 'option'); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/apple.svg"></a>
-			<a href="<?php the_field('windows_link', 'option'); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/windows.svg"></a>
+			<a href="<?php the_field('windows_link', 'option'); ?>" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/windows.svg"></a>
 			</span> 
 		</div>
 	</div>

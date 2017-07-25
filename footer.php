@@ -38,8 +38,8 @@
 		<p>Stay up-to-date with the latest product & exhibition stand news</p>
 
 
-			<form name="form_subscribe" method="get" action="http://s5.newzapp.co.uk/t/ThankyouSubscribe.aspx">
-			<input type="hidden" name="RedirectURL" id="RedirectURL" value="<?php echo site_url(); ?>/thank-you" />
+			<form name="form_subscribe" method="post"  target="_blank" action="http://s5.newzapp.co.uk/t/ThankyouSubscribe.aspx">
+			<input type="hidden" name="RedirectURL" id="RedirectURL" value="<?php echo site_url(); ?>/thank-you/" />
  <input type="hidden" name="CID" id="CID" value="14736" />
 
   <input type="hidden" name="Group" id="Group" value="website 2017" />
