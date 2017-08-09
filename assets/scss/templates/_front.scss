@@ -348,6 +348,9 @@ a {
 			@include grid-column(6);
 			ul {
 				list-style:none;
+				padding-left:20px;
+				font-size:rem-calc(18);
+				color:$brand-purple;
 			}
 		}
 	}
