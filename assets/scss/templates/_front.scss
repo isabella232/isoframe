@@ -282,6 +282,8 @@ a {
 
 .our-custom-stands {
 	background:$tint-orange-1;
+	padding-top:15px;
+	padding-bottom:15px;
 
 	h2 {
 		@include grid-row();
@@ -293,10 +295,12 @@ a {
 	 	@include grid-row();
 	 	display:flex;
 	 	flex-wrap:wrap;
-	 	justify-content:space-between;
+	 	justify-content: space-between
 	 	div {
 	 		display:block;
 	 		width:30%;
+	 		flex:  1 1 30%;
+	 		margin:15px;
 
 	 		img {
 	 			width:100%;
@@ -311,6 +315,8 @@ a {
 
 .our-services--homepage {
 	background:$grey-3;
+	padding-top:15px;
+	padding-bottom:15px;
 
 	h2 {
 		color:$brand-purple;
@@ -318,7 +324,7 @@ a {
 	}
 	> div {
 		@include grid-row();
-		
+
 		.our-services--homepage__video {
 			@include grid-column(6);
 		}
