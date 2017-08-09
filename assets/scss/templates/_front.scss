@@ -342,10 +342,16 @@ a {
 		@include grid-row();
 
 		.our-services--homepage__video {
-			@include grid-column(6);
+			@include grid-column(12);
+			@include breakpoint(large) {
+				@include grid-column(6);
+			}
 		}
 		.our-services--homepage__content {
-			@include grid-column(6);
+			@include grid-column(12);
+			@include breakpoint(large) {
+				@include grid-column(6);
+			}
 			ul {
 				list-style:none;
 				padding-left:20px;

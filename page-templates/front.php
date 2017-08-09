@@ -31,7 +31,6 @@ get_header(); ?>
 		<?php the_field('content', false); ?>
 	</div>
 </div>
-<div style="display:none;">
 
 <div class="our-custom-stands">
 	<h2>Our Isoframe custom stands</h2>
@@ -61,7 +60,6 @@ get_header(); ?>
 	</div>
 </div>
 
-</div>
 <div class="values">
 	<?php
 	if( have_rows('values') ):
