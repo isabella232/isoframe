@@ -282,19 +282,21 @@ a {
 
 .our-custom-stands {
 	background:$tint-orange-1;
-	@include grid-row();
 
 	h2 {
+		@include grid-row();
 		color:$brand-purple;
 		font-size:rem-calc(32);
 	}
 
 	 > div {
+	 	@include grid-row();
 	 	display:flex;
 	 	flex-wrap:wrap;
+	 	justify-content:space-between;
 	 	div {
 	 		display:block;
-	 		width:33.33%;
+	 		width:30%;
 
 	 		img {
 	 			width:100%;
@@ -314,10 +316,14 @@ a {
 		color:$brand-purple;
 		font-size:rem-calc(32);
 	}
-	.our-services--homepage__video {
-		@include grid-column(6);
-	}
-	.our-services--homepage__content {
-		@include grid-column(6);
+	> div {
+		@include grid-row();
+		
+		.our-services--homepage__video {
+			@include grid-column(6);
+		}
+		.our-services--homepage__content {
+			@include grid-column(6);
+		}
 	}
 }
