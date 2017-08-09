@@ -31,7 +31,34 @@ get_header(); ?>
 		<?php the_field('content', false); ?>
 	</div>
 </div>
+<div style="display:none;">
 
+<div class="our-custom-stands">
+	<h2>Our Isoframe custom stands</h2>
+
+	<div>
+	<?php $images = get_field('custom_images'); ?>
+	<?php foreach( $images as $image ): ?>
+		<div>
+		<a href="<?php echo $image['sizes']['medium']; ?>" data-lightbox="inspiration"> <img src="<?php echo $image['sizes']['large']; ?>" alt="<?php echo $image['alt']; ?>" /></a>
+		</div>
+	<?php endforeach; ?>	
+
+	</div>
+</div>									
+
+<div class="our-services--homepage">
+<h2>Our Service</h2>
+	<div class="our-services--homepage__video">
+		<?php the_field('homepageservice_video'); ?>
+	</div>
+
+	<div class="our-services--homepage__content">
+		<?php the_field('homepageservice_text'); ?>
+	</div>
+</div>
+
+</div>
 <div class="values">
 	<?php
 	if( have_rows('values') ):
