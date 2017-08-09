@@ -292,6 +292,7 @@ a {
 		margin-bottom:0px;
 		color:$brand-purple;
 		font-size:rem-calc(32);
+		text-transform:uppercase;
 	}
 
 	 > div {
@@ -328,8 +329,15 @@ a {
 		margin-bottom:0px;
 		color:$brand-purple;
 		font-size:rem-calc(32);
+		text-transform:uppercase;
 	}
-	
+	strong {
+		padding-left:20px;
+		color:$brand-purple;
+	}
+	p {
+		font-size:rem-calc(18);
+	}
 	> div {
 		@include grid-row();
 
