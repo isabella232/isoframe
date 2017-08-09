@@ -48,13 +48,16 @@ get_header(); ?>
 </div>									
 
 <div class="our-services--homepage">
-<h2>Our Service</h2>
-	<div class="our-services--homepage__video">
-		<?php the_field('homepageservice_video'); ?>
-	</div>
+	<h2>Our Service</h2>
+	
+	<div>
+		<div class="our-services--homepage__video">
+			<?php the_field('homepageservice_video'); ?>
+		</div>
 
-	<div class="our-services--homepage__content">
-		<?php the_field('homepageservice_text'); ?>
+		<div class="our-services--homepage__content">
+			<?php the_field('homepageservice_text'); ?>
+		</div>
 	</div>
 </div>
 
