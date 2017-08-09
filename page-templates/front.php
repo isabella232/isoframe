@@ -40,7 +40,7 @@ get_header(); ?>
 	<?php $images = get_field('custom_images'); ?>
 	<?php foreach( $images as $image ): ?>
 		<div>
-		<a href="<?php echo $image['sizes']['medium']; ?>" data-lightbox="inspiration"> <img src="<?php echo $image['sizes']['large']; ?>" alt="<?php echo $image['alt']; ?>" /></a>
+		<a href="<?php echo $image['sizes']['large']; ?>" data-lightbox="inspiration"> <img src="<?php echo $image['sizes']['medium']; ?>" alt="<?php echo $image['alt']; ?>" /></a>
 		</div>
 	<?php endforeach; ?>	
 
