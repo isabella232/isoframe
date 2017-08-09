@@ -280,3 +280,44 @@ a {
 	}
 }
 
+.our-custom-stands {
+	background:$tint-orange-1;
+	@include grid-row();
+
+	h2 {
+		color:$brand-purple;
+		font-size:rem-calc(32);
+	}
+
+	 > div {
+	 	display:flex;
+	 	flex-wrap:wrap;
+	 	div {
+	 		display:block;
+	 		width:33.33%;
+
+	 		img {
+	 			width:100%;
+	 			height:100%;
+	 			object-fit:cover;
+	 		}
+	 	}
+	 }
+
+
+}
+
+.our-services--homepage {
+	background:$grey-3;
+
+	h2 {
+		color:$brand-purple;
+		font-size:rem-calc(32);
+	}
+	.our-services--homepage__video {
+		@include grid-column(6);
+	}
+	.our-services--homepage__content {
+		@include grid-column(6);
+	}
+}
