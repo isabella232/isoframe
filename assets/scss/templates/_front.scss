@@ -363,6 +363,7 @@ a {
 			@include breakpoint(large) {
 				@include grid-column(6);
 			}
+			h2 { text-transform:lowercase; }
 			ul {
 				list-style:none;
 				padding-left:20px;
