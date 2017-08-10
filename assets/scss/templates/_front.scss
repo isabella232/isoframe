@@ -9,6 +9,7 @@ a {
 	text-decoration:none;
 	color:$brand-purple;
 }
+
 	div {
 		@include grid-column(12, 0);
 
@@ -16,6 +17,12 @@ a {
 				@include grid-column(4, 0);
 				flex: 1 1 33.3333%;
 				margin:20px;
+			}
+
+			&:first-of-type {
+				p {
+					margin-bottom:40px;
+				}
 			}
 
 		h2 {
@@ -305,6 +312,7 @@ a {
 	 		width:30%;
 	 		flex:  1 1 30%;
 	 		margin:15px;
+	 		border:solid 4px $brand-purple;
 
 	 		img {
 	 			width:100%;
@@ -329,6 +337,9 @@ a {
 		margin-bottom:0px;
 		color:$brand-purple;
 		font-size:rem-calc(28);
+		&:first-of-type {
+			text-transform:uppercase;
+		}
 		
 	}
 	strong {
