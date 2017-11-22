@@ -355,8 +355,14 @@ a {
 
 		.our-services--homepage__video {
 			@include grid-column(12);
+			iframe {
+					height:200px;
+				}
 			@include breakpoint(large) {
 				@include grid-column(6);
+				iframe {
+					height:360px;
+				}
 			}
 		}
 		.our-services--homepage__content {
