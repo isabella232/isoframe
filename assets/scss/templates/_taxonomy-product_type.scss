@@ -167,8 +167,9 @@
 	.productType__action--box{
 		margin:0px;
 		display:block;
-		padding-bottom:15px;
+		padding-bottom:6px;
 		padding-right:10px;
+		margin-bottom:20px;
 		@include breakpoint(large) {
 			flex:1 1 25%;
 			width:25%;
