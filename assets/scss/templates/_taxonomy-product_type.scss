@@ -232,6 +232,7 @@
 
 .productType-CTA{
 	@include grid-row();
+	max-width:73rem!important;
 	background:$grey-1;
 
 @include breakpoint(large) {
