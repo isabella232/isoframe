@@ -182,7 +182,7 @@
 	</div>
 </div>
 <?php } ?>
-
+<?php if(get_field('tandcs')) { ?>
 <div class="color--purple">
 
 	<div class="product__content">
@@ -192,7 +192,7 @@
 	</div>
 
 </div>
-
+<?php  }?>
 
 <?php get_template_part( 'template-parts/footer-cta', 'footer-cta' ); ?>
  <?php get_footer(); ?>
