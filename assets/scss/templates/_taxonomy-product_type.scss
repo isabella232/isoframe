@@ -190,7 +190,7 @@
 
 		&:last-child {
 			background:$tint-orange-1;
-				padding:10px 20px;
+				padding:5px 20px 30px 20px;
 			@include breakpoint(large) {
 				padding: 40px;
 				font-size:rem-calc(20);
@@ -237,9 +237,9 @@
 	border-top-right-radius:50px;
 	border-bottom-right-radius:50px;
 }
-	padding:20px;
-	margin-top:40px;
-	margin-bottom:60px;
+	padding:20px 10px 20px 10px
+	margin-top:20px;
+	margin-bottom:20px;
 
 	h2 {
 		@include grid-column(12);
