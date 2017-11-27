@@ -165,11 +165,15 @@
 	margin-top:50px;
 
 	.productType__action--box{
+		margin:0px;
+		display:block;
+		padding-bottom:15px;
+		padding-right:10px;
 		@include breakpoint(large) {
 			flex:1 1 25%;
 			width:25%;
+			margin:15px;
 		}
-		margin:15px;
 		text-decoration:none!important;
 		background:$brand-orange;
 
