@@ -62,7 +62,7 @@
 		</div>
 	</div>
 	<div class="footer__copyright__container--katapult">
-		<div>Website by <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/katapult.svg"></a></div>
+		<div>Website by <a href="https://www.katapult.co.uk"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/katapult.svg"></a></div>
 	</div>
 </div>
 
