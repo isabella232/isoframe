@@ -14,7 +14,7 @@
 				$image = get_sub_field('hero_image');
 			?>
 
-				<div class="slider-item">
+				<a href="<?php the_sub_field('hero_link'); ?>" class="slider-item">
 
 					<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt'] ?>" />
 
@@ -24,7 +24,7 @@
 
 					</div>
 
-				</div>
+				</a>
 
 			<?php
 				endwhile;
@@ -40,13 +40,13 @@
 
 	<div class="sliderprevious">
 
-		<img src="<?php echo get_template_directory_uri(); ?>/assets/images/previous.svg" />
+		<img src="<?php bloginfo('template_url');?>/assets/img/previous.svg" />
 
 	</div>
 
 	<div class="slidernext">
 
-		<img src="<?php echo get_template_directory_uri(); ?>/assets/images/next.svg" />
+		<img src="<?php bloginfo('template_url');?>/assets/img/next.svg" />
 
 	</div>
 
