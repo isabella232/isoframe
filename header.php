@@ -55,7 +55,7 @@
 			</div>
 			</noscript>
 
-
+			<link href="<?php bloginfo('template_url');?>/slider.css" rel="stylesheet" type="text/css" />
 
 	</head>
 	<body <?php body_class(); ?>>
