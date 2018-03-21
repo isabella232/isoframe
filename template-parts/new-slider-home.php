@@ -1,69 +1,53 @@
-<div class="homeslider">
+<div class="outer-container slider purple">
 
-	<?php
-	if( have_rows('slider') ):
-	    while ( have_rows('slider') ) : the_row();
-	?>
-		<div class="slider-items" style="width:<?php the_field('slider_1_width', false); ?>;">
-		<img src="<?php the_field('slider_1', false); ?>">
-			<div class="titleText">
-				<div>
-					<h2><?php the_field('title_text', false); ?></h2><?php the_field('sub_text', false); ?>
+	<div class="variable-width">
+
+		<?php
+			if( have_rows('hero_slideshow') ):
+			while ( have_rows('hero_slideshow') ) : the_row();
+		?>
+
+			<?php
+				if( have_rows('slide') ):
+				while ( have_rows('slide') ) : the_row();
+
+				$image = get_sub_field('hero_image');
+			?>
+
+				<div class="slider-item">
+
+					<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt'] ?>" />
+
+					<div class="slider-text">
+
+						<?php the_sub_field('hero_text'); ?>
+
+					</div>
+
 				</div>
-			</div>
-		</div>
 
-		<div class="slider-items" style="width:<?php the_field('slider_2_width', false); ?>;">
-		<img src="<?php the_field('slider_2', false); ?>">
-			<div class="titleText">
-				<div>
-					<h2><?php the_field('title_text', false); ?></h2><?php the_field('sub_text', false); ?>
-				</div>
-			</div>
-		</div>
+			<?php
+				endwhile;
+				endif;
+			?>
 
-		<div class="slider-items" style="width:<?php the_field('slider_3_width', false); ?>;">
-		<img src="<?php the_field('slider_3', false); ?>">
-			<div class="titleText">
-				<div>
-					<h2><?php the_field('title_text', false); ?></h2><?php the_field('sub_text', false); ?>
-				</div>
-			</div>
-		</div>
+		<?php
+			endwhile;
+			endif;
+		?>
 
-		<div class="slider-items" style="width:<?php the_field('slider_1_width', false); ?>;">
-		<img src="<?php the_field('slider_1', false); ?>">
-			<div class="titleText">
-				<div>
-					<h2><?php the_field('title_text', false); ?></h2><?php the_field('sub_text', false); ?>
-				</div>
-			</div>
-		</div>
+	</div>
 
-		<div class="slider-items" style="width:<?php the_field('slider_2_width', false); ?>;">
-		<img src="<?php the_field('slider_2', false); ?>">
-			<div class="titleText">
-				<div>
-					<h2><?php the_field('title_text', false); ?></h2><?php the_field('sub_text', false); ?>
-				</div>
-			</div>
-		</div>
+	<div class="sliderprevious">
 
-		<div class="slider-items" style="width:<?php the_field('slider_3_width', false); ?>;">
-		<img src="<?php the_field('slider_3', false); ?>">
-			<div class="titleText">
-				<div>
-					<h2><?php the_field('title_text', false); ?></h2><?php the_field('sub_text', false); ?>
-				</div>
-			</div>
-		</div>
+		<img src="<?php bloginfo('template_url');?>/assets/img/previous.svg" />
 
-	<?php  
-		endwhile;
-	endif;
-	?>
+	</div>
+
+	<div class="slidernext">
+
+		<img src="<?php bloginfo('template_url');?>/assets/img/next.svg" />
+
+	</div>
 
 </div>
-
-<div class="sliderprevious"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/previous.svg"></div>
-<div class="slidernext"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/next.svg"></div>
