@@ -40,13 +40,13 @@
 
 	<div class="sliderprevious">
 
-		<img src="<?php bloginfo('template_url');?>/assets/img/previous.svg" />
+		<img src="<?php echo get_template_directory_uri(); ?>/assets/images/previous.svg" />
 
 	</div>
 
 	<div class="slidernext">
 
-		<img src="<?php bloginfo('template_url');?>/assets/img/next.svg" />
+		<img src="<?php echo get_template_directory_uri(); ?>/assets/images/next.svg" />
 
 	</div>
 
