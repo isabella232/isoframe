@@ -14,6 +14,9 @@
 	<head>
 		<meta charset="<?php bloginfo( 'charset' ); ?>" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		
+		<link href="<?php echo get_template_directory_uri(); ?>/slider.css" rel="stylesheet" type="text/css" />
+		
 		<?php wp_head(); ?>
 
 			<link rel="apple-touch-icon" sizes="76x76" href="<?php echo get_template_directory_uri(); ?>/assets/images/apple-touch-icon.png">
@@ -54,8 +57,6 @@
 			<img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/1000925128/?guid=ON&amp;script=0"/>
 			</div>
 			</noscript>
-
-			<link href="<?php bloginfo('template_url');?>/slider.css" rel="stylesheet" type="text/css" />
 
 	</head>
 	<body <?php body_class(); ?>>
