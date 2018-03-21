@@ -14,7 +14,7 @@
 				$image = get_sub_field('hero_image');
 			?>
 
-				<a href="" class="slider-item">
+				<a href="<?php the_sub_field('hero_link'); ?>" class="slider-item">
 
 					<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt'] ?>" />
 
