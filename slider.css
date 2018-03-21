@@ -1,1 +1,91 @@
+/** Structure **/
 
+.outer-container {
+	position: relative;
+	overflow: hidden;
+}
+
+.purple {
+	background-color: #4B324B;
+}
+
+.purple * {
+	color: #fff !important;
+}
+
+/** Image Slider **/
+
+.slider-item {
+	padding: 0 12.5px;
+	outline: 0;
+	-webkit-filter: blur(5px) saturate(0.4);
+	filter: blur(5px) saturate(0.4);
+	-webkit-transition: all 0.2s;
+	transition: all 0.2s;
+}
+
+.slider-item.slick-active {
+	-webkit-filter: blur(0) saturate(1);
+	filter: blur(0) saturate(1);
+}
+
+.slider-item img {
+	width: auto;
+	max-height: 400px;
+	height: 100%;
+}
+
+.slick-arrow {
+	position: absolute;
+	top: 50%;
+	margin-top: -114px;
+	z-index: 10;
+	width: 50px;
+	height: auto;
+	cursor: pointer;
+	opacity: 0.5;
+	-webkit-transition: all 0.2s;
+	transition: all 0.2s;
+}
+
+.slick-arrow:hover {
+	opacity: 1;
+}
+
+.sliderprevious {
+	left: 50px;
+}
+
+.slidernext {
+	right: 50px;
+}
+
+.slider-text {
+	max-width: 711px;
+	opacity: 0;
+	padding-bottom: 35px;
+	margin-top: -40px;
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s;
+}
+
+.slick-active .slider-text {
+	opacity: 1;
+}
+
+.slider-text *:first-child {
+	margin-top: 0;
+}
+
+.slider-text *:last-child {
+	margin-bottom: 0;
+}
+
+.slider-text h1 {
+	margin-bottom: 6px;
+	color: #faa500 !important;
+}
+
+.slider-text h4 {
+	margin-top: 0;
+} 
